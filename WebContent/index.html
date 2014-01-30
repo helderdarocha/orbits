@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Objetos do Sistema Solar</title>
+<script type="text/javascript" src="/js/jscolor/jscolor.js"></script>
+<style>
+   tr {text-align: center}
+   .body {width: 800px}
+   * {font-family: sans-serif}
+   h1, h2, h3 {color: navy}
+   h1 {font-size: 16pt}
+   h2,h3 {font-size: 13pt}
+   p, td, th, li {font-size: 10pt}
+   input[type='number'] {font-size: 10pt; font-family: monospace; color: rgb(128,30,30); font-weight: bold}
+</style>
+</head>
+<body><div class="body">
+<h1>Objetos sistema solar</h1>
+
+<p>Este programa pesquisa em uma base de dados XML de objetos do sistema solar
+contendo 5024  objetos obtidos da base do <a href="http://www.jpl.nasa.gov" target="jpl">Jet Propulsion Laboratory 
+da NASA</a>. Os dados foram atualizados em dezembro de 2010.</p>
+
+<p>Use o formulário abaixo para alterar a aparência dos resultados e
+ filtrar os resultados por tipo de objeto, diâmetro
+e órbita máxima e mínima, e mostrar menos objetos.
+
+<p><b>Limitações</b>: 
+<ul>
+<li>Esta é uma aplicação experimental. Não há validação nos campos abaixo.</li>
+<li>A reordenação dos dados da tabela só é possível quando as luas não são exibidas.</li>
+</ul>
+</p>
+
+<form action="/Orbits/servlet/sistemasolar.html" method="post">
+     <h3>1. Filtro de objetos e aparência</h3>
+     <table border="1" width="100%">
+     	<tr><th>Objetos</th><th>Mostrar</th><th>Cor de fundo</th><th>Cor do texto</th></tr>
+     	<tr><td>Planetas</td><td><input type="checkbox" name="planeta" checked value="1" /></td>
+     	    <td><input type="text" name="corPlaneta" value="dddd60" size="6" class="color"/></td>
+     	    <td><input type="text" name="corTextoPlaneta" value="000000" size="6" class="color"/></td></tr>
+     	<tr><td>Planetas-anão</td><td><input type="checkbox" name="planetaAnao" checked value="1" /></td>
+     	    <td><input type="text" name="corPlanetaAnao" value="ddff99" size="6" class="color"/></td>
+     	    <td><input type="text" name="corTextoPlanetaAnao" value="000000" size="6" class="color"/></td>
+     	    </tr>
+     	<tr><td>Asteróides</td><td><input type="checkbox" name="asteroide" value="1" checked /></td>
+     	    <td><input type="text" name="corAsteroide" value="ccffcc" size="6" class="color"/></td>
+     	    <td><input type="text" name="corTextoAsteroide" value="000000" size="6" class="color"/></td>
+     	    </tr>
+     	<tr><td>Objetos Trans-Netunianos</td><td><input type="checkbox" name="tno" checked value="1" /></td>
+     	    <td><input type="text" name="corObjeto" value="70ffff" size="6" class="color"/></td>
+     	    <td><input type="text" name="corTextoObjeto" value="000000" size="6" class="color"/></td>
+     	    </tr>
+     	<tr><td>Cometas</td><td><input type="checkbox" name="cometa" value="1" /></td>
+     	    <td><input type="text" name="corCometa" value="ffdd99" size="6" class="color"/></td>
+     	    <td><input type="text" name="corTextoCometa" value="000000" size="6" class="color"/></td>
+     	    </tr>
+     	<tr><td>Centauros</td><td><input type="checkbox" name="centauro" value="1" checked /></td>
+     	    <td><input type="text" name="corCentauro" value="ccccff" size="6" class="color"/></td>
+     	    <td><input type="text" name="corTextoCentauro" value="000000" size="6" class="color"/></td>
+     	    </tr>
+     	<tr><td>Sol</td><td><input type="checkbox" name="estrela" value="1" checked /></td>
+     	    <td><input type="text" name="corEstrela" value="ffff00" size="6" class="color"/></td>
+     	    <td><input type="text" name="corTextoEstrela" value="000000" size="6" class="color"/></td>
+     	    </tr>
+     	<tr><td>Luas</td><td><input type="checkbox" name="satelite" value="1"  checked /></td>
+     	    <td></td>
+     	    <td></td>
+     	    </tr>
+     </table>
+     
+     <h3>2. Filtro de dimensões e órbita</h3>
+     <p>Diâmetro mínimo dos objetos mostrados (exceto cometas): <input type="number" name="minDiametro" value="500" size="10" min="0"/> km. Diâmetro máximo <input type="number" name="maxDiametro" value="1390000.00" size="10" min="0"/> km
+     <br>Órbita mínima (afélio) <input type="number" name="minOrbita" value="0" size="6" min="0"/> UA.  Órbita máxima (afélio) <input type="number" name="maxOrbita" value="100" size="6" min="0" /> UA</p>
+
+     <h3>3. Parâmetros de apresentação</h3>
+     <p>Título a exibir para o gráfico <input type="text" name="titulo" value="Objetos do Sistema Solar" size="60"/>
+     <br/>Tamanho da fonte (pt) <input type="number" name="tamFonte" value="8" size="4" min="1" step="1"/> Cor de fundo <input type="text" class="color" name="corDeFundo" value="ffffff" size="6"/> Cor do texto <input type="text" class="color" name="corDoTexto" value="000000" size="6"/>
+     <br/><input type="checkbox" name="exibirImagens" value="1" checked />Mostrar imagens
+          <input type="checkbox" name="mostrarLegenda" value="1" checked /> Mostrar legenda
+          
+     <h3>4. Colunas a mostrar</h3>
+     <p><input type="checkbox" name="categoria" value="1" checked /> categoria   
+     <br/><input type="checkbox" name="diametrokm" value="1" checked /> diâmetro (km)   
+     <br/><input type="checkbox" name="massaGM" value="1" checked /> massa (GM)   
+     <br/><input type="checkbox" name="massaKg" value="1" /> massa (kg)   
+     <br/><input type="checkbox" name="volume" value="1" /> volume   
+     <br/><input type="checkbox" name="densidade" value="1" /> densidade   
+     <br/><input type="checkbox" name="gravidadeEquatorial" value="1" checked /> gravidade   
+     <br/><input type="checkbox" name="periodoRotacaoSideralH" value="1" checked /> tempo de rotação   
+     <br/><input type="checkbox" name="afelioUA" value="1" checked /> afélio da órbita   
+     <br/><input type="checkbox" name="perielioUA" value="1" checked /> periélio da órbita  
+     <br/><input type="checkbox" name="periodoOrbitalD" value="1" checked /> período da órbita   
+     <br/><input type="checkbox" name="excentricidade" value="1" /> excentricidade da órbita   
+     <br/><input type="checkbox" name="inclinacao" value="1" /> inclinação da órbita   
+     <br/><input type="checkbox" name="longitudeNoAscendente" value="1" /> longitude do nó ascendente   
+     <br/><input type="checkbox" name="argumentoPerielio" value="1" /> argumento do periélio   
+     <br/><input type="checkbox" name="anomaliaMedia" value="1" /> anomalia média   
+     <br/><input type="checkbox" name="designacao" value="1" /> designação   
+     <br/><input type="checkbox" name="numero" value="1" /> número   
+     <br/><input type="checkbox" name="inclinacaoAxial" value="1" checked /> inclinação do eixo   
+     <br/><input type="checkbox" name="anoDescobrimento" value="1" checked /> ano do descobrimento   
+     <br/><input type="checkbox" name="descobertoPor" value="1" checked /> descoberto por</p>  
+     
+     <input type="hidden" name="raioMedUA" value="1" />
+     <input type="hidden" name="raioMedOrbitakm" value="1" />
+     <input type="hidden" name="nome" value="1" />
+ 
+	 <p><input type="submit" value="Gerar Tabela" /></p>
+
+     </form>
+     
+     <p><a name="sobre"></a><b>* Sobre a aplicação</b>: Esta aplicação foi construída a partir de exemplos e exercícios propostos nos <a href="http://www.argonavis.com.br/cursos/xml">cursos
+de XML, XSL e SVG</a> da <a href="http://www.argonavis.com.br">Argo Navis</a>, cujas apostilas estão disponíveis para download. Os programas em Java,
+documentos XSL e XML usados para gerar os dados, e uma descrição de como os dados foram
+extraídos dinamicamente dos <a href="http://ssd.jpl.nasa.gov/sbdb_query.cgi" target="jpl">bancos de dados do JPL</a> para gerar a <a href="../data/sol_2010.2.2.xml">base XML</a> estão detalhados
+<a href="../index.html">neste documento</a>.</p>
+</div></body>
+</html>

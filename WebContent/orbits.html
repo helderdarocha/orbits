@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Geração de órbitas do Sistema Solar</title>
+<script type="text/javascript" src="http://www.argonavis.com.br/js/jscolor/jscolor.js"></script>
+<link type="text/css" href="/Orbits/js/jquery-ui-1.8.9.custom.css" rel="stylesheet" />	
+<script type="text/javascript" src="/Orbits/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/Orbits/js/jquery-ui-1.8.9.custom.min.js"></script>
+<script>
+  $(document).ready(function(){
+
+	  var accentMap = {
+		"á": "a",
+		"ã": "a",
+		"à": "a",
+		"â": "a",
+		"ä": "a",
+
+		"é": "e",
+		"ê": "e",
+		"ë": "e",
+		"è": "e",
+
+		"í": "i",
+		"ï": "i",
+
+		"õ": "o",
+		"ò": "o",
+		"ó": "o",
+		"ô": "o",
+		"ö": "o",
+
+		"ú": "u",
+		"ü": "u",
+		
+		"ç": "c"
+	  };
+
+	  var normalize = function( term ) {
+			var ret = "";
+			for ( var i = 0; i < term.length; i++ ) {
+				ret += accentMap[ term.charAt(i) ] || term.charAt(i);
+			}
+			return ret;
+	  };
+	  
+      $("#destaqueView").autocomplete({
+    	  source: function( request, response ) {
+			var matcher = new RegExp( $.ui.autocomplete.escapeRegex( request.term ), "i" );
+			response( $.grep( $.getJSON("/Orbits/servlet/buscaNomes", {term: escape(request.term)}, response), function( value ) {
+				value = value.label || value.value || value;
+				return matcher.test( value ) || matcher.test( normalize( value ) );
+			}) );
+		  },
+		  minLength: 1
+	  }); 
+  });
+
+  function enviar(form) {
+	  form.submit();
+  }
+
+  function send(form) {
+	  form.destaque.value = escape(form.destaqueView.value); 
+	  form.textoLegendaDestaque.value=form.destaque.value; 
+      enviar(form);
+  }
+</script>
+<style>
+   tr {text-align: center}
+   .body {width: 800px}
+   * {font-family: sans-serif}
+   h1, h2, h3 {color: navy}
+   h1 {font-size: 16pt}
+   h2,h3 {font-size: 13pt}
+   p, td, th, li {font-size: 10pt}
+   input[type='number'] {font-size: 10pt; font-family: monospace; color: rgb(128,30,30); font-weight: bold}
+</style>
+
+</head>
+<body><div class="body">
+<h1>Gerador de órbitas do sistema solar</h1>
+
+<p>Este programa gera um gráfico de órbitas do sistema solar em formato SVG,
+usando dados obtidos do <a href="http://www.jpl.nasa.gov" target="jpl">Jet Propulsion Laboratory 
+da NASA</a> atualizados em dezembro de 2010.</p>
+
+<p>No total, há 5024 objetos na base (metade são asteróides). Se todos forem mostrados, é provável que o gráfico
+fique muito grande e não haja memória na sua máquina para a animação ou mesmo para mostrar
+partes dele. Use o formulário abaixo para filtrar os resultados por tipo de objeto, diâmetro
+e órbita máxima e mínima, e mostrar menos objetos.
+
+<p><b>Limitações</b>: 
+<ul>
+<li>Esta é uma aplicação experimental (é baseada em <a href="#sobre">material de treinamento*</a>). Não há validação nos campos abaixo.</li>
+<li>A imagem gerada tem dimensões fixas em 1000 x 800 pixels e está em formato <a href="http://pt.wikipedia.org/wiki/SVG" target="wikipedia">SVG</a>, que não funciona em qualquer navegador. Foi testada e funciona nos browsers e versões <a href="http://www.apple.com/safari/download/" target="browser">Apple Safari 5</a>, <a href="http://www.mozilla.com/pt-BR/firefox/all-rc.html" target="browser">Mozilla Firefox 4</a>, <a href="http://www.google.com/chrome" target="browser">Google Chrome 10</a> e <a href="http://www.opera.com/download/" target="browser">Opera 10</a>, e deve funcionar também no <a href="http://windows.microsoft.com/ie9" target="browser">Internet Explorer 9</a></li>
+<li>Esta versão desenha as órbitas sobre um plano comum sem considerar a sua inclinação, portanto o desenho de órbitas muito inclinadas (ex: Éris, cometas) não é preciso.</li>
+<li>A animação das órbitas é proporcional ao período orbital de cada objeto, mas as velocidades são constantes, portanto órbitas de grande excentricidade (ex: cometas) não aceleram perto do sol como deveriam.
+</ul>
+</p>
+
+<form id="mainForm" action="/Orbits/servlet/orbitas.svg" method="post">
+     <h3>1. Filtro de objetos e aparência</h3>
+     <table border="1" width="100%">
+     	<tr><th>Objetos</th><th>Mostrar</th><th>Legenda</th><th>Linha da órbita (px)</th><th>Raio do objeto (px)</th><th>Cor (rrggbb)</th></tr>
+     	<tr><td>Planetas</td><td><input type="checkbox" name="planeta" checked value="1" /></td>
+     	    <td><input type="checkbox" name="mostrarNomePlaneta" checked value="1" /></td>
+     	    <td><input type="number" name="linhaPlaneta" value="1.0" 
+     	    min="0.0" max="10.0" step="0.1" size="4"/></td>
+     	    <td><input type="number" name="circuloPlaneta" value="2.0" min="0.0" max="10.0" step="0.1" size="4"/></td>
+     	    <td><input type="text" name="corPlaneta" value="ffff80" size="6" class="color"/></td></tr>
+     	<tr><td>Planetas-anão</td><td><input type="checkbox" name="planetaAnao" checked value="1" /></td>
+     	    <td><input type="checkbox" name="mostrarNomePlanetaAnao" checked value="1" /></td>
+     	    <td><input type="number" name="linhaPlanetaAnao" value="1.0" min="0.0" max="10.0" step="0.1" size="4"/></td>
+     	    <td><input type="number" name="circuloPlanetaAnao" value="2.0" min="0.0" max="10.0" step="0.1" size="4"/></td>
+     	    <td><input type="text" name="corPlanetaAnao" value="ff80ff" size="6" class="color"/></td>
+     	    </tr>
+     	<tr><td>Asteróides</td><td><input type="checkbox" name="asteroide" value="1" /></td>
+     	    <td><input type="checkbox" name="mostrarNomeAsteroide" value="1" /></td>
+     	    <td><input type="number" name="linhaAsteroide" value="0.2" min="0.0" max="10.0" step="0.1" size="4"/></td>
+     	    <td><input type="number" name="circuloAsteroide" value="1.0" 
+     	    min="0.0" max="10.0" step="0.1" size="4" /></td>
+     	    <td><input type="text" name="corAsteroide" value="80ff80" size="6" class="color"/></td>
+     	    </tr>
+     	<tr><td>Objetos Trans-Netunianos</td><td><input type="checkbox" name="tno" value="1" /></td>
+     	    <td><input type="checkbox" name="mostrarNomeTNO" value="1" /></td>
+     	    <td><input type="number" name="linhaTNO" value="0.2" 
+     	    min="0.0" max="10.0" step="0.1" size="4" /></td>
+     	    <td><input type="number" name="circuloTNO" value="1.0" 
+     	    min="0.0" max="10.0" step="0.1" size="4" /></td>
+     	    <td><input type="text" name="corTNO" value="00ffff" size="6" class="color"/></td>
+     	    </tr>
+     	<tr><td>Cometas</td><td><input type="checkbox" name="cometa" value="1" /></td>
+     	    <td><input type="checkbox" name="mostrarNomeCometa" value="1" /></td>
+     	    <td><input type="number" name="linhaCometa" value="0.2" 
+     	    min="0.0" max="10.0" step="0.1" size="4" /></td>
+     	    <td><input type="number" name="circuloCometa" value="1.0" 
+     	    min="0.0" max="10.0" step="0.1" size="4" /></td>
+     	    <td><input type="text" name="corCometa" value="ff4040" size="6" class="color"/></td>
+     	    </tr>
+     	<tr><td>Centauros</td><td><input type="checkbox" name="centauro" value="1" /></td>
+     	    <td><input type="checkbox" name="mostrarNomeCentauro" value="1" /></td>
+     	    <td><input type="number" name="linhaCentauro" value="0.5" 
+     	    min="0.0" max="10.0" step="0.1" size="4" /></td>
+     	    <td><input type="number" name="circuloCentauro" value="1.0" 
+     	    min="0.0" max="10.0" step="0.1" size="4" /></td>
+     	    <td><input type="text" name="corCentauro" value="4000ff" size="6" class="color"/></td>
+     	    </tr>
+     </table>
+     
+     <h3>2. Destacar objeto</h3>
+      <p>Digite o nome do objeto a destacar ou selecione da lista (digite o início do nome).</p>
+     <table border="1" width="100%">
+     	 <tr><th>Objeto</th><th>Linha da órbita (px)</th><th>Raio do objeto (px)</th><th>Cor (rrggbb)</th><th>Fonte (pt)</th></tr>
+     	 <tr><td><input type="text" id="destaqueView" name="destaqueView" size="40"/></td>
+     	    <td><input type="number" name="linhaDestaque" value="2" size="4" min="0.0" max="10.0" step="0.1" /></td>
+     	    <td><input type="number" name="circuloDestaque" value="4" min="0.0" max="10.0" step="0.1" size="4" /></td>
+     	    <td><input type="text" name="corDestaque" value="ffffff" size="6" class="color"/></td>
+     	    <td><input type="number" name="tamFonteDestaque" value="18" size="4" min="1" step="1"/></td>
+     	 </tr>
+     </table>
+     
+     <input type="hidden" name="destaque" />
+     <input type="hidden" name="textoLegendaDestaque" />
+     <input type="hidden" name="mostrarNomeDestaque" value="1" />
+     
+     <h3>3. Filtro de dimensões e órbita</h3>
+     <p>Diâmetro mínimo dos objetos mostrados (exceto cometas): <input type="number" name="minDiametro" value="100" size="10" min="0"/> km
+     <br>Órbita mínima (afélio) <input type="number" name="minOrbita" value="0" size="6" min="0"/> UA.  Órbita máxima (afélio) <input type="number" name="maxOrbita" value="50" size="6" min="0" /> UA</p>
+
+     <h3>4. Parâmetros de apresentação</h3>
+     <p>Título a exibir para o gráfico <input type="text" name="titulo" value="Sistema Solar" size="60"/>
+     <br/>Tamanho da fonte (pt) <input type="number" name="tamFonte" value="14" size="4" min="1" step="1"/> Cor de fundo <input type="text" class="color" name="corDeFundo" value="000030" size="6"/> Cor do texto <input type="text" class="color" name="corDoTexto" value="ffffff" size="6"/> Segundos orbita maxima <input type="number" name="segundosOrbitaMaxima" value="120" size="4"
+     min="0" step="10"/>
+     <br/><input type="checkbox" name="brilhoSol" value="1" checked />Brilho do sol 
+          <input type="checkbox" name="mostrarLegenda" value="1" checked /> Mostrar legenda</p>
+          
+     <h3>5. Parâmetros de ajuste</h3>
+     <p>Use os parâmetros abaixo para ajustar o gráfico da forma desejada (para caber inteiro no espaço, para aproximar, para afastar).</p>
+     <p>Ajuste de escala <input type="number" name="escala" value="1" size="6" min="0.1" step="0.10"/> * 100%
+     <br/>Ajuste horizontal (valores positivos para a direita) <input type="number" name="maisX" value="0.0" size="6" step="50"/> px
+     <br/>Ajuste vertical (valores positivos para baixo) <input type="number" name="maisY" value="0.0" size="6" step="50"/> px
+
+	 <p><input type="button" value="Gerar Órbitas" onclick="send(this.form)"/></p>
+
+     </form>
+     
+     <p><a name="sobre"></a><b>* Sobre a aplicação</b>: Esta aplicação foi construída a partir de exemplos e exercícios propostos nos <a href="http://www.argonavis.com.br/cursos/xml">cursos
+de XML, XSL e SVG</a> da <a href="http://www.argonavis.com.br">Argo Navis</a>, cujas apostilas estão disponíveis para download. Os programas em Java,
+documentos XSL e XML usados para gerar os dados, e uma descrição de como os dados foram
+extraídos dinamicamente dos <a href="http://ssd.jpl.nasa.gov/sbdb_query.cgi" target="jpl">bancos de dados do JPL</a> para gerar a <a href="../data/sol_2010.2.2.xml">base XML</a> estão detalhados
+<a href="../index.html">neste documento</a>.</p>
+</div>
+<!--
+<div>
+<p><a href="javascript:buildParams(document.forms[0])">Sedna</a></p>
+<script>
+function buildParams(form) {
+	form.planeta.checked=true;
+	form.planetaAnao.checked=true;
+	form.asteroide.checked=false;
+	form.tno.checked=true;
+	form.cometa.checked=true;
+	form.centauro.checked=true;
+	
+	form.mostrarNomePlaneta.checked=true;
+	form.mostrarNomePlanetaAnao.checked=true;
+	form.mostrarNomeAsteroide.checked=false;
+	form.mostrarNomeTNO.checked=false;
+	form.mostrarNomeCometa.checked=false;
+	form.mostrarNomeCentauro.checked=false;
+	
+	form.linhaPlaneta.value = '1';
+	form.linhaPlanetaAnao.value = '1';
+	form.linhaAsteroide.value = '1';
+	form.linhaTNO.value = '1';
+	form.linhaCometa.value = '1';
+	form.linhaCentauro.value = '1';
+	
+	form.minDiametro.value = '100';
+	form.minOrbita.value = '40';
+	form.maxOrbita.value = '1000';
+	form.maisX.value = '-350';
+	form.maisY.value = '300';
+	form.escala.value = '0.9';
+	//enviar(form);
+}
+</script>
+</div>
+-->
+
+  <script>
+    var _gaq=[['_setAccount','UA-21073777-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+</body>
+</html>
