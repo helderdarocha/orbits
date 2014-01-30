@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centauros versao="2.1" dataAtualizacao="2010-12-27">
+    <!-- Numerados -->
+    <objeto id="a1920.hz" nome="Hidalgo" numero="944" designacao="1920 HZ" anoDescobrimento="1920"
+        categoria="centauro" raioMedUA="5.742" excentricidade="0.6603" perielioUA="1.950"
+        afelioUA="9.53" inclinacao="42.56" diametrokm="38." longitudeNoAscendente="21.61"
+        argumentoPerielio="56.58" anomaliaMedia="143.87" periodoOrbitalD="5030"/>
+    <objeto id="a1977.ub" nome="Chiron" numero="2060" designacao="1977 UB" anoDescobrimento="1977"
+        categoria="centauro" raioMedUA="13.7" excentricidade="0.3786" perielioUA="8.513"
+        afelioUA="18.88" inclinacao="6.93" diametrokm="173" longitudeNoAscendente="209.36"
+        argumentoPerielio="339.80" anomaliaMedia="102.75" periodoOrbitalD="18500" descobertoPor=""
+        massaKg=""/>
+    <objeto id="a1992.ad" nome="Pholus" numero="5145" designacao="1992 AD" anoDescobrimento="1992"
+        categoria="centauro" raioMedUA="20.3" excentricidade="0.5719" perielioUA="8.691"
+        afelioUA="31.91" inclinacao="24.67" diametrokm="190" longitudeNoAscendente="119.41"
+        argumentoPerielio="354.70" anomaliaMedia="74.23" periodoOrbitalD="33400"/>
+    <objeto id="a1991.da" nome="Damocles" numero="5335" designacao="1991 DA" anoDescobrimento="1991"
+        categoria="damocloide" raioMedUA="11.84" excentricidade="0.8659" perielioUA="1.588"
+        afelioUA="22.09" inclinacao="61.73" longitudeNoAscendente="314.12"
+        argumentoPerielio="191.19" anomaliaMedia="178.72" periodoOrbitalD="14900" descobertoPor=""
+        massaKg="" diametrokm="10"/>
+    <objeto id="a1993.ha2" nome="Nessus" numero="7066" designacao="1993 HA2" anoDescobrimento="1993"
+        categoria="centauro" raioMedUA="24.62" excentricidade="0.5177" perielioUA="11.872"
+        afelioUA="37.36" inclinacao="15.64" longitudeNoAscendente="31.39" argumentoPerielio="170.75"
+        anomaliaMedia="54.48" periodoOrbitalD="44600"/>
+    <objeto id="a1995.go" nome="Asbolus" numero="8405" designacao="1995 GO" anoDescobrimento="1995"
+        categoria="centauro" raioMedUA="18.12" excentricidade="0.6212" perielioUA="6.862"
+        afelioUA="29.37" inclinacao="17.60" diametrokm="66" longitudeNoAscendente="5.97"
+        argumentoPerielio="290.69" anomaliaMedia="37.24" periodoOrbitalD="28200"/>
+    <objeto id="a1997.cu26" nome="Chariklo" numero="10199" designacao="1997 CU26"
+        anoDescobrimento="1997" categoria="centauro" raioMedUA="15.76" excentricidade="0.1704"
+        perielioUA="13.076" afelioUA="18.45" inclinacao="23.38" diametrokm="302"
+        longitudeNoAscendente="300.50" argumentoPerielio="242.04" anomaliaMedia="37.74"
+        periodoOrbitalD="22900"/>
+    <objeto id="a1995.dw2" nome="Hylonome" numero="10370" designacao="1995 DW2"
+        anoDescobrimento="1995" categoria="centauro" raioMedUA="25.03" excentricidade="0.2452"
+        perielioUA="18.894" afelioUA="31.17" inclinacao="4.15" longitudeNoAscendente="178.28"
+        argumentoPerielio="6.25" anomaliaMedia="43.69" periodoOrbitalD="45700"/>
+    <objeto id="a1999.rg33" nome="15504" numero="15504" designacao="1999 RG33"
+        anoDescobrimento="1999" categoria="damocloide" raioMedUA="9.383" excentricidade="0.7734"
+        perielioUA="2.126" afelioUA="16.64" inclinacao="34.92" longitudeNoAscendente="23.36"
+        argumentoPerielio="273.87" anomaliaMedia="150.01" periodoOrbitalD="10500" descobertoPor=""
+        massaKg="" diametrokm="17"/>
+    <objeto id="a1999.ld31" nome="Dioretsa" numero="20461" designacao="1999 LD31"
+        anoDescobrimento="1999" categoria="damocloide" raioMedUA="23.89" excentricidade="0.9008"
+        perielioUA="2.370" afelioUA="45.41" inclinacao="160.43" longitudeNoAscendente="297.55"
+        argumentoPerielio="102.73" anomaliaMedia="32.89" periodoOrbitalD="42700" descobertoPor=""
+        massaKg="" diametrokm="8"/>
+    <objeto id="a1999.td10" nome="29981" numero="29981" designacao="1999 TD10"
+        anoDescobrimento="1999" categoria="centauro" raioMedUA="98.69" excentricidade="0.8755"
+        perielioUA="12.288" afelioUA="185.09" inclinacao="5.96" longitudeNoAscendente="184.57"
+        argumentoPerielio="172.75" anomaliaMedia="3.94" periodoOrbitalD="358000" descobertoPor=""
+        massaKg="" diametrokm="97"/>
+    <objeto id="a1999.ug5" nome="Elatus" numero="31824" designacao="1999 UG5"
+        anoDescobrimento="1999" categoria="centauro" raioMedUA="11.77" excentricidade="0.3845"
+        perielioUA="7.243" afelioUA="16.29" inclinacao="5.25" longitudeNoAscendente="87.10"
+        argumentoPerielio="281.59" anomaliaMedia="107.19" periodoOrbitalD="14700" descobertoPor=""
+        massaKg="" diametrokm="39"/>
+    <objeto id="a2001.pt13" nome="Thereus" numero="32532" designacao="2001 PT13"
+        anoDescobrimento="2001" categoria="centauro" raioMedUA="10.66" excentricidade="0.1977"
+        perielioUA="8.550" afelioUA="12.76" inclinacao="20.34" longitudeNoAscendente="205.20"
+        argumentoPerielio="87.32" anomaliaMedia="117.82" periodoOrbitalD="12700" descobertoPor=""
+        massaKg="" diametrokm="84"/>
+    <objeto id="a1998.bu48" nome="33128" numero="33128" designacao="1998 BU48"
+        anoDescobrimento="1998" categoria="centauro" raioMedUA="33.17" excentricidade="0.3843"
+        perielioUA="20.424" afelioUA="45.92" inclinacao="14.27" longitudeNoAscendente="132.81"
+        argumentoPerielio="281.89" anomaliaMedia="61.96" periodoOrbitalD="69800" descobertoPor=""
+        massaKg="" diametrokm="160"/>
+    <objeto id="a2000.vu2" nome="Narcissus" numero="37117" designacao="2000 VU2"
+        anoDescobrimento="2000" categoria="incomum" raioMedUA="6.884" excentricidade="0.5535"
+        perielioUA="3.074" afelioUA="10.69" inclinacao="13.81" diametrokm="10"
+        longitudeNoAscendente="248.61" argumentoPerielio="180.09" anomaliaMedia="202.03"
+        periodoOrbitalD="6600" descobertoPor="" massaKg=""/>
+    <objeto id="a2002.cr46" nome="Typhon" numero="42355" designacao="2002 CR46"
+        anoDescobrimento="2002" categoria="centauro" raioMedUA="37.6" excentricidade="0.5341"
+        perielioUA="17.519" afelioUA="57.69" inclinacao="2.43" longitudeNoAscendente="351.96"
+        argumentoPerielio="158.83" anomaliaMedia="6.59" periodoOrbitalD="84200" descobertoPor="NEAT"
+        massaKg="" diametrokm="152">
+        <satelite id="s42355.1" nome="Equidna" diametrokm="79" raioMedOrbitakm="1300"
+            anoDescobrimento="2006" descobertoPor="K. Noll et al"/>
+    </objeto>
+    <objeto id="a1999.ox3" nome="44594" numero="44594" designacao="1999 OX3" anoDescobrimento="1999"
+        categoria="centauro" raioMedUA="32.5" excentricidade="0.4576" perielioUA="17.629"
+        afelioUA="47.37" inclinacao="2.62" longitudeNoAscendente="259.22" argumentoPerielio="143.86"
+        anomaliaMedia="333.82" periodoOrbitalD="67700" descobertoPor="" massaKg="" diametrokm="146"/>
+    <objeto id="a1998.qm107" nome="Pelion" numero="49036" designacao="1998 QM107"
+        anoDescobrimento="1998" categoria="centauro" raioMedUA="20.08" excentricidade="0.1364"
+        perielioUA="17.339" afelioUA="22.82" inclinacao="9.35" longitudeNoAscendente="127.00"
+        argumentoPerielio="155.22" anomaliaMedia="71.85" periodoOrbitalD="32900" descobertoPor=""
+        massaKg="" diametrokm="37"/>
+    <objeto id="a1998.sg35" nome="Okyrhoe" numero="52872" designacao="1998 SG35"
+        anoDescobrimento="1998" categoria="centauro" raioMedUA="8.347" excentricidade="0.3058"
+        perielioUA="5.795" afelioUA="10.90" inclinacao="15.66" longitudeNoAscendente="173.17"
+        argumentoPerielio="337.71" anomaliaMedia="37.28" periodoOrbitalD="8810" descobertoPor=""
+        massaKg="" diametrokm="49"/>
+    <objeto id="a1998.tf35" nome="Cyllarus" numero="52975" designacao="1998 TF35"
+        anoDescobrimento="1998" categoria="centauro" raioMedUA="26.22" excentricidade="0.3806"
+        perielioUA="16.239" afelioUA="36.19" inclinacao="12.63" longitudeNoAscendente="51.92"
+        argumentoPerielio="301.22" anomaliaMedia="55.81" periodoOrbitalD="49000" descobertoPor=""
+        massaKg="" diametrokm="62"/>
+    <objeto id="a2000.pj30" nome="54520" numero="54520" designacao="2000 PJ30"
+        anoDescobrimento="2000" categoria="centauro" raioMedUA="123.7" excentricidade="0.7678"
+        perielioUA="28.735" afelioUA="218.76" inclinacao="5.71" longitudeNoAscendente="293.25"
+        argumentoPerielio="304.08" anomaliaMedia="10.00" periodoOrbitalD="503000" descobertoPor=""
+        massaKg="" diametrokm="111"/>
+    <objeto id="a2000.qc243" nome="Bienor" numero="54598" designacao="2000 QC243"
+        anoDescobrimento="2000" categoria="centauro" raioMedUA="16.55" excentricidade="0.1991"
+        perielioUA="13.258" afelioUA="19.85" inclinacao="20.71" longitudeNoAscendente="337.77"
+        argumentoPerielio="151.95" anomaliaMedia="266.86" periodoOrbitalD="24600" descobertoPor=""
+        massaKg="" diametrokm="191"/>
+    <objeto id="a2002.gb10" nome="Amycus" numero="55576" designacao="2002 GB10"
+        anoDescobrimento="2002" categoria="centauro" raioMedUA="25.03" excentricidade="0.3927"
+        perielioUA="15.198" afelioUA="34.85" inclinacao="13.34" longitudeNoAscendente="315.58"
+        argumentoPerielio="239.15" anomaliaMedia="21.48" periodoOrbitalD="45700"
+        descobertoPor="NEAT" massaKg="" diametrokm="76"/>
+    <objeto id="a2000.ec98" nome="Echeclus" numero="60558" designacao="2000 EC98"
+        anoDescobrimento="2000" categoria="centauro" raioMedUA="10.74" excentricidade="0.4580"
+        perielioUA="5.822" afelioUA="15.66" inclinacao="4.34" longitudeNoAscendente="173.40"
+        argumentoPerielio="162.68" anomaliaMedia="311.53" periodoOrbitalD="12900" descobertoPor=""
+        massaKg="" diametrokm="77"/>
+    <objeto id="a2000.ee173" nome="60608" numero="60608" designacao="2000 EE173"
+        anoDescobrimento="2000" categoria="centauro" raioMedUA="48.89" excentricidade="0.5382"
+        perielioUA="22.579" afelioUA="75.21" inclinacao="5.95" longitudeNoAscendente="294.11"
+        argumentoPerielio="235.43" anomaliaMedia="3.49" periodoOrbitalD="125000" descobertoPor=""
+        massaKg="" diametrokm="84"/>
+    <objeto id="a2001.bl41" nome="63252" numero="63252" designacao="2001 BL41"
+        anoDescobrimento="2001" categoria="centauro" raioMedUA="9.726" excentricidade="0.2960"
+        perielioUA="6.847" afelioUA="12.60" inclinacao="12.46" longitudeNoAscendente="281.22"
+        argumentoPerielio="132.01" anomaliaMedia="148.36" periodoOrbitalD="11100" descobertoPor=""
+        massaKg="" diametrokm="35"/>
+    <objeto id="a2002.rp120" nome="65407" numero="65407" designacao="2002 RP120"
+        anoDescobrimento="2002" categoria="damocloide" raioMedUA="53.93" excentricidade="0.9542"
+        perielioUA="2.472" afelioUA="105.38" inclinacao="119.26" diametrokm="15"
+        longitudeNoAscendente="39.04" argumentoPerielio="357.79" anomaliaMedia="7.09"
+        periodoOrbitalD="145000" descobertoPor="" massaKg=""/>
+    <objeto id="a2003.fx128" nome="Ceto" numero="65489" designacao="2003 FX128"
+        anoDescobrimento="2003" categoria="centauro" raioMedUA="99.68" excentricidade="0.8215"
+        perielioUA="17.795" afelioUA="181.56" inclinacao="22.33" longitudeNoAscendente="172.06"
+        argumentoPerielio="319.51" anomaliaMedia="7.60" periodoOrbitalD="363000"
+        descobertoPor="Michael Brown, Chadwick Trujillo" massaKg="" diametrokm="183">
+        <satelite id="s65489.1" nome="Forsis" diametrokm="132" raioMedOrbitakm="-1"
+            anoDescobrimento="2006" descobertoPor="K. Noll et al"/>
+    </objeto>
+    <objeto id="a2002.pn34" nome="73480" numero="73480" designacao="2002 PN34"
+        anoDescobrimento="2002" categoria="centauro" raioMedUA="31.24" excentricidade="0.5723"
+        perielioUA="13.363" afelioUA="49.13" inclinacao="16.63" longitudeNoAscendente="299.16"
+        argumentoPerielio="358.81" anomaliaMedia="17.81" periodoOrbitalD="63800" descobertoPor=""
+        massaKg="" diametrokm="120"/>
+    <objeto id="a2002.go9" nome="Crantor" numero="83982" designacao="2002 GO9"
+        anoDescobrimento="2002" categoria="centauro" raioMedUA="19.43" excentricidade="0.2763"
+        perielioUA="14.063" afelioUA="24.80" inclinacao="12.77" longitudeNoAscendente="117.44"
+        argumentoPerielio="93.24" anomaliaMedia="34.14" periodoOrbitalD="31300" descobertoPor=""
+        massaKg="" diametrokm="60"/>
+    <objeto id="a2000.oo67" nome="87269" numero="87269" designacao="2000 OO67"
+        anoDescobrimento="2000" categoria="centauro" raioMedUA="670.4" excentricidade="0.9690"
+        perielioUA="20.776" afelioUA="1319.93" inclinacao="20.06" longitudeNoAscendente="142.27"
+        argumentoPerielio="212.52" anomaliaMedia="0.11" periodoOrbitalD="6340000"
+        descobertoPor="Cerro Tololo" massaKg="" diametrokm="64"/>
+    <objeto id="a2000.qb243" nome="87555" numero="87555" designacao="2000 QB243"
+        anoDescobrimento="2000" categoria="centauro" raioMedUA="35.17" excentricidade="0.5642"
+        perielioUA="15.323" afelioUA="55.01" inclinacao="6.77" longitudeNoAscendente="330.11"
+        argumentoPerielio="285.01" anomaliaMedia="31.41" periodoOrbitalD="76200" descobertoPor=""
+        massaKg="" diametrokm="96"/>
+    <objeto id="a2001.kf77" nome="88269" numero="88269" designacao="2001 KF77"
+        anoDescobrimento="2001" categoria="centauro" raioMedUA="25.97" excentricidade="0.2388"
+        perielioUA="19.771" afelioUA="32.18" inclinacao="4.36" longitudeNoAscendente="14.71"
+        argumentoPerielio="266.55" anomaliaMedia="342.65" periodoOrbitalD="48400" descobertoPor=""
+        massaKg="" diametrokm="55"/>
+    <objeto id="a2002.gz32" nome="95626" numero="95626" designacao="2002 GZ32"
+        anoDescobrimento="2002" categoria="centauro" raioMedUA="23.04" excentricidade="0.2191"
+        perielioUA="17.990" afelioUA="28.08" inclinacao="15.02" longitudeNoAscendente="107.33"
+        argumentoPerielio="155.56" anomaliaMedia="330.36" periodoOrbitalD="40400" descobertoPor=""
+        massaKg="" diametrokm="192"/>
+    <objeto id="a2001.sq73" nome="119315" numero="119315" designacao="2001 SQ73"
+        anoDescobrimento="2001" categoria="centauro" raioMedUA="17.51" excentricidade="0.1762"
+        perielioUA="14.421" afelioUA="20.59" inclinacao="17.42" longitudeNoAscendente="16.17"
+        argumentoPerielio="305.03" anomaliaMedia="87.71" periodoOrbitalD="26800" descobertoPor=""
+        massaKg="" diametrokm="53"/>
+    <objeto id="a2002.vr130" nome="119976" numero="119976" designacao="2002 VR130"
+        anoDescobrimento="2002" categoria="centauro" raioMedUA="24.05" excentricidade="0.3876"
+        perielioUA="14.729" afelioUA="33.38" inclinacao="3.52" longitudeNoAscendente="181.80"
+        argumentoPerielio="218.82" anomaliaMedia="17.03" periodoOrbitalD="43100" descobertoPor=""
+        massaKg="" diametrokm="28"/>
+    <objeto id="a2003.co1" nome="120061" numero="120061" designacao="2003 CO1"
+        anoDescobrimento="2003" categoria="centauro" raioMedUA="20.73" excentricidade="0.4731"
+        perielioUA="10.925" afelioUA="30.54" inclinacao="19.75" longitudeNoAscendente="78.49"
+        argumentoPerielio="116.37" anomaliaMedia="14.79" periodoOrbitalD="34500" descobertoPor=""
+        massaKg="" diametrokm="77"/>
+    <objeto id="a1999.xx143" nome="121725" numero="121725" designacao="1999 XX143"
+        anoDescobrimento="1999" categoria="centauro" raioMedUA="17.93" excentricidade="0.4644"
+        perielioUA="9.603" afelioUA="26.26" inclinacao="6.78" longitudeNoAscendente="103.80"
+        argumentoPerielio="215.98" anomaliaMedia="176.91" periodoOrbitalD="27700" descobertoPor=""
+        massaKg="" diametrokm="84"/>
+    <objeto id="a2002.xu93" nome="127546" numero="127546" designacao="2002 XU93"
+        anoDescobrimento="2002" categoria="centauro" raioMedUA="66.45" excentricidade="0.6842"
+        perielioUA="20.982" afelioUA="111.91" inclinacao="77.95" longitudeNoAscendente="90.32"
+        argumentoPerielio="27.78" anomaliaMedia="1.25" periodoOrbitalD="198000" descobertoPor=""
+        massaKg="" diametrokm="111"/>
+    <objeto id="a2003.wl7" nome="136204" numero="136204" designacao="2003 WL7"
+        anoDescobrimento="2003" categoria="centauro" raioMedUA="20.2" excentricidade="0.2596"
+        perielioUA="14.954" afelioUA="25.44" inclinacao="11.16" longitudeNoAscendente="4.64"
+        argumentoPerielio="70.33" anomaliaMedia="357.26" periodoOrbitalD="33200" descobertoPor=""
+        massaKg="" diametrokm="80"/>
+    <objeto id="a2004.yh32" nome="144908" numero="144908" designacao="2004 YH32"
+        anoDescobrimento="2004" categoria="damocloide" raioMedUA="8.14" excentricidade="0.5671"
+        perielioUA="3.524" afelioUA="12.76" inclinacao="79.15" longitudeNoAscendente="47.67"
+        argumentoPerielio="348.74" anomaliaMedia="76.52" periodoOrbitalD="8480" descobertoPor=""
+        massaKg="" diametrokm="12"/>
+    <objeto id="a2005.uj438" nome="145486" numero="145486" designacao="2005 UJ438"
+        anoDescobrimento="2005" categoria="centauro" raioMedUA="17.64" excentricidade="0.5318"
+        perielioUA="8.258" afelioUA="27.01" inclinacao="3.79" longitudeNoAscendente="262.97"
+        argumentoPerielio="208.05" anomaliaMedia="2.98" periodoOrbitalD="27100" descobertoPor=""
+        massaKg="" diametrokm="35"/>
+    <objeto id="a2006.ry102" nome="145627" numero="145627" designacao="2006 RY102"
+        anoDescobrimento="2006" categoria="incomum" raioMedUA="6.321" excentricidade="0.2774"
+        perielioUA="4.568" afelioUA="8.07" inclinacao="18.69" longitudeNoAscendente="94.85"
+        argumentoPerielio="344.92" anomaliaMedia="47.19" periodoOrbitalD="5800" descobertoPor=""
+        massaKg="" diametrokm="27"/>
+    <objeto id="a2001.xa255" nome="148975" numero="148975" designacao="2001 XA255"
+        anoDescobrimento="2001" categoria="centauro" raioMedUA="29.07" excentricidade="0.6789"
+        perielioUA="9.337" afelioUA="48.81" inclinacao="12.61" longitudeNoAscendente="106.10"
+        argumentoPerielio="90.34" anomaliaMedia="0.20" periodoOrbitalD="57300" descobertoPor=""
+        massaKg="" diametrokm="25"/>
+    <objeto id="a2003.qz91" nome="149560" numero="149560" designacao="2003 QZ91"
+        anoDescobrimento="2003" categoria="centauro" raioMedUA="41.77" excentricidade="0.4781"
+        perielioUA="21.797" afelioUA="61.74" inclinacao="34.79" longitudeNoAscendente="130.82"
+        argumentoPerielio="137.89" anomaliaMedia="25.99" periodoOrbitalD="98600" descobertoPor=""
+        massaKg="" diametrokm="106"/>
+    <objeto id="a2004.pa44" nome="154783" numero="154783" designacao="2004 PA44"
+        anoDescobrimento="2004" categoria="damocloide" raioMedUA="14.29" excentricidade="0.7584"
+        perielioUA="3.454" afelioUA="25.13" inclinacao="3.27" longitudeNoAscendente="212.49"
+        argumentoPerielio="73.17" anomaliaMedia="45.79" periodoOrbitalD="19700" descobertoPor=""
+        massaKg="" diametrokm="8"/>
+    <objeto id="a2005.rl43" nome="160427" numero="160427" designacao="2005 RL43"
+        anoDescobrimento="2005" categoria="centauro" raioMedUA="24.63" excentricidade="0.0456"
+        perielioUA="23.508" afelioUA="25.76" inclinacao="12.25" longitudeNoAscendente="162.49"
+        argumentoPerielio="175.23" anomaliaMedia="53.16" periodoOrbitalD="44700" descobertoPor=""
+        massaKg="" diametrokm="92"/>
+    <objeto id="a2007.jg43" nome="187661" numero="187661" designacao="2007 JG43"
+        anoDescobrimento="2007" categoria="centauro" raioMedUA="23.98" excentricidade="0.4047"
+        perielioUA="14.278" afelioUA="33.69" inclinacao="33.14" longitudeNoAscendente="62.57"
+        argumentoPerielio="173.92" anomaliaMedia="11.64" periodoOrbitalD="42900" descobertoPor=""
+        massaKg="" diametrokm="61"/>
+    <objeto id="a2007.du112" nome="241097" numero="241097" designacao="2007 DU112"
+        anoDescobrimento="2007" categoria="centauro" raioMedUA="40.32" excentricidade="0.7760"
+        perielioUA="9.033" afelioUA="71.60" inclinacao="15.69" longitudeNoAscendente="187.13"
+        argumentoPerielio="348.37" anomaliaMedia="6.38" periodoOrbitalD="93500" descobertoPor=""
+        massaKg="" diametrokm="27"/>
+    <objeto id="a2006.sx368" nome="248835" numero="248835" designacao="2006 SX368"
+        anoDescobrimento="2006" categoria="centauro" raioMedUA="22.29" excentricidade="0.4633"
+        perielioUA="11.961" afelioUA="32.62" inclinacao="36.29" longitudeNoAscendente="280.04"
+        argumentoPerielio="70.77" anomaliaMedia="2.41" periodoOrbitalD="38400" descobertoPor=""
+        massaKg="" diametrokm="75"/>
+    <objeto id="a2002.ky14" nome="250112" numero="250112" designacao="2002 KY14"
+        anoDescobrimento="2002" categoria="centauro" raioMedUA="12.63" excentricidade="0.3173"
+        perielioUA="8.621" afelioUA="16.63" inclinacao="19.45" longitudeNoAscendente="245.40"
+        argumentoPerielio="99.51" anomaliaMedia="13.86" periodoOrbitalD="16400" descobertoPor=""
+        massaKg="" diametrokm="55"/>
+
+    <!-- Nao numerados -->
+    <objeto id="a1994.ta" nome="1994 TA" designacao="1994 TA" anoDescobrimento="1994"
+        categoria="centauro" raioMedUA="16.78" excentricidade="0.3013" perielioUA="11.728"
+        afelioUA="21.84" inclinacao="5.40" longitudeNoAscendente="137.62" argumentoPerielio="154.31"
+        anomaliaMedia="138.27" periodoOrbitalD="25100" descobertoPor="" massaKg="" diametrokm="22"/>
+    <objeto id="a1995.sn55" nome="1995 SN55" designacao="1995 SN55" anoDescobrimento="1995"
+        categoria="centauro" raioMedUA="23.56" excentricidade="0.6631" perielioUA="7.938"
+        afelioUA="39.19" inclinacao="4.97" longitudeNoAscendente="144.61" argumentoPerielio="49.33"
+        anomaliaMedia="180.22" periodoOrbitalD="41800" descobertoPor="" massaKg="" diametrokm="278"/>
+    <objeto id="a1996.ar20" nome="1996 AR20" designacao="1996 AR20" anoDescobrimento="1996"
+        categoria="centauro" raioMedUA="15.2" excentricidade="0.6272" perielioUA="5.666"
+        afelioUA="24.73" inclinacao="6.17" longitudeNoAscendente="330.06" argumentoPerielio="107.94"
+        anomaliaMedia="8.58" periodoOrbitalD="21600" descobertoPor="" massaKg="" diametrokm="7"/>
+    <objeto id="a1996.as20" nome="1996 AS20" designacao="1996 AS20" anoDescobrimento="1996"
+        categoria="centauro" raioMedUA="35.79" excentricidade="0.6210" perielioUA="13.565"
+        afelioUA="58.01" inclinacao="10.62" longitudeNoAscendente="183.69"
+        argumentoPerielio="265.55" anomaliaMedia="9.69" periodoOrbitalD="78200" descobertoPor=""
+        massaKg="" diametrokm="61"/>
+    <objeto id="a1996.pw" nome="1996 PW" designacao="1996 PW" anoDescobrimento="1996"
+        categoria="damocloide" raioMedUA="276.7" excentricidade="0.9909" perielioUA="2.528"
+        afelioUA="550.90" inclinacao="29.91" longitudeNoAscendente="144.40"
+        argumentoPerielio="181.86" anomaliaMedia="1.13" periodoOrbitalD="1680000" descobertoPor=""
+        massaKg="" diametrokm="7"/>
+    <objeto id="a1996.rx33" nome="1996 RX33" designacao="1996 RX33" anoDescobrimento="1996"
+        categoria="centauro" raioMedUA="23.87" excentricidade="0.2036" perielioUA="19.009"
+        afelioUA="28.73" inclinacao="9.40" longitudeNoAscendente="145.36" argumentoPerielio="200.51"
+        anomaliaMedia="0.05" periodoOrbitalD="42600" descobertoPor="" massaKg="" diametrokm="61"/>
+    <objeto id="a1997.md10" nome="1997 MD10" designacao="1997 MD10" anoDescobrimento="1997"
+        categoria="damocloide" raioMedUA="26.55" excentricidade="0.9427" perielioUA="1.521"
+        afelioUA="51.58" inclinacao="59.18" longitudeNoAscendente="281.73" argumentoPerielio="68.75"
+        anomaliaMedia="34.82" periodoOrbitalD="50000" descobertoPor="" massaKg="" diametrokm="3"/>
+    <objeto id="a1998.ho121" nome="1998 HO121" designacao="1998 HO121" anoDescobrimento="1998"
+        categoria="incomum" raioMedUA="7.145" excentricidade="0.5848" perielioUA="2.967"
+        afelioUA="11.32" inclinacao="11.97" longitudeNoAscendente="180.69"
+        argumentoPerielio="325.17" anomaliaMedia="263.03" periodoOrbitalD="6980" descobertoPor=""
+        massaKg="" diametrokm="15"/>
+    <objeto id="a1998.qj1" nome="1998 QJ1" designacao="1998 QJ1" anoDescobrimento="1998"
+        categoria="damocloide" raioMedUA="11.26" excentricidade="0.8138" perielioUA="2.097"
+        afelioUA="20.42" inclinacao="23.57" longitudeNoAscendente="311.67" argumentoPerielio="3.99"
+        anomaliaMedia="118.93" periodoOrbitalD="13800" descobertoPor="" massaKg="" diametrokm="2"/>
+    <objeto id="a1998.wu24" nome="1998 WU24" designacao="1998 WU24" anoDescobrimento="1998"
+        categoria="damocloide" raioMedUA="15.13" excentricidade="0.9073" perielioUA="1.403"
+        afelioUA="28.85" inclinacao="42.57" longitudeNoAscendente="103.13"
+        argumentoPerielio="303.94" anomaliaMedia="76.36" periodoOrbitalD="21500" descobertoPor=""
+        massaKg="" diametrokm="4"/>
+    <objeto id="a1999.hd12" nome="1999 HD12" designacao="1999 HD12" anoDescobrimento="1999"
+        categoria="centauro" raioMedUA="21.32" excentricidade="0.5827" perielioUA="8.898"
+        afelioUA="33.75" inclinacao="10.14" longitudeNoAscendente="177.69"
+        argumentoPerielio="288.81" anomaliaMedia="23.80" periodoOrbitalD="36000" descobertoPor=""
+        massaKg="" diametrokm="12"/>
+    <objeto id="a1999.jv127" nome="1999 JV127" designacao="1999 JV127" anoDescobrimento="1999"
+        categoria="centauro" raioMedUA="16.72" excentricidade="0.3591" perielioUA="10.719"
+        afelioUA="22.73" inclinacao="25.51" longitudeNoAscendente="3.09" argumentoPerielio="0.09"
+        anomaliaMedia="179.42" periodoOrbitalD="25000" descobertoPor="" massaKg="" diametrokm="37"/>
+    <objeto id="a1999.le31" nome="1999 LE31" designacao="1999 LE31" anoDescobrimento="1999"
+        categoria="damocloide" raioMedUA="8.126" excentricidade="0.4669" perielioUA="4.332"
+        afelioUA="11.92" inclinacao="151.85" diametrokm="15" longitudeNoAscendente="292.06"
+        argumentoPerielio="32.56" anomaliaMedia="180.14" periodoOrbitalD="8460" descobertoPor=""
+        massaKg=""/>
+    <objeto id="a2000.ab229" nome="2000 AB229" designacao="2000 AB229" anoDescobrimento="2000"
+        categoria="damocloide" raioMedUA="52.24" excentricidade="0.9561" perielioUA="2.293"
+        afelioUA="102.19" inclinacao="68.53" longitudeNoAscendente="314.16"
+        argumentoPerielio="171.76" anomaliaMedia="10.12" periodoOrbitalD="138000" descobertoPor=""
+        massaKg="" diametrokm="7"/>
+    <objeto id="a2000.co104" nome="2000 CO104" designacao="2000 CO104" anoDescobrimento="2000"
+        categoria="centauro" raioMedUA="24.03" excentricidade="0.1448" perielioUA="20.552"
+        afelioUA="27.51" inclinacao="3.07" longitudeNoAscendente="353.32" argumentoPerielio="136.83"
+        anomaliaMedia="45.66" periodoOrbitalD="43000" descobertoPor="" massaKg="" diametrokm="42"/>
+    <objeto id="a2000.dg8" nome="2000 DG8" designacao="2000 DG8" anoDescobrimento="2000"
+        categoria="damocloide" raioMedUA="10.76" excentricidade="0.7924" perielioUA="2.234"
+        afelioUA="19.29" inclinacao="129.34" diametrokm="11" longitudeNoAscendente="279.15"
+        argumentoPerielio="222.17" anomaliaMedia="97.41" periodoOrbitalD="12900" descobertoPor=""
+        massaKg=""/>
+    <objeto id="a2000.ej37" nome="2000 EJ37" designacao="2000 EJ37" anoDescobrimento="2000"
+        categoria="incomum" raioMedUA="4.68" excentricidade="0.7031" perielioUA="1.390"
+        afelioUA="7.97" inclinacao="10.25" diametrokm="9" longitudeNoAscendente="183.37"
+        argumentoPerielio="111.83" anomaliaMedia="357.19" periodoOrbitalD="3700" descobertoPor=""
+        massaKg=""/>
+    <objeto id="a2000.fz53" nome="2000 FZ53" designacao="2000 FZ53" anoDescobrimento="2000"
+        categoria="centauro" raioMedUA="23.72" excentricidade="0.4782" perielioUA="12.376"
+        afelioUA="35.06" inclinacao="34.88" longitudeNoAscendente="202.49"
+        argumentoPerielio="291.21" anomaliaMedia="61.20" periodoOrbitalD="42200" descobertoPor=""
+        massaKg="" diametrokm="23"/>
+    <objeto id="a2000.gm137" nome="2000 GM137" designacao="2000 GM137" anoDescobrimento="2000"
+        categoria="centauro" raioMedUA="7.902" excentricidade="0.1187" perielioUA="6.964"
+        afelioUA="8.84" inclinacao="15.83" longitudeNoAscendente="89.69" argumentoPerielio="123.83"
+        anomaliaMedia="146.58" periodoOrbitalD="8110" descobertoPor="" massaKg="" diametrokm="6"/>
+    <objeto id="a2000.he46" nome="2000 HE46" designacao="2000 HE46" anoDescobrimento="2000"
+        categoria="damocloide" raioMedUA="23.7" excentricidade="0.9005" perielioUA="2.357"
+        afelioUA="45.04" inclinacao="158.53" diametrokm="5" longitudeNoAscendente="313.46"
+        argumentoPerielio="82.48" anomaliaMedia="32.19" periodoOrbitalD="42100" descobertoPor=""
+        massaKg=""/>
+    <objeto id="a2000.kp65" nome="2000 KP65" designacao="2000 KP65" anoDescobrimento="2000"
+        categoria="damocloide" raioMedUA="89.34" excentricidade="0.9630" perielioUA="3.310"
+        afelioUA="175.38" inclinacao="45.58" longitudeNoAscendente="223.80"
+        argumentoPerielio="322.21" anomaliaMedia="4.77" periodoOrbitalD="308000" descobertoPor=""
+        massaKg="" diametrokm="35"/>
+    <objeto id="a2000.oz21" nome="2000 OZ21" designacao="2000 OZ21" anoDescobrimento="2000"
+        categoria="incomum" raioMedUA="4.867" excentricidade="0.5723" perielioUA="2.082"
+        afelioUA="7.65" inclinacao="5.53" longitudeNoAscendente="340.35" argumentoPerielio="346.76"
+        anomaliaMedia="355.22" periodoOrbitalD="3920" descobertoPor="" massaKg="" diametrokm="2"/>
+    <objeto id="a2000.sn331" nome="2000 SN331" designacao="2000 SN331" anoDescobrimento="2000"
+        categoria="centauro" raioMedUA="17.99" excentricidade="0.2009" perielioUA="14.374"
+        afelioUA="21.60" inclinacao="14.72" longitudeNoAscendente="66.85" argumentoPerielio="170.25"
+        anomaliaMedia="180.83" periodoOrbitalD="27900" descobertoPor="" massaKg="" diametrokm="29"/>
+    <objeto id="a2000.sq331" nome="2000 SQ331" designacao="2000 SQ331" anoDescobrimento="2000"
+        categoria="centauro" raioMedUA="69.81" excentricidade="0.7067" perielioUA="20.473"
+        afelioUA="119.14" inclinacao="5.44" longitudeNoAscendente="86.00" argumentoPerielio="332.54"
+        anomaliaMedia="359.98" periodoOrbitalD="213000" descobertoPor="" massaKg="" diametrokm="32"/>
+    <objeto id="a2000.yy1" nome="2000 YY1" designacao="2000 YY1" anoDescobrimento="2000"
+        categoria="centauro" raioMedUA="63.63" excentricidade="0.5300" perielioUA="29.909"
+        afelioUA="97.36" inclinacao="7.86" longitudeNoAscendente="209.61" argumentoPerielio="292.38"
+        anomaliaMedia="337.43" periodoOrbitalD="185000" descobertoPor="" massaKg="" diametrokm="167"/>
+    <objeto id="a2001.fk194" nome="2001 FK194" designacao="2001 FK194" anoDescobrimento="2001"
+        categoria="centauro" raioMedUA="76.32" excentricidade="0.6330" perielioUA="28.010"
+        afelioUA="124.64" inclinacao="8.82" longitudeNoAscendente="182.56"
+        argumentoPerielio="358.49" anomaliaMedia="359.99" periodoOrbitalD="244000" descobertoPor=""
+        massaKg="" diametrokm="73"/>
+    <objeto id="a2001.qf6" nome="2001 QF6" designacao="2001 QF6" anoDescobrimento="2001"
+        categoria="incomum" raioMedUA="7.216" excentricidade="0.6892" perielioUA="2.243"
+        afelioUA="12.19" inclinacao="24.24" diametrokm="4" longitudeNoAscendente="144.27"
+        argumentoPerielio="240.18" anomaliaMedia="167.31" periodoOrbitalD="7080" descobertoPor=""
+        massaKg=""/>
+    <objeto id="a2001.qq199" nome="2001 QQ199" designacao="2001 QQ199" anoDescobrimento="2001"
+        categoria="incomum" raioMedUA="5.326" excentricidade="0.4311" perielioUA="3.030"
+        afelioUA="7.62" inclinacao="42.49" diametrokm="15" longitudeNoAscendente="213.10"
+        argumentoPerielio="192.90" anomaliaMedia="265.17" periodoOrbitalD="4490" descobertoPor=""
+        massaKg=""/>
+    <objeto id="a2001.xz255" nome="2001 XZ255" designacao="2001 XZ255" anoDescobrimento="2001"
+        categoria="centauro" raioMedUA="15.92" excentricidade="0.0360" perielioUA="15.343"
+        afelioUA="16.49" inclinacao="2.61" longitudeNoAscendente="77.78" argumentoPerielio="284.44"
+        anomaliaMedia="148.42" periodoOrbitalD="23200" descobertoPor="" massaKg="" diametrokm="27"/>
+    <objeto id="a2001.yk61" nome="2001 YK61" designacao="2001 YK61" anoDescobrimento="2001"
+        categoria="incomum" raioMedUA="10.56" excentricidade="0.6924" perielioUA="3.249"
+        afelioUA="17.87" inclinacao="12.38" longitudeNoAscendente="83.57" argumentoPerielio="15.54"
+        anomaliaMedia="95.15" periodoOrbitalD="12500" descobertoPor="" massaKg="" diametrokm="8"/>
+    <objeto id="a2002.ao148" nome="2002 AO148" designacao="2002 AO148" anoDescobrimento="2002"
+        categoria="centauro" raioMedUA="5.666" excentricidade="0.2676" perielioUA="4.149"
+        afelioUA="7.18" inclinacao="18.96" longitudeNoAscendente="330.26" argumentoPerielio="214.00"
+        anomaliaMedia="221.72" periodoOrbitalD="4930"/>
+    <objeto id="a2002.ca249" nome="2002 CA249" designacao="2002 CA249" anoDescobrimento="2002"
+        categoria="centauro" raioMedUA="20.71" excentricidade="0.3847" perielioUA="12.744"
+        afelioUA="28.68" inclinacao="6.42" longitudeNoAscendente="313.59" argumentoPerielio="182.39"
+        anomaliaMedia="0.09" periodoOrbitalD="34400" descobertoPor="" massaKg="" diametrokm="18"/>
+    <objeto id="a2002.cb249" nome="2002 CB249" designacao="2002 CB249" anoDescobrimento="2002"
+        categoria="centauro" raioMedUA="28.42" excentricidade="0.5110" perielioUA="13.899"
+        afelioUA="42.94" inclinacao="13.98" longitudeNoAscendente="353.50"
+        argumentoPerielio="168.15" anomaliaMedia="0.05" periodoOrbitalD="55300" descobertoPor=""
+        massaKg="" diametrokm="48"/>
+    <objeto id="a2002.dh5" nome="2002 DH5" designacao="2002 DH5" anoDescobrimento="2002"
+        categoria="centauro" raioMedUA="21.96" excentricidade="0.3651" perielioUA="13.943"
+        afelioUA="29.98" inclinacao="22.49" longitudeNoAscendente="157.03"
+        argumentoPerielio="327.17" anomaliaMedia="44.37" periodoOrbitalD="37600" descobertoPor=""
+        massaKg="" diametrokm="42"/>
+    <objeto id="a2002.fy36" nome="2002 FY36" designacao="2002 FY36" anoDescobrimento="2002"
+        categoria="centauro" raioMedUA="28.97" excentricidade="0.1144" perielioUA="25.654"
+        afelioUA="32.28" inclinacao="5.42" longitudeNoAscendente="332.85" argumentoPerielio="194.12"
+        anomaliaMedia="0.06" periodoOrbitalD="57000" descobertoPor="" massaKg="" diametrokm="92"/>
+    <objeto id="a2002.pq152" nome="2002 PQ152" designacao="2002 PQ152" anoDescobrimento="2002"
+        categoria="centauro" raioMedUA="25.93" excentricidade="0.1920" perielioUA="20.950"
+        afelioUA="30.91" inclinacao="9.34" longitudeNoAscendente="324.78" argumentoPerielio="356.62"
+        anomaliaMedia="34.08" periodoOrbitalD="48200" descobertoPor="" massaKg="" diametrokm="73"/>
+    <objeto id="a2002.qx47" nome="2002 QX47" designacao="2002 QX47" anoDescobrimento="2002"
+        categoria="centauro" raioMedUA="25.59" excentricidade="0.3748" perielioUA="15.997"
+        afelioUA="35.17" inclinacao="7.26" longitudeNoAscendente="276.21" argumentoPerielio="4.30"
+        anomaliaMedia="42.53" periodoOrbitalD="47300" descobertoPor="" massaKg="" diametrokm="73"/>
+    <objeto id="a2002.rn109" nome="2002 RN109" designacao="2002 RN109" anoDescobrimento="2002"
+        categoria="damocloide" raioMedUA="625.6" excentricidade="0.9957" perielioUA="2.686"
+        afelioUA="1248.56" inclinacao="58.23" longitudeNoAscendente="170.45"
+        argumentoPerielio="212.32" anomaliaMedia="0.17" periodoOrbitalD="5720000" descobertoPor=""
+        massaKg="" diametrokm="4"/>
+    <objeto id="a2002.tk301" nome="2002 TK301" designacao="2002 TK301" anoDescobrimento="2002"
+        categoria="centauro" raioMedUA="16.1" excentricidade="0.1323" perielioUA="13.969"
+        afelioUA="18.23" inclinacao="24.40" longitudeNoAscendente="206.80"
+        argumentoPerielio="183.01" anomaliaMedia="359.80" periodoOrbitalD="23600" descobertoPor=""
+        massaKg="" diametrokm="9"/>
+    <objeto id="a2002.vg131" nome="2002 VG131" designacao="2002 VG131" anoDescobrimento="2002"
+        categoria="centauro" raioMedUA="19.1" excentricidade="0.3431" perielioUA="12.550"
+        afelioUA="25.66" inclinacao="21.23" longitudeNoAscendente="213.38" argumentoPerielio="99.82"
+        anomaliaMedia="33.60" periodoOrbitalD="30500" descobertoPor="" massaKg="" diametrokm="24"/>
+    <objeto id="a2003.cc22" nome="2003 CC22" designacao="2003 CC22" anoDescobrimento="2003"
+        categoria="incomum" raioMedUA="7.293" excentricidade="0.4247" perielioUA="4.196"
+        afelioUA="10.39" inclinacao="6.42" longitudeNoAscendente="123.78" argumentoPerielio="37.25"
+        anomaliaMedia="136.24" periodoOrbitalD="7190" descobertoPor="" massaKg="" diametrokm="13"/>
+    <objeto id="a2003.fh129" nome="2003 FH129" designacao="2003 FH129" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="70.96" excentricidade="0.6115" perielioUA="27.571"
+        afelioUA="114.36" inclinacao="18.74" longitudeNoAscendente="171.61"
+        argumentoPerielio="296.40" anomaliaMedia="17.95" periodoOrbitalD="218000" descobertoPor=""
+        massaKg="" diametrokm="101"/>
+    <objeto id="a2003.kq20" nome="2003 KQ20" designacao="2003 KQ20" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="10.56" excentricidade="0.1939" perielioUA="8.515"
+        afelioUA="12.61" inclinacao="5.70" longitudeNoAscendente="252.14" argumentoPerielio="357.71"
+        anomaliaMedia="359.74" periodoOrbitalD="12500" descobertoPor="" massaKg="" diametrokm="11"/>
+    <objeto id="a2003.lh7" nome="2003 LH7" designacao="2003 LH7" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="16.96" excentricidade="0.2925" perielioUA="12.002"
+        afelioUA="21.93" inclinacao="21.16" longitudeNoAscendente="244.81" argumentoPerielio="4.38"
+        anomaliaMedia="359.84" periodoOrbitalD="25500" descobertoPor="" massaKg="" diametrokm="14"/>
+    <objeto id="a2003.qc112" nome="2003 QC112" designacao="2003 QC112" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="22.2" excentricidade="0.2093" perielioUA="17.552"
+        afelioUA="26.84" inclinacao="16.67" longitudeNoAscendente="158.07"
+        argumentoPerielio="327.57" anomaliaMedia="261.34" periodoOrbitalD="38200" descobertoPor=""
+        massaKg="" diametrokm="80"/>
+    <objeto id="a2003.qd112" nome="2003 QD112" designacao="2003 QD112" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="19.11" excentricidade="0.5818" perielioUA="7.993"
+        afelioUA="30.23" inclinacao="14.48" longitudeNoAscendente="0.53" argumentoPerielio="274.49"
+        anomaliaMedia="54.69" periodoOrbitalD="30500" descobertoPor="" massaKg="" diametrokm="28"/>
+    <objeto id="a2003.qm112" nome="2003 QM112" designacao="2003 QM112" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="83.4" excentricidade="0.8421" perielioUA="13.170"
+        afelioUA="153.63" inclinacao="16.41" longitudeNoAscendente="148.35"
+        argumentoPerielio="178.98" anomaliaMedia="0.21" periodoOrbitalD="278000" descobertoPor=""
+        massaKg="" diametrokm="7"/>
+    <objeto id="a2003.qn112" nome="2003 QN112" designacao="2003 QN112" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="25.12" excentricidade="0.3334" perielioUA="16.743"
+        afelioUA="33.49" inclinacao="7.86" longitudeNoAscendente="148.50" argumentoPerielio="220.09"
+        anomaliaMedia="341.92" periodoOrbitalD="46000" descobertoPor="" massaKg="" diametrokm="12"/>
+    <objeto id="a2003.qo112" nome="2003 QO112" designacao="2003 QO112" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="33.33" excentricidade="0.5036" perielioUA="16.545"
+        afelioUA="50.12" inclinacao="7.00" longitudeNoAscendente="334.32" argumentoPerielio="276.63"
+        anomaliaMedia="29.13" periodoOrbitalD="70300" descobertoPor="" massaKg="" diametrokm="18"/>
+    <objeto id="a2003.qp112" nome="2003 QP112" designacao="2003 QP112" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="21.13" excentricidade="0.3287" perielioUA="14.184"
+        afelioUA="28.07" inclinacao="31.20" longitudeNoAscendente="332.10"
+        argumentoPerielio="106.84" anomaliaMedia="290.52" periodoOrbitalD="35500" descobertoPor=""
+        massaKg="" diametrokm="13"/>
+    <objeto id="a2003.qw113" nome="2003 QW113" designacao="2003 QW113" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="51.53" excentricidade="0.4881" perielioUA="26.377"
+        afelioUA="76.68" inclinacao="6.91" longitudeNoAscendente="160.30" argumentoPerielio="253.48"
+        anomaliaMedia="333.17" periodoOrbitalD="135000" descobertoPor="" massaKg="" diametrokm="127"/>
+    <objeto id="a2003.uc414" nome="2003 UC414" designacao="2003 UC414" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="44.94" excentricidade="0.6367" perielioUA="16.327"
+        afelioUA="73.54" inclinacao="25.88" longitudeNoAscendente="160.78"
+        argumentoPerielio="285.84" anomaliaMedia="335.75" periodoOrbitalD="110000" descobertoPor=""
+        massaKg="" diametrokm="96"/>
+    <objeto id="a2003.uy283" nome="2003 UY283" designacao="2003 UY283" anoDescobrimento="2003"
+        categoria="damocloide" raioMedUA="33.45" excentricidade="0.8952" perielioUA="3.506"
+        afelioUA="63.40" inclinacao="18.90" longitudeNoAscendente="40.13" argumentoPerielio="311.29"
+        anomaliaMedia="1.25" periodoOrbitalD="70700" descobertoPor="" massaKg="" diametrokm="4"/>
+    <objeto id="a2003.uy292" nome="2003 UY292" designacao="2003 UY292" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="21.86" excentricidade="0.2722" perielioUA="15.913"
+        afelioUA="27.82" inclinacao="8.63" longitudeNoAscendente="28.28" argumentoPerielio="23.88"
+        anomaliaMedia="0.05" periodoOrbitalD="37300" descobertoPor="" massaKg="" diametrokm="40"/>
+    <objeto id="a2003.uy413" nome="2003 UY413" designacao="2003 UY413" anoDescobrimento="2003"
+        categoria="centauro" raioMedUA="67.68" excentricidade="0.5801" perielioUA="28.420"
+        afelioUA="106.94" inclinacao="20.59" longitudeNoAscendente="340.99"
+        argumentoPerielio="106.08" anomaliaMedia="343.69" periodoOrbitalD="203000" descobertoPor=""
+        massaKg="" diametrokm="319"/>
+    <objeto id="a2003.wg166" nome="2003 WG166" designacao="2003 WG166" anoDescobrimento="2003"
+        categoria="incomum" raioMedUA="5.15" excentricidade="0.6403" perielioUA="1.852"
+        afelioUA="8.45" inclinacao="55.58" longitudeNoAscendente="67.31" argumentoPerielio="7.62"
+        anomaliaMedia="202.88" periodoOrbitalD="4270" descobertoPor="" massaKg="" diametrokm="1"/>
+    <objeto id="a2003.wn188" nome="2003 WN188" designacao="2003 WN188" anoDescobrimento="2003"
+        categoria="damocloide" raioMedUA="14.38" excentricidade="0.8468" perielioUA="2.203"
+        afelioUA="26.56" inclinacao="26.94" diametrokm="7" longitudeNoAscendente="123.60"
+        argumentoPerielio="41.15" anomaliaMedia="41.57" periodoOrbitalD="19900" descobertoPor=""
+        massaKg=""/>
+    <objeto id="a2004.ae9" nome="2004 AE9" designacao="2004 AE9" anoDescobrimento="2004"
+        categoria="incomum" raioMedUA="5.109" excentricidade="0.6446" perielioUA="1.815"
+        afelioUA="8.40" inclinacao="1.65" longitudeNoAscendente="188.72" argumentoPerielio="285.74"
+        anomaliaMedia="222.00" periodoOrbitalD="4220" descobertoPor="" massaKg="" diametrokm="1"/>
+    <objeto id="a2004.cj39" nome="2004 CJ39" designacao="2004 CJ39" anoDescobrimento="2004"
+        categoria="centauro" raioMedUA="12.96" excentricidade="0.4819" perielioUA="6.715"
+        afelioUA="19.20" inclinacao="3.60" longitudeNoAscendente="334.77" argumentoPerielio="127.67"
+        anomaliaMedia="7.32" periodoOrbitalD="17000" descobertoPor="" massaKg="" diametrokm="7"/>
+    <objeto id="a2004.cm111" nome="2004 CM111" designacao="2004 CM111" anoDescobrimento="2004"
+        categoria="damocloide" raioMedUA="33.18" excentricidade="0.8511" perielioUA="4.942"
+        afelioUA="61.42" inclinacao="4.66" longitudeNoAscendente="33.58" argumentoPerielio="83.28"
+        anomaliaMedia="1.13" periodoOrbitalD="69800" descobertoPor="" massaKg="" diametrokm="6"/>
+    <objeto id="a2004.da62" nome="2004 DA62" designacao="2004 DA62" anoDescobrimento="2004"
+        categoria="damocloide" raioMedUA="7.692" excentricidade="0.4643" perielioUA="4.120"
+        afelioUA="11.26" inclinacao="52.21" longitudeNoAscendente="32.11" argumentoPerielio="162.44"
+        anomaliaMedia="110.84" periodoOrbitalD="7790" descobertoPor="" massaKg="" diametrokm="11"/>
+    <objeto id="a2004.kv18" nome="2004 KV18" designacao="2004 KV18" anoDescobrimento="2004"
+        categoria="centauro" raioMedUA="26.92" excentricidade="0.0031" perielioUA="26.834"
+        afelioUA="27.00" inclinacao="14.16" longitudeNoAscendente="235.35"
+        argumentoPerielio="174.33" anomaliaMedia="180.11" periodoOrbitalD="51000" descobertoPor=""
+        massaKg="" diametrokm="58"/>
+    <objeto id="a2004.lr31" nome="2004 LR31" designacao="2004 LR31" anoDescobrimento="2004"
+        categoria="centauro" raioMedUA="28.52" excentricidade="0.5578" perielioUA="12.611"
+        afelioUA="44.42" inclinacao="16.71" longitudeNoAscendente="163.53"
+        argumentoPerielio="134.13" anomaliaMedia="2.61" periodoOrbitalD="55600" descobertoPor=""
+        massaKg="" diametrokm="61"/>
+    <objeto id="a2004.nn8" nome="2004 NN8" designacao="2004 NN8" anoDescobrimento="2004"
+        categoria="damocloide" raioMedUA="101.8" excentricidade="0.9771" perielioUA="2.335"
+        afelioUA="201.21" inclinacao="165.54" longitudeNoAscendente="165.38"
+        argumentoPerielio="262.87" anomaliaMedia="2.01" periodoOrbitalD="375000" descobertoPor=""
+        massaKg="" diametrokm="4"/>
+    <objeto id="a2004.pa108" nome="2004 PA108" designacao="2004 PA108" anoDescobrimento="2004"
+        categoria="centauro" raioMedUA="54.67" excentricidade="0.4628" perielioUA="29.370"
+        afelioUA="79.97" inclinacao="1.15" longitudeNoAscendente="136.17" argumentoPerielio="293.68"
+        anomaliaMedia="328.46" periodoOrbitalD="148000" descobertoPor="" massaKg="" diametrokm="242"/>
+    <objeto id="a2004.qq26" nome="2004 QQ26" designacao="2004 QQ26" anoDescobrimento="2004"
+        categoria="centauro" raioMedUA="22.9" excentricidade="0.1474" perielioUA="19.526"
+        afelioUA="26.28" inclinacao="21.48" longitudeNoAscendente="197.62"
+        argumentoPerielio="355.00" anomaliaMedia="34.50" periodoOrbitalD="40000" descobertoPor=""
+        massaKg="" diametrokm="55"/>
+    <objeto id="a2004.rw141" nome="2004 RW141" designacao="2004 RW141" anoDescobrimento="2004"
+        categoria="incomum" raioMedUA="6.937" excentricidade="0.4925" perielioUA="3.520"
+        afelioUA="10.35" inclinacao="7.67" longitudeNoAscendente="164.26" argumentoPerielio="157.25"
+        anomaliaMedia="135.00" periodoOrbitalD="6670" descobertoPor="" massaKg="" diametrokm="6"/>
+    <objeto id="a2004.vp112" nome="2004 VP112" designacao="2004 VP112" anoDescobrimento="2004"
+        categoria="centauro" raioMedUA="8.701" excentricidade="0.0474" perielioUA="8.288"
+        afelioUA="9.11" inclinacao="6.85" longitudeNoAscendente="219.01" argumentoPerielio="180.97"
+        anomaliaMedia="359.30" periodoOrbitalD="9370" descobertoPor="" massaKg="" diametrokm="4"/>
+    <objeto id="a2004.vt130" nome="2004 VT130" designacao="2004 VT130" anoDescobrimento="2004"
+        categoria="centauro" raioMedUA="9.039" excentricidade="0.1166" perielioUA="7.985"
+        afelioUA="10.09" inclinacao="18.27" longitudeNoAscendente="38.80" argumentoPerielio="1.95"
+        anomaliaMedia="359.33" periodoOrbitalD="9930" descobertoPor="" massaKg="" diametrokm="3"/>
+    <objeto id="a2004.xq190" nome="2004 XQ190" designacao="2004 XQ190" anoDescobrimento="2004"
+        categoria="centauro" raioMedUA="23.06" excentricidade="0.0101" perielioUA="22.824"
+        afelioUA="23.29" inclinacao="6.27" longitudeNoAscendente="305.78" argumentoPerielio="169.54"
+        anomaliaMedia="359.90" periodoOrbitalD="40400" descobertoPor="" massaKg="" diametrokm="18"/>
+    <objeto id="a2005.cc79" nome="2005 CC79" designacao="2005 CC79" anoDescobrimento="2005"
+        categoria="centauro" raioMedUA="20.07" excentricidade="0.1632" perielioUA="16.793"
+        afelioUA="23.34" inclinacao="28.26" longitudeNoAscendente="310.54" argumentoPerielio="31.88"
+        anomaliaMedia="179.63" periodoOrbitalD="32800" descobertoPor="" massaKg="" diametrokm="192"/>
+    <objeto id="a2005.cr16" nome="2005 CR16" designacao="2005 CR16" anoDescobrimento="2005"
+        categoria="incomum" raioMedUA="6.608" excentricidade="0.5098" perielioUA="3.239"
+        afelioUA="9.98" inclinacao="9.39" longitudeNoAscendente="140.11" argumentoPerielio="313.18"
+        anomaliaMedia="140.28" periodoOrbitalD="6200" descobertoPor="" massaKg="" diametrokm="7"/>
+    <objeto id="a2005.eb299" nome="2005 EB299" designacao="2005 EB299" anoDescobrimento="2005"
+        categoria="centauro" raioMedUA="51.79" excentricidade="0.5087" perielioUA="25.444"
+        afelioUA="78.13" inclinacao="0.71" longitudeNoAscendente="351.49" argumentoPerielio="177.08"
+        anomaliaMedia="0.59" periodoOrbitalD="136000" descobertoPor="" massaKg="" diametrokm="111"/>
+    <objeto id="a2005.hl3" nome="2005 HL3" designacao="2005 HL3" anoDescobrimento="2005"
+        categoria="damocloide" raioMedUA="11.29" excentricidade="0.8316" perielioUA="1.902"
+        afelioUA="20.68" inclinacao="35.61" longitudeNoAscendente="238.73"
+        argumentoPerielio="314.51" anomaliaMedia="54.85" periodoOrbitalD="13900" descobertoPor=""
+        massaKg="" diametrokm="6"/>
+    <objeto id="a2005.np82" nome="2005 NP82" designacao="2005 NP82" anoDescobrimento="2005"
+        categoria="damocloide" raioMedUA="5.876" excentricidade="0.4801" perielioUA="3.055"
+        afelioUA="8.70" inclinacao="130.57" longitudeNoAscendente="123.66"
+        argumentoPerielio="254.38" anomaliaMedia="117.43" periodoOrbitalD="5200" descobertoPor=""
+        massaKg="" diametrokm="7"/>
+    <objeto id="a2005.oe" nome="2005 OE" designacao="2005 OE" anoDescobrimento="2005"
+        categoria="damocloide" raioMedUA="63.86" excentricidade="0.9520" perielioUA="3.068"
+        afelioUA="124.64" inclinacao="67.50" longitudeNoAscendente="153.19"
+        argumentoPerielio="116.22" anomaliaMedia="4.25" periodoOrbitalD="186000" descobertoPor=""
+        massaKg="" diametrokm="8"/>
+    <objeto id="a2005.pu21" nome="2005 PU21" designacao="2005 PU21" anoDescobrimento="2005"
+        categoria="centauro" raioMedUA="181" excentricidade="0.8380" perielioUA="29.321"
+        afelioUA="332.68" inclinacao="6.16" longitudeNoAscendente="192.54"
+        argumentoPerielio="227.46" anomaliaMedia="355.66" periodoOrbitalD="889000" descobertoPor=""
+        massaKg="" diametrokm="265"/>
+    <objeto id="a2005.ro43" nome="2005 RO43" designacao="2005 RO43" anoDescobrimento="2005"
+        categoria="centauro" raioMedUA="28.93" excentricidade="0.5188" perielioUA="13.919"
+        afelioUA="43.93" inclinacao="35.41" longitudeNoAscendente="198.11"
+        argumentoPerielio="326.33" anomaliaMedia="312.77" periodoOrbitalD="56800" descobertoPor=""
+        massaKg="" diametrokm="153"/>
+    <objeto id="a2005.sb223" nome="2005 SB223" designacao="2005 SB223" anoDescobrimento="2005"
+        categoria="damocloide" raioMedUA="29.51" excentricidade="0.9062" perielioUA="2.769"
+        afelioUA="56.24" inclinacao="91.54" longitudeNoAscendente="219.75"
+        argumentoPerielio="252.55" anomaliaMedia="11.75" periodoOrbitalD="58500" descobertoPor=""
+        massaKg="" diametrokm="6"/>
+    <objeto id="a2005.th173" nome="2005 TH173" designacao="2005 TH173" anoDescobrimento="2005"
+        categoria="centauro" raioMedUA="15.72" excentricidade="0.0143" perielioUA="15.500"
+        afelioUA="15.95" inclinacao="15.67" longitudeNoAscendente="193.72"
+        argumentoPerielio="182.32" anomaliaMedia="0.14" periodoOrbitalD="22800" descobertoPor=""
+        massaKg="" diametrokm="28"/>
+    <objeto id="a2005.tj50" nome="2005 TJ50" designacao="2005 TJ50" anoDescobrimento="2005"
+        categoria="damocloide" raioMedUA="9.204" excentricidade="0.5882" perielioUA="3.790"
+        afelioUA="14.62" inclinacao="110.41" longitudeNoAscendente="218.04"
+        argumentoPerielio="211.85" anomaliaMedia="61.98" periodoOrbitalD="10200" descobertoPor=""
+        massaKg="" diametrokm="4"/>
+    <objeto id="a2005.ts100" nome="2005 TS100" designacao="2005 TS100" anoDescobrimento="2005"
+        categoria="centauro" raioMedUA="5.56" excentricidade="0.1655" perielioUA="4.640"
+        afelioUA="6.48" inclinacao="8.55" longitudeNoAscendente="23.60" argumentoPerielio="53.14"
+        anomaliaMedia="91.32" periodoOrbitalD="4790"/>
+    <objeto id="a2005.un524" nome="2005 UN524" designacao="2005 UN524" anoDescobrimento="2005"
+        categoria="centauro" raioMedUA="21.61" excentricidade="0.1325" perielioUA="18.746"
+        afelioUA="24.47" inclinacao="17.76" longitudeNoAscendente="39.23" argumentoPerielio="50.59"
+        anomaliaMedia="341.85" periodoOrbitalD="36700" descobertoPor="" massaKg="" diametrokm="55"/>
+    <objeto id="a2005.vb123" nome="2005 VB123" designacao="2005 VB123" anoDescobrimento="2005"
+        categoria="centauro" raioMedUA="17.74" excentricidade="0.0086" perielioUA="17.592"
+        afelioUA="17.90" inclinacao="38.89" longitudeNoAscendente="39.54" argumentoPerielio="2.78"
+        anomaliaMedia="0.04" periodoOrbitalD="27300" descobertoPor="" massaKg="" diametrokm="40"/>
+    <objeto id="a2005.vd" nome="2005 VD" designacao="2005 VD" anoDescobrimento="2005"
+        categoria="centauro" raioMedUA="6.669" excentricidade="0.2487" perielioUA="5.010"
+        afelioUA="8.33" inclinacao="172.91" longitudeNoAscendente="173.04"
+        argumentoPerielio="178.61" anomaliaMedia="102.07" periodoOrbitalD="6290" descobertoPor=""
+        massaKg="" diametrokm="6"/>
+    <objeto id="a2005.vj119" nome="2005 VJ119" designacao="2005 VJ119" anoDescobrimento="2005"
+        categoria="centauro" raioMedUA="35.16" excentricidade="0.6795" perielioUA="11.268"
+        afelioUA="59.05" inclinacao="6.95" longitudeNoAscendente="301.61" argumentoPerielio="245.69"
+        anomaliaMedia="3.64" periodoOrbitalD="76100" descobertoPor="" massaKg="" diametrokm="33"/>
+    <objeto id="a2005.vx3" nome="2005 VX3" designacao="2005 VX3" anoDescobrimento="2005"
+        categoria="damocloide" raioMedUA="837.3" excentricidade="0.9951" perielioUA="4.116"
+        afelioUA="1670.54" inclinacao="112.47" longitudeNoAscendente="255.19"
+        argumentoPerielio="196.32" anomaliaMedia="0.08" periodoOrbitalD="8850000" descobertoPor=""
+        massaKg="" diametrokm="7"/>
+    <objeto id="a2005.wy3" nome="2005 WY3" designacao="2005 WY3" anoDescobrimento="2005"
+        categoria="incomum" raioMedUA="6.715" excentricidade="0.7348" perielioUA="1.781"
+        afelioUA="11.65" inclinacao="29.41" longitudeNoAscendente="190.25"
+        argumentoPerielio="309.12" anomaliaMedia="62.95" periodoOrbitalD="6360" descobertoPor=""
+        massaKg="" diametrokm="9"/>
+    <objeto id="a2006.aa99" nome="2006 AA99" designacao="2006 AA99" anoDescobrimento="2006"
+        categoria="centauro" raioMedUA="26.86" excentricidade="0.0454" perielioUA="25.639"
+        afelioUA="28.08" inclinacao="33.41" longitudeNoAscendente="126.80" argumentoPerielio="2.34"
+        anomaliaMedia="360.00" periodoOrbitalD="50800" descobertoPor="" massaKg="" diametrokm="18"/>
+    <objeto id="a2006.bf208" nome="2006 BF208" designacao="2006 BF208" anoDescobrimento="2006"
+        categoria="incomum" raioMedUA="5.932" excentricidade="0.4821" perielioUA="3.072"
+        afelioUA="8.79" inclinacao="35.58" longitudeNoAscendente="156.09" argumentoPerielio="52.56"
+        anomaliaMedia="104.61" periodoOrbitalD="5280" descobertoPor="" massaKg="" diametrokm="6"/>
+    <objeto id="a2006.bz8" nome="2006 BZ8" designacao="2006 BZ8" anoDescobrimento="2006"
+        categoria="damocloide" raioMedUA="9.596" excentricidade="0.8019" perielioUA="1.901"
+        afelioUA="17.29" inclinacao="165.28" longitudeNoAscendente="183.50"
+        argumentoPerielio="82.10" anomaliaMedia="55.86" periodoOrbitalD="10900" descobertoPor=""
+        massaKg="" diametrokm="6"/>
+    <objeto id="a2006.ex52" nome="2006 EX52" designacao="2006 EX52" anoDescobrimento="2006"
+        categoria="damocloide" raioMedUA="42.19" excentricidade="0.9388" perielioUA="2.581"
+        afelioUA="81.80" inclinacao="150.26" longitudeNoAscendente="247.88"
+        argumentoPerielio="163.34" anomaliaMedia="5.60" periodoOrbitalD="100000" descobertoPor=""
+        massaKg="" diametrokm="5"/>
+    <objeto id="a2006.fv4" nome="2006 FV4" designacao="2006 FV4" anoDescobrimento="2006"
+        categoria="incomum" raioMedUA="10.83" excentricidade="0.6992" perielioUA="3.257"
+        afelioUA="18.40" inclinacao="32.02" longitudeNoAscendente="25.15" argumentoPerielio="217.67"
+        anomaliaMedia="42.37" periodoOrbitalD="13000" descobertoPor="" massaKg="" diametrokm="12"/>
+    <objeto id="a2006.hh123" nome="2006 HH123" designacao="2006 HH123" anoDescobrimento="2006"
+        categoria="centauro" raioMedUA="55.71" excentricidade="0.4637" perielioUA="29.875"
+        afelioUA="81.54" inclinacao="44.14" longitudeNoAscendente="240.14" argumentoPerielio="0.35"
+        anomaliaMedia="359.97" periodoOrbitalD="152000" descobertoPor="" massaKg="" diametrokm="401"/>
+    <objeto id="a2006.jg57" nome="2006 JG57" designacao="2006 JG57" anoDescobrimento="2006"
+        categoria="damocloide" raioMedUA="9.651" excentricidade="0.5077" perielioUA="4.751"
+        afelioUA="14.55" inclinacao="56.87" longitudeNoAscendente="75.88" argumentoPerielio="146.80"
+        anomaliaMedia="58.03" periodoOrbitalD="11000" descobertoPor="" massaKg="" diametrokm="15"/>
+    <objeto id="a2006.lm1" nome="2006 LM1" designacao="2006 LM1" anoDescobrimento="2006"
+        categoria="damocloide" raioMedUA="37.18" excentricidade="0.9002" perielioUA="3.711"
+        afelioUA="70.66" inclinacao="172.14" longitudeNoAscendente="120.69"
+        argumentoPerielio="201.94" anomaliaMedia="359.55" periodoOrbitalD="82800" descobertoPor=""
+        massaKg="" diametrokm="5"/>
+    <objeto id="a2006.qg181" nome="2006 QG181" designacao="2006 QG181" anoDescobrimento="2006"
+        categoria="centauro" raioMedUA="45.54" excentricidade="0.5212" perielioUA="21.806"
+        afelioUA="69.28" inclinacao="7.30" longitudeNoAscendente="38.91" argumentoPerielio="322.26"
+        anomaliaMedia="12.47" periodoOrbitalD="112000" descobertoPor="" massaKg="" diametrokm="92"/>
+    <objeto id="a2006.ql39" nome="2006 QL39" designacao="2006 QL39" anoDescobrimento="2006"
+        categoria="incomum" raioMedUA="5.118" excentricidade="0.6012" perielioUA="2.041"
+        afelioUA="8.20" inclinacao="13.35" longitudeNoAscendente="172.51" argumentoPerielio="253.91"
+        anomaliaMedia="123.35" periodoOrbitalD="4230" descobertoPor="" massaKg="" diametrokm="8"/>
+    <objeto id="a2006.qp180" nome="2006 QP180" designacao="2006 QP180" anoDescobrimento="2006"
+        categoria="centauro" raioMedUA="38.54" excentricidade="0.6572" perielioUA="13.212"
+        afelioUA="63.88" inclinacao="4.95" longitudeNoAscendente="237.67" argumentoPerielio="53.13"
+        anomaliaMedia="16.66" periodoOrbitalD="87400" descobertoPor="" massaKg="" diametrokm="48"/>
+    <objeto id="a2006.rb117" nome="2006 RB117" designacao="2006 RB117" anoDescobrimento="2006"
+        categoria="incomum" raioMedUA="5.09" excentricidade="0.7107" perielioUA="1.472"
+        afelioUA="8.71" inclinacao="1.41" longitudeNoAscendente="28.27" argumentoPerielio="104.60"
+        anomaliaMedia="326.71" periodoOrbitalD="4190" descobertoPor="" massaKg="" diametrokm="2"/>
+    <objeto id="a2006.rg1" nome="2006 RG1" designacao="2006 RG1" anoDescobrimento="2006"
+        categoria="damocloide" raioMedUA="25.66" excentricidade="0.9211" perielioUA="2.025"
+        afelioUA="49.29" inclinacao="133.29" longitudeNoAscendente="305.77"
+        argumentoPerielio="344.22" anomaliaMedia="11.65" periodoOrbitalD="47500" descobertoPor=""
+        massaKg="" diametrokm="3"/>
+    <objeto id="a2006.rj2" nome="2006 RJ2" designacao="2006 RJ2" anoDescobrimento="2006"
+        categoria="damocloide" raioMedUA="9.736" excentricidade="0.7616" perielioUA="2.321"
+        afelioUA="17.15" inclinacao="164.65" longitudeNoAscendente="191.45"
+        argumentoPerielio="161.32" anomaliaMedia="54.17" periodoOrbitalD="11100" descobertoPor=""
+        massaKg="" diametrokm="3"/>
+    <objeto id="a2006.so134" nome="2006 SO134" designacao="2006 SO134" anoDescobrimento="2006"
+        categoria="damocloide" raioMedUA="19.67" excentricidade="0.8316" perielioUA="3.313"
+        afelioUA="36.03" inclinacao="4.18" longitudeNoAscendente="185.05" argumentoPerielio="170.60"
+        anomaliaMedia="18.81" periodoOrbitalD="31900" descobertoPor="" massaKg="" diametrokm="2"/>
+    <objeto id="a2006.sq372" nome="2006 SQ372" designacao="2006 SQ372" anoDescobrimento="2006"
+        categoria="centauro" raioMedUA="1015" excentricidade="0.9762" perielioUA="24.179"
+        afelioUA="2006.42" inclinacao="19.45" longitudeNoAscendente="197.42"
+        argumentoPerielio="122.51" anomaliaMedia="0.05" periodoOrbitalD="11800000"
+        descobertoPor="A. C. Becker, A. W. Puckett, J. Kubica" massaKg="" diametrokm="106"/>
+    <objeto id="a2006.sv301" nome="2006 SV301" designacao="2006 SV301" anoDescobrimento="2006"
+        categoria="incomum" raioMedUA="5.101" excentricidade="0.4955" perielioUA="2.574"
+        afelioUA="7.63" inclinacao="5.31" longitudeNoAscendente="105.15" argumentoPerielio="30.47"
+        anomaliaMedia="119.94" periodoOrbitalD="4210" descobertoPor="" massaKg="" diametrokm="6"/>
+    <objeto id="a2006.ul321" nome="2006 UL321" designacao="2006 UL321" anoDescobrimento="2006"
+        categoria="centauro" raioMedUA="260.8" excentricidade="0.9099" perielioUA="23.494"
+        afelioUA="498.03" inclinacao="37.37" longitudeNoAscendente="342.92"
+        argumentoPerielio="353.80" anomaliaMedia="0.06" periodoOrbitalD="1540000" descobertoPor=""
+        massaKg="" diametrokm="133"/>
+    <objeto id="a2006.ux184" nome="2006 UX184" designacao="2006 UX184" anoDescobrimento="2006"
+        categoria="centauro" raioMedUA="38.19" excentricidade="0.4648" perielioUA="20.437"
+        afelioUA="55.93" inclinacao="37.37" longitudeNoAscendente="39.46" argumentoPerielio="20.54"
+        anomaliaMedia="351.57" periodoOrbitalD="86200" descobertoPor="" massaKg="" diametrokm="96"/>
+    <objeto id="a2006.xq51" nome="2006 XQ51" designacao="2006 XQ51" anoDescobrimento="2006"
+        categoria="centauro" raioMedUA="15.9" excentricidade="0.3782" perielioUA="9.887"
+        afelioUA="21.91" inclinacao="31.58" longitudeNoAscendente="233.85"
+        argumentoPerielio="134.77" anomaliaMedia="46.08" periodoOrbitalD="23200" descobertoPor=""
+        massaKg="" diametrokm="48"/>
+    <objeto id="a2007.da61" nome="2007 DA61" designacao="2007 DA61" anoDescobrimento="2007"
+        categoria="damocloide" raioMedUA="518.4" excentricidade="0.9949" perielioUA="2.656"
+        afelioUA="1034.13" inclinacao="76.72" longitudeNoAscendente="145.98"
+        argumentoPerielio="349.67" anomaliaMedia="0.00" periodoOrbitalD="4310000" descobertoPor=""
+        massaKg="" diametrokm="4"/>
+    <objeto id="a2007.dp50" nome="2007 DP50" designacao="2007 DP50" anoDescobrimento="2007"
+        categoria="incomum" raioMedUA="6.223" excentricidade="0.3804" perielioUA="3.856"
+        afelioUA="8.59" inclinacao="3.06" longitudeNoAscendente="36.77" argumentoPerielio="153.44"
+        anomaliaMedia="73.95" periodoOrbitalD="5670" descobertoPor="" massaKg="" diametrokm="5"/>
+    <objeto id="a2007.gh6" nome="2007 GH6" designacao="2007 GH6" anoDescobrimento="2007"
+        categoria="incomum" raioMedUA="5.299" excentricidade="0.4619" perielioUA="2.851"
+        afelioUA="7.75" inclinacao="25.52" longitudeNoAscendente="79.17" argumentoPerielio="97.53"
+        anomaliaMedia="125.42" periodoOrbitalD="4460" descobertoPor="" massaKg="" diametrokm="6"/>
+    <objeto id="a2007.hu45" nome="2007 HU45" designacao="2007 HU45" anoDescobrimento="2007"
+        categoria="incomum" raioMedUA="6.847" excentricidade="0.5006" perielioUA="3.419"
+        afelioUA="10.27" inclinacao="5.99" longitudeNoAscendente="197.31" argumentoPerielio="44.86"
+        anomaliaMedia="69.14" periodoOrbitalD="6540" descobertoPor="" massaKg="" diametrokm="3"/>
+    <objeto id="a2007.jk43" nome="2007 JK43" designacao="2007 JK43" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="46.18" excentricidade="0.4899" perielioUA="23.554"
+        afelioUA="68.81" inclinacao="44.93" longitudeNoAscendente="233.61" argumentoPerielio="10.51"
+        anomaliaMedia="358.98" periodoOrbitalD="115000" descobertoPor="" massaKg="" diametrokm="133"/>
+    <objeto id="a2007.nc7" nome="2007 NC7" designacao="2007 NC7" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="34.28" excentricidade="0.5051" perielioUA="16.964"
+        afelioUA="51.60" inclinacao="6.30" longitudeNoAscendente="324.15" argumentoPerielio="287.33"
+        anomaliaMedia="25.77" periodoOrbitalD="73300" descobertoPor="" massaKg="" diametrokm="84"/>
+    <objeto id="a2007.rg283" nome="2007 RG283" designacao="2007 RG283" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="20.02" excentricidade="0.2344" perielioUA="15.326"
+        afelioUA="24.71" inclinacao="28.75" longitudeNoAscendente="311.82"
+        argumentoPerielio="148.44" anomaliaMedia="312.81" periodoOrbitalD="32700" descobertoPor=""
+        massaKg="" diametrokm="76"/>
+    <objeto id="a2007.rh283" nome="2007 RH283" designacao="2007 RH283" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="15.98" excentricidade="0.3381" perielioUA="10.576"
+        afelioUA="21.38" inclinacao="21.35" longitudeNoAscendente="286.48"
+        argumentoPerielio="329.88" anomaliaMedia="106.80" periodoOrbitalD="23300" descobertoPor=""
+        massaKg="" diametrokm="92"/>
+    <objeto id="a2007.rw10" nome="2007 RW10" designacao="2007 RW10" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="30.4" excentricidade="0.3015" perielioUA="21.232"
+        afelioUA="39.57" inclinacao="36.04" longitudeNoAscendente="187.02" argumentoPerielio="96.97"
+        anomaliaMedia="54.99" periodoOrbitalD="61200" descobertoPor="" massaKg="" diametrokm="221"/>
+    <objeto id="a2007.sa24" nome="2007 SA24" designacao="2007 SA24" anoDescobrimento="2007"
+        categoria="incomum" raioMedUA="6.265" excentricidade="0.5685" perielioUA="2.704"
+        afelioUA="9.83" inclinacao="17.12" longitudeNoAscendente="233.41" argumentoPerielio="109.09"
+        anomaliaMedia="88.65" periodoOrbitalD="5730" descobertoPor="" massaKg="" diametrokm="4"/>
+    <objeto id="a2007.tb434" nome="2007 TB434" designacao="2007 TB434" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="8.704" excentricidade="0.0261" perielioUA="8.477"
+        afelioUA="8.93" inclinacao="9.77" longitudeNoAscendente="12.68" argumentoPerielio="1.39"
+        anomaliaMedia="359.72" periodoOrbitalD="9380" descobertoPor="" massaKg="" diametrokm="5"/>
+    <objeto id="a2007.tj422" nome="2007 TJ422" designacao="2007 TJ422" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="19.63" excentricidade="0.5268" perielioUA="9.290"
+        afelioUA="29.97" inclinacao="2.91" longitudeNoAscendente="318.67" argumentoPerielio="317.18"
+        anomaliaMedia="40.51" periodoOrbitalD="31800" descobertoPor="" massaKg="" diametrokm="27"/>
+    <objeto id="a2007.tk422" nome="2007 TK422" designacao="2007 TK422" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="21.22" excentricidade="0.1920" perielioUA="17.143"
+        afelioUA="25.29" inclinacao="3.06" longitudeNoAscendente="65.41" argumentoPerielio="201.44"
+        anomaliaMedia="89.05" periodoOrbitalD="35700" descobertoPor="" massaKg="" diametrokm="80"/>
+    <objeto id="a2007.tr436" nome="2007 TR436" designacao="2007 TR436" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="62.99" excentricidade="0.5953" perielioUA="25.497"
+        afelioUA="100.49" inclinacao="31.71" longitudeNoAscendente="195.68"
+        argumentoPerielio="179.55" anomaliaMedia="0.03" periodoOrbitalD="183000" descobertoPor=""
+        massaKg="" diametrokm="55"/>
+    <objeto id="a2007.tu431" nome="2007 TU431" designacao="2007 TU431" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="126.6" excentricidade="0.8308" perielioUA="21.427"
+        afelioUA="231.86" inclinacao="6.67" longitudeNoAscendente="195.72"
+        argumentoPerielio="222.98" anomaliaMedia="357.36" periodoOrbitalD="521000" descobertoPor=""
+        massaKg="" diametrokm="37"/>
+    <objeto id="a2007.um126" nome="2007 UM126" designacao="2007 UM126" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="12.92" excentricidade="0.3392" perielioUA="8.537"
+        afelioUA="17.30" inclinacao="41.70" longitudeNoAscendente="184.84"
+        argumentoPerielio="104.61" anomaliaMedia="67.10" periodoOrbitalD="17000" descobertoPor=""
+        massaKg="" diametrokm="42"/>
+    <objeto id="a2007.vh305" nome="2007 VH305" designacao="2007 VH305" anoDescobrimento="2007"
+        categoria="centauro" raioMedUA="24.61" excentricidade="0.6673" perielioUA="8.188"
+        afelioUA="41.03" inclinacao="6.20" longitudeNoAscendente="165.85" argumentoPerielio="248.71"
+        anomaliaMedia="1.95" periodoOrbitalD="44600" descobertoPor="" massaKg="" diametrokm="22"/>
+    <objeto id="a2007.vw266" nome="2007 VW266" designacao="2007 VW266" anoDescobrimento="2007"
+        categoria="damocloide" raioMedUA="5.452" excentricidade="0.3893" perielioUA="3.329"
+        afelioUA="7.57" inclinacao="108.30" longitudeNoAscendente="276.51"
+        argumentoPerielio="226.05" anomaliaMedia="69.67" periodoOrbitalD="4650" descobertoPor=""
+        massaKg="" diametrokm="4"/>
+    <objeto id="a2008.bn18" nome="2008 BN18" designacao="2008 BN18" anoDescobrimento="2008"
+        categoria="damocloide" raioMedUA="35.3" excentricidade="0.9260" perielioUA="2.613"
+        afelioUA="67.99" inclinacao="28.76" longitudeNoAscendente="168.72"
+        argumentoPerielio="282.42" anomaliaMedia="4.56" periodoOrbitalD="76600" descobertoPor=""
+        massaKg="" diametrokm="8"/>
+    <objeto id="a2008.fc76" nome="2008 FC76" designacao="2008 FC76" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="14.79" excentricidade="0.3117" perielioUA="10.183"
+        afelioUA="19.41" inclinacao="27.11" longitudeNoAscendente="245.69"
+        argumentoPerielio="141.58" anomaliaMedia="340.55" periodoOrbitalD="20800" descobertoPor=""
+        massaKg="" diametrokm="67"/>
+    <objeto id="a2008.hy21" nome="2008 HY21" designacao="2008 HY21" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="10.96" excentricidade="0.5066" perielioUA="5.408"
+        afelioUA="16.51" inclinacao="11.99" longitudeNoAscendente="53.35" argumentoPerielio="164.42"
+        anomaliaMedia="31.69" periodoOrbitalD="13300" descobertoPor="" massaKg="" diametrokm="17"/>
+    <objeto id="a2008.js14" nome="2008 JS14" designacao="2008 JS14" anoDescobrimento="2008"
+        categoria="damocloide" raioMedUA="11.67" excentricidade="0.7427" perielioUA="3.002"
+        afelioUA="20.33" inclinacao="26.06" longitudeNoAscendente="312.17" argumentoPerielio="2.08"
+        anomaliaMedia="23.97" periodoOrbitalD="14600" descobertoPor="" massaKg="" diametrokm="10"/>
+    <objeto id="a2008.kv42" nome="2008 KV42" designacao="2008 KV42" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="41.82" excentricidade="0.4936" perielioUA="21.179"
+        afelioUA="62.47" inclinacao="103.46" longitudeNoAscendente="261.00"
+        argumentoPerielio="132.63" anomaliaMedia="327.23" periodoOrbitalD="98800" descobertoPor=""
+        massaKg="" diametrokm="76"/>
+    <objeto id="a2008.lc18" nome="2008 LC18" designacao="2008 LC18" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="29.97" excentricidade="0.0832" perielioUA="27.478"
+        afelioUA="32.47" inclinacao="27.55" longitudeNoAscendente="88.52" argumentoPerielio="7.27"
+        anomaliaMedia="170.20" periodoOrbitalD="59900"/>
+    <objeto id="a2008.lp17" nome="2008 LP17" designacao="2008 LP17" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="87.33" excentricidade="0.6569" perielioUA="29.965"
+        afelioUA="144.69" inclinacao="14.11" longitudeNoAscendente="72.47"
+        argumentoPerielio="162.12" anomaliaMedia="359.17" periodoOrbitalD="298000" descobertoPor=""
+        massaKg="" diametrokm="211"/>
+    <objeto id="a2008.qd4" nome="2008 QD4" designacao="2008 QD4" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="8.433" excentricidade="0.3548" perielioUA="5.441"
+        afelioUA="11.42" inclinacao="42.02" longitudeNoAscendente="344.68" argumentoPerielio="68.96"
+        anomaliaMedia="6.66" periodoOrbitalD="8940" descobertoPor="" massaKg="" diametrokm="25"/>
+    <objeto id="a2008.se82" nome="2008 SE82" designacao="2008 SE82" anoDescobrimento="2008"
+        categoria="incomum" raioMedUA="19.58" excentricidade="0.8361" perielioUA="3.209"
+        afelioUA="35.96" inclinacao="17.43" longitudeNoAscendente="21.35" argumentoPerielio="300.47"
+        anomaliaMedia="12.28" periodoOrbitalD="31700" descobertoPor="" massaKg="" diametrokm="5"/>
+    <objeto id="a2008.sj236" nome="2008 SJ236" designacao="2008 SJ236" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="10.98" excentricidade="0.4392" perielioUA="6.159"
+        afelioUA="15.81" inclinacao="6.04" longitudeNoAscendente="234.54" argumentoPerielio="183.12"
+        anomaliaMedia="12.29" periodoOrbitalD="13300" descobertoPor="" massaKg="" diametrokm="16"/>
+    <objeto id="a2008.so218" nome="2008 SO218" designacao="2008 SO218" anoDescobrimento="2008"
+        categoria="damocloide" raioMedUA="8.115" excentricidade="0.5632" perielioUA="3.545"
+        afelioUA="12.69" inclinacao="170.36" longitudeNoAscendente="348.05"
+        argumentoPerielio="354.41" anomaliaMedia="17.26" periodoOrbitalD="8440" descobertoPor=""
+        massaKg="" diametrokm="12"/>
+    <objeto id="a2008.up332" nome="2008 UP332" designacao="2008 UP332" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="5.531" excentricidade="0.3346" perielioUA="3.680"
+        afelioUA="7.38" inclinacao="26.05" longitudeNoAscendente="116.37" argumentoPerielio="274.50"
+        anomaliaMedia="349.84" periodoOrbitalD="4750"/>
+    <objeto id="a2008.uz331" nome="2008 UZ331" designacao="2008 UZ331" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="18.36" excentricidade="0.0354" perielioUA="17.712"
+        afelioUA="19.01" inclinacao="32.63" longitudeNoAscendente="74.63" argumentoPerielio="284.79"
+        anomaliaMedia="359.94" periodoOrbitalD="28700" descobertoPor="" massaKg="" diametrokm="58"/>
+    <objeto id="a2008.uz6" nome="2008 UZ6" designacao="2008 UZ6" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="27.45" excentricidade="0.6149" perielioUA="10.569"
+        afelioUA="44.32" inclinacao="35.81" longitudeNoAscendente="240.63"
+        argumentoPerielio="199.62" anomaliaMedia="359.27" periodoOrbitalD="52500" descobertoPor=""
+        massaKg="" diametrokm="32"/>
+    <objeto id="a2008.wa95" nome="2008 WA95" designacao="2008 WA95" anoDescobrimento="2008"
+        categoria="damocloide" raioMedUA="14.05" excentricidade="0.8782" perielioUA="1.711"
+        afelioUA="26.38" inclinacao="60.29" longitudeNoAscendente="264.92"
+        argumentoPerielio="140.04" anomaliaMedia="16.44" periodoOrbitalD="19200" descobertoPor=""
+        massaKg="" diametrokm="2"/>
+    <objeto id="a2008.yb3" nome="2008 YB3" designacao="2008 YB3" anoDescobrimento="2008"
+        categoria="centauro" raioMedUA="11.66" excentricidade="0.4436" perielioUA="6.486"
+        afelioUA="16.83" inclinacao="105.04" longitudeNoAscendente="112.48"
+        argumentoPerielio="330.51" anomaliaMedia="359.47" periodoOrbitalD="14500" descobertoPor=""
+        massaKg="" diametrokm="58"/>
+    <objeto id="a2009.au16" nome="2009 AU16" designacao="2009 AU16" anoDescobrimento="2009"
+        categoria="damocloide" raioMedUA="23.53" excentricidade="0.9177" perielioUA="1.936"
+        afelioUA="45.13" inclinacao="70.05" longitudeNoAscendente="262.86"
+        argumentoPerielio="227.34" anomaliaMedia="6.55" periodoOrbitalD="41700" descobertoPor=""
+        massaKg="" diametrokm="3"/>
+    <objeto id="a2009.bl80" nome="2009 BL80" designacao="2009 BL80" anoDescobrimento="2009"
+        categoria="incomum" raioMedUA="6.134" excentricidade="0.6415" perielioUA="2.199"
+        afelioUA="10.07" inclinacao="9.03" longitudeNoAscendente="93.69" argumentoPerielio="8.05"
+        anomaliaMedia="53.36" periodoOrbitalD="5550" descobertoPor="" massaKg="" diametrokm="2"/>
+    <objeto id="a2009.bm124" nome="2009 BM124" designacao="2009 BM124" anoDescobrimento="2009"
+        categoria="incomum" raioMedUA="5.072" excentricidade="0.4948" perielioUA="2.562"
+        afelioUA="7.58" inclinacao="13.23" longitudeNoAscendente="141.09" argumentoPerielio="334.41"
+        anomaliaMedia="10.33" periodoOrbitalD="4170" descobertoPor="" massaKg="" diametrokm="2"/>
+    <objeto id="a2009.dd47" nome="2009 DD47" designacao="2009 DD47" anoDescobrimento="2009"
+        categoria="damocloide" raioMedUA="47.59" excentricidade="0.9533" perielioUA="2.220"
+        afelioUA="92.95" inclinacao="107.45" longitudeNoAscendente="173.80"
+        argumentoPerielio="313.92" anomaliaMedia="0.40" periodoOrbitalD="120000" descobertoPor=""
+        massaKg="" diametrokm="3"/>
+    <objeto id="a2009.dl26" nome="2009 DL26" designacao="2009 DL26" anoDescobrimento="2009"
+        categoria="incomum" raioMedUA="8.549" excentricidade="0.5581" perielioUA="3.777"
+        afelioUA="13.32" inclinacao="2.56" longitudeNoAscendente="28.25" argumentoPerielio="277.71"
+        anomaliaMedia="282.16" periodoOrbitalD="9130" descobertoPor="" massaKg="" diametrokm="27"/>
+    <objeto id="a2009.dp2" nome="2009 DP2" designacao="2009 DP2" anoDescobrimento="2009"
+        categoria="incomum" raioMedUA="6.686" excentricidade="0.4235" perielioUA="3.854"
+        afelioUA="9.52" inclinacao="27.00" longitudeNoAscendente="0.80" argumentoPerielio="126.43"
+        anomaliaMedia="15.37" periodoOrbitalD="6310" descobertoPor="" massaKg="" diametrokm="7"/>
+    <objeto id="a2009.fw23" nome="2009 FW23" designacao="2009 FW23" anoDescobrimento="2009"
+        categoria="damocloide" raioMedUA="11.52" excentricidade="0.8567" perielioUA="1.651"
+        afelioUA="21.39" inclinacao="86.61" longitudeNoAscendente="180.07"
+        argumentoPerielio="314.85" anomaliaMedia="18.23" periodoOrbitalD="14300" descobertoPor=""
+        massaKg="" diametrokm="4"/>
+    <objeto id="a2009.hh36" nome="2009 HH36" designacao="2009 HH36" anoDescobrimento="2009"
+        categoria="centauro" raioMedUA="12.74" excentricidade="0.4472" perielioUA="7.043"
+        afelioUA="18.44" inclinacao="23.29" longitudeNoAscendente="72.24" argumentoPerielio="240.02"
+        anomaliaMedia="339.66" periodoOrbitalD="16600" descobertoPor="" massaKg="" diametrokm="33"/>
+    <objeto id="a2009.hw77" nome="2009 HW77" designacao="2009 HW77" anoDescobrimento="2009"
+        categoria="centauro" raioMedUA="21.41" excentricidade="0.4179" perielioUA="12.463"
+        afelioUA="30.36" inclinacao="17.89" longitudeNoAscendente="50.42" argumentoPerielio="140.55"
+        anomaliaMedia="14.72" periodoOrbitalD="36200" descobertoPor="" massaKg="" diametrokm="64"/>
+    <objeto id="a2009.me10" nome="2009 ME10" designacao="2009 ME10" anoDescobrimento="2009"
+        categoria="centauro" raioMedUA="27.83" excentricidade="0.1796" perielioUA="22.830"
+        afelioUA="32.83" inclinacao="14.68" longitudeNoAscendente="344.71"
+        argumentoPerielio="338.69" anomaliaMedia="341.13" periodoOrbitalD="53600" descobertoPor=""
+        massaKg="" diametrokm="139"/>
+    <objeto id="a2009.ms9" nome="2009 MS9" designacao="2009 MS9" anoDescobrimento="2009"
+        categoria="centauro" raioMedUA="406.4" excentricidade="0.9729" perielioUA="11.006"
+        afelioUA="801.84" inclinacao="67.99" longitudeNoAscendente="220.27"
+        argumentoPerielio="128.55" anomaliaMedia="359.91" periodoOrbitalD="2990000" descobertoPor=""
+        massaKg="" diametrokm="35"/>
+    <objeto id="a2009.qv38" nome="2009 QV38" designacao="2009 QV38" anoDescobrimento="2009"
+        categoria="centauro" raioMedUA="10.92" excentricidade="0.4498" perielioUA="6.006"
+        afelioUA="15.83" inclinacao="19.89" longitudeNoAscendente="11.63" argumentoPerielio="13.49"
+        anomaliaMedia="9.24" periodoOrbitalD="13200" descobertoPor="" massaKg="" diametrokm="18"/>
+    <objeto id="a2009.qy6" nome="2009 QY6" designacao="2009 QY6" anoDescobrimento="2009"
+        categoria="damocloide" raioMedUA="12.49" excentricidade="0.8343" perielioUA="2.070"
+        afelioUA="22.91" inclinacao="137.80" longitudeNoAscendente="197.58"
+        argumentoPerielio="194.96" anomaliaMedia="10.97" periodoOrbitalD="16100" descobertoPor=""
+        massaKg="" diametrokm="5"/>
+    <objeto id="a2009.sz247" nome="2009 SZ247" designacao="2009 SZ247" anoDescobrimento="2009"
+        categoria="centauro" raioMedUA="5.655" excentricidade="0.1848" perielioUA="4.610"
+        afelioUA="6.70" inclinacao="8.65" longitudeNoAscendente="235.70" argumentoPerielio="68.60"
+        anomaliaMedia="57.95" periodoOrbitalD="4910"/>
+    <objeto id="a2009.wm48" nome="2009 WM48" designacao="2009 WM48" anoDescobrimento="2009"
+        categoria="incomum" raioMedUA="5.842" excentricidade="0.3055" perielioUA="4.057"
+        afelioUA="7.63" inclinacao="3.42" longitudeNoAscendente="283.48" argumentoPerielio="149.11"
+        anomaliaMedia="344.40" periodoOrbitalD="5160" descobertoPor="" massaKg="" diametrokm="4"/>
+    <objeto id="a2009.yd7" nome="2009 YD7" designacao="2009 YD7" anoDescobrimento="2009"
+        categoria="centauro" raioMedUA="127.1" excentricidade="0.8947" perielioUA="13.384"
+        afelioUA="240.88" inclinacao="30.79" longitudeNoAscendente="126.04"
+        argumentoPerielio="326.64" anomaliaMedia="359.28" periodoOrbitalD="524000" descobertoPor=""
+        massaKg="" diametrokm="44"/>
+    <objeto id="a2009.yf7" nome="2009 YF7" designacao="2009 YF7" anoDescobrimento="2009"
+        categoria="centauro" raioMedUA="12.01" excentricidade="0.4562" perielioUA="6.532"
+        afelioUA="17.49" inclinacao="31.01" longitudeNoAscendente="97.47" argumentoPerielio="89.56"
+        anomaliaMedia="294.32" periodoOrbitalD="15200" descobertoPor="" massaKg="" diametrokm="30"/>
+    <objeto id="a2009.ys6" nome="2009 YS6" designacao="2009 YS6" anoDescobrimento="2009"
+        categoria="damocloide" raioMedUA="20.27" excentricidade="0.9202" perielioUA="1.617"
+        afelioUA="38.93" inclinacao="147.76" longitudeNoAscendente="295.86"
+        argumentoPerielio="288.82" anomaliaMedia="358.15" periodoOrbitalD="33300" descobertoPor=""
+        massaKg="" diametrokm="6"/>
+    <objeto id="a2010.ar108" nome="2010 AR108" designacao="2010 AR108" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="5.654" excentricidade="0.2148" perielioUA="4.439"
+        afelioUA="6.87" inclinacao="19.23" longitudeNoAscendente="10.13" argumentoPerielio="318.16"
+        anomaliaMedia="48.05" periodoOrbitalD="4910"/>
+    <objeto id="a2010.bl4" nome="2010 BL4" designacao="2010 BL4" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="18.55" excentricidade="0.5377" perielioUA="8.574"
+        afelioUA="28.52" inclinacao="20.82" longitudeNoAscendente="227.03"
+        argumentoPerielio="252.96" anomaliaMedia="6.90" periodoOrbitalD="29200" descobertoPor=""
+        massaKg="" diametrokm="18"/>
+    <objeto id="a2010.cg55" nome="2010 CG55" designacao="2010 CG55" anoDescobrimento="2010"
+        categoria="damocloide" raioMedUA="31.4" excentricidade="0.9081" perielioUA="2.886"
+        afelioUA="59.91" inclinacao="146.38" longitudeNoAscendente="195.95"
+        argumentoPerielio="81.97" anomaliaMedia="0.72" periodoOrbitalD="64300" descobertoPor=""
+        massaKg="" diametrokm="6"/>
+    <objeto id="a2010.cq186" nome="2010 CQ186" designacao="2010 CQ186" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="5.507" excentricidade="0.2097" perielioUA="4.352"
+        afelioUA="6.66" inclinacao="14.66" longitudeNoAscendente="142.39" argumentoPerielio="206.29"
+        anomaliaMedia="55.30" periodoOrbitalD="4720"/>
+    <objeto id="a2010.cr140" nome="2010 CR140" designacao="2010 CR140" anoDescobrimento="2010"
+        categoria="damocloide" raioMedUA="5.625" excentricidade="0.4086" perielioUA="3.326"
+        afelioUA="7.92" inclinacao="74.68" longitudeNoAscendente="132.27" argumentoPerielio="216.40"
+        anomaliaMedia="59.68" periodoOrbitalD="4870" descobertoPor="" massaKg="" diametrokm="3"/>
+    <objeto id="a2010.eb46" nome="2010 EB46" designacao="2010 EB46" anoDescobrimento="2010"
+        categoria="damocloide" raioMedUA="31.78" excentricidade="0.9527" perielioUA="1.504"
+        afelioUA="62.06" inclinacao="156.64" longitudeNoAscendente="175.86"
+        argumentoPerielio="26.34" anomaliaMedia="1.62" periodoOrbitalD="65500" descobertoPor=""
+        massaKg="" diametrokm="1"/>
+    <objeto id="a2010.ee21" nome="2010 EE21" designacao="2010 EE21" anoDescobrimento="2010"
+        categoria="incomum" raioMedUA="8.44" excentricidade="0.6224" perielioUA="3.187"
+        afelioUA="13.69" inclinacao="36.14" longitudeNoAscendente="239.13"
+        argumentoPerielio="243.85" anomaliaMedia="9.71" periodoOrbitalD="8960" descobertoPor=""
+        massaKg="" diametrokm="3"/>
+    <objeto id="a2010.ej104" nome="2010 EJ104" designacao="2010 EJ104" anoDescobrimento="2010"
+        categoria="damocloide" raioMedUA="21.54" excentricidade="0.9009" perielioUA="2.134"
+        afelioUA="40.95" inclinacao="41.55" longitudeNoAscendente="353.03"
+        argumentoPerielio="177.02" anomaliaMedia="3.24" periodoOrbitalD="36500" descobertoPor=""
+        massaKg="" diametrokm="2"/>
+    <objeto id="a2010.en65" nome="2010 EN65" designacao="2010 EN65" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="30.58" excentricidade="0.3124" perielioUA="21.028"
+        afelioUA="40.13" inclinacao="19.24" longitudeNoAscendente="234.30"
+        argumentoPerielio="224.81" anomaliaMedia="33.82" periodoOrbitalD="61800" descobertoPor=""
+        massaKg="" diametrokm="183"/>
+    <objeto id="a2010.eo65" nome="2010 EO65" designacao="2010 EO65" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="25.08" excentricidade="0.4446" perielioUA="13.929"
+        afelioUA="36.23" inclinacao="11.38" longitudeNoAscendente="315.81"
+        argumentoPerielio="271.89" anomaliaMedia="344.52" periodoOrbitalD="45900" descobertoPor=""
+        massaKg="" diametrokm="51"/>
+    <objeto id="a2010.es65" nome="2010 ES65" designacao="2010 ES65" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="21.35" excentricidade="0.5563" perielioUA="9.473"
+        afelioUA="33.22" inclinacao="10.39" longitudeNoAscendente="273.70"
+        argumentoPerielio="239.29" anomaliaMedia="7.42" periodoOrbitalD="36000" descobertoPor=""
+        massaKg="" diametrokm="19"/>
+    <objeto id="a2010.eu65" nome="2010 EU65" designacao="2010 EU65" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="19.2" excentricidade="0.0540" perielioUA="18.167"
+        afelioUA="20.24" inclinacao="14.84" longitudeNoAscendente="4.62" argumentoPerielio="180.82"
+        anomaliaMedia="0.37" periodoOrbitalD="30700" descobertoPor="" massaKg="" diametrokm="67"/>
+    <objeto id="a2010.fb49" nome="2010 FB49" designacao="2010 FB49" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="24.42" excentricidade="0.2805" perielioUA="17.573"
+        afelioUA="31.27" inclinacao="23.55" longitudeNoAscendente="185.06"
+        argumentoPerielio="118.97" anomaliaMedia="265.52" periodoOrbitalD="44100" descobertoPor=""
+        massaKg="" diametrokm="146"/>
+    <objeto id="a2010.fh92" nome="2010 FH92" designacao="2010 FH92" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="24.03" excentricidade="0.7629" perielioUA="5.699"
+        afelioUA="42.37" inclinacao="62.56" longitudeNoAscendente="279.33"
+        argumentoPerielio="329.33" anomaliaMedia="358.68" periodoOrbitalD="43000" descobertoPor=""
+        massaKg="" diametrokm="20"/>
+    <objeto id="a2010.gf65" nome="2010 GF65" designacao="2010 GF65" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="36.27" excentricidade="0.4219" perielioUA="20.966"
+        afelioUA="51.57" inclinacao="12.36" longitudeNoAscendente="0.27" argumentoPerielio="288.29"
+        anomaliaMedia="331.70" periodoOrbitalD="79800" descobertoPor="" massaKg="" diametrokm="160"/>
+    <objeto id="a2010.gm163" nome="2010 GM163" designacao="2010 GM163" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="6.118" excentricidade="0.4874" perielioUA="3.136"
+        afelioUA="9.10" inclinacao="27.78" longitudeNoAscendente="107.58" argumentoPerielio="269.68"
+        anomaliaMedia="316.93" periodoOrbitalD="5530"/>
+    <objeto id="a2010.gw147" nome="2010 GW147" designacao="2010 GW147" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="196.3" excentricidade="0.9726" perielioUA="5.384"
+        afelioUA="387.28" inclinacao="99.68" longitudeNoAscendente="313.27"
+        argumentoPerielio="50.21" anomaliaMedia="0.24" periodoOrbitalD="1000000" descobertoPor=""
+        massaKg="" diametrokm="10"/>
+    <objeto id="a2010.gw64" nome="2010 GW64" designacao="2010 GW64" anoDescobrimento="2010"
+        categoria="damocloide" raioMedUA="63.46" excentricidade="0.9416" perielioUA="3.708"
+        afelioUA="123.21" inclinacao="105.29" longitudeNoAscendente="301.60"
+        argumentoPerielio="152.61" anomaliaMedia="0.58" periodoOrbitalD="185000" descobertoPor=""
+        massaKg="" diametrokm="5"/>
+    <objeto id="a2010.gx34" nome="2010 GX34" designacao="2010 GX34" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="28.4" excentricidade="0.4124" perielioUA="16.691"
+        afelioUA="40.11" inclinacao="11.53" longitudeNoAscendente="279.30"
+        argumentoPerielio="355.18" anomaliaMedia="338.45" periodoOrbitalD="55300" descobertoPor=""
+        massaKg="" diametrokm="96"/>
+    <objeto id="a2010.ha25" nome="2010 HA25" designacao="2010 HA25" anoDescobrimento="2010"
+        categoria="incomum" raioMedUA="6.626" excentricidade="0.4878" perielioUA="3.394"
+        afelioUA="9.86" inclinacao="32.79" longitudeNoAscendente="111.15" argumentoPerielio="263.99"
+        anomaliaMedia="324.06" periodoOrbitalD="6230" descobertoPor="" massaKg="" diametrokm="5"/>
+    <objeto id="a2010.hm23" nome="2010 HM23" designacao="2010 HM23" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="16.67" excentricidade="0.0849" perielioUA="15.251"
+        afelioUA="18.08" inclinacao="6.92" longitudeNoAscendente="251.10" argumentoPerielio="336.61"
+        anomaliaMedia="359.91" periodoOrbitalD="24900" descobertoPor="" massaKg="" diametrokm="35"/>
+    <objeto id="a2010.ht81" nome="2010 HT81" designacao="2010 HT81" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="5.851" excentricidade="0.2433" perielioUA="4.428"
+        afelioUA="7.28" inclinacao="30.13" longitudeNoAscendente="10.62" argumentoPerielio="349.49"
+        anomaliaMedia="317.60" periodoOrbitalD="5170"/>
+    <objeto id="a2010.hu20" nome="2010 HU20" designacao="2010 HU20" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="5.845" excentricidade="0.2719" perielioUA="4.256"
+        afelioUA="7.43" inclinacao="22.43" longitudeNoAscendente="244.89" argumentoPerielio="103.05"
+        anomaliaMedia="324.70" periodoOrbitalD="5160"/>
+    <objeto id="a2010.jb80" nome="2010 JB80" designacao="2010 JB80" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="12.91" excentricidade="0.2023" perielioUA="10.296"
+        afelioUA="15.52" inclinacao="17.84" longitudeNoAscendente="21.03" argumentoPerielio="184.78"
+        anomaliaMedia="5.58" periodoOrbitalD="16900" descobertoPor="" massaKg="" diametrokm="20"/>
+    <objeto id="a2010.jc147" nome="2010 JC147" designacao="2010 JC147" anoDescobrimento="2010"
+        categoria="damocloide" raioMedUA="14.35" excentricidade="0.7599" perielioUA="3.447"
+        afelioUA="25.26" inclinacao="41.82" longitudeNoAscendente="334.43"
+        argumentoPerielio="194.76" anomaliaMedia="5.16" periodoOrbitalD="19900" descobertoPor=""
+        massaKg="" diametrokm="6"/>
+    <objeto id="a2010.jc81" nome="2010 JC81" designacao="2010 JC81" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="8.146" excentricidade="0.7777" perielioUA="1.811"
+        afelioUA="14.48" inclinacao="38.69" longitudeNoAscendente="30.77" argumentoPerielio="12.58"
+        anomaliaMedia="356.71" periodoOrbitalD="8490"/>
+    <objeto id="a2010.jh124" nome="2010 JH124" designacao="2010 JH124" anoDescobrimento="2010"
+        categoria="damocloide" raioMedUA="85.34" excentricidade="0.9694" perielioUA="2.613"
+        afelioUA="168.07" inclinacao="53.37" longitudeNoAscendente="135.78"
+        argumentoPerielio="117.67" anomaliaMedia="359.94" periodoOrbitalD="288000" descobertoPor=""
+        massaKg="" diametrokm="5"/>
+    <objeto id="a2010.jj124" nome="2010 JJ124" designacao="2010 JJ124" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="86.18" excentricidade="0.7383" perielioUA="22.557"
+        afelioUA="149.80" inclinacao="39.29" longitudeNoAscendente="267.41" argumentoPerielio="2.18"
+        anomaliaMedia="356.59" periodoOrbitalD="292000" descobertoPor="" massaKg="" diametrokm="211"/>
+    <objeto id="a2010.kg43" nome="2010 KG43" designacao="2010 KG43" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="5.668" excentricidade="0.4864" perielioUA="2.911"
+        afelioUA="8.43" inclinacao="13.48" longitudeNoAscendente="327.79" argumentoPerielio="353.53"
+        anomaliaMedia="15.46" periodoOrbitalD="4930"/>
+    <objeto id="a2010.kr59" nome="2010 KR59" designacao="2010 KR59" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="29.74" excentricidade="0.5634" perielioUA="12.985"
+        afelioUA="46.50" inclinacao="19.67" longitudeNoAscendente="46.77" argumentoPerielio="108.29"
+        anomaliaMedia="0.87" periodoOrbitalD="59200" descobertoPor="" massaKg="" diametrokm="127"/>
+    <objeto id="a2010.kz39" nome="2010 KZ39" designacao="2010 KZ39" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="184.4" excentricidade="0.8583" perielioUA="26.135"
+        afelioUA="342.68" inclinacao="24.65" longitudeNoAscendente="52.14"
+        argumentoPerielio="283.94" anomaliaMedia="354.83" periodoOrbitalD="915000" descobertoPor=""
+        massaKg="" diametrokm="697"/>
+    <objeto id="a2010.lg61" nome="2010 LG61" designacao="2010 LG61" anoDescobrimento="2010"
+        categoria="damocloide" raioMedUA="7.079" excentricidade="0.8070" perielioUA="1.367"
+        afelioUA="12.79" inclinacao="123.73" longitudeNoAscendente="317.24"
+        argumentoPerielio="351.83" anomaliaMedia="4.51" periodoOrbitalD="6880" descobertoPor=""
+        massaKg="" diametrokm="1"/>
+    <objeto id="a2010.lj109" nome="2010 LJ109" designacao="2010 LJ109" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="13.47" excentricidade="0.3218" perielioUA="9.135"
+        afelioUA="17.80" inclinacao="24.68" longitudeNoAscendente="41.88" argumentoPerielio="137.92"
+        anomaliaMedia="6.52" periodoOrbitalD="18100" descobertoPor="" massaKg="" diametrokm="42"/>
+    <objeto id="a2010.ln68" nome="2010 LN68" designacao="2010 LN68" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="12.59" excentricidade="0.0218" perielioUA="12.312"
+        afelioUA="12.86" inclinacao="15.09" longitudeNoAscendente="92.57" argumentoPerielio="138.20"
+        anomaliaMedia="359.98" periodoOrbitalD="16300" descobertoPor="" massaKg="" diametrokm="64"/>
+    <objeto id="a2010.lo33" nome="2010 LO33" designacao="2010 LO33" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="24.1" excentricidade="0.3762" perielioUA="15.033"
+        afelioUA="33.16" inclinacao="17.83" longitudeNoAscendente="241.16" argumentoPerielio="81.71"
+        anomaliaMedia="317.63" periodoOrbitalD="43200" descobertoPor="" massaKg="" diametrokm="106"/>
+    <objeto id="a2010.lx90" nome="2010 LX90" designacao="2010 LX90" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="5.688" excentricidade="0.5436" perielioUA="2.596"
+        afelioUA="8.78" inclinacao="8.46" longitudeNoAscendente="154.82" argumentoPerielio="125.40"
+        anomaliaMedia="31.29" periodoOrbitalD="4950"/>
+    <objeto id="a2010.nk83" nome="2010 NK83" designacao="2010 NK83" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="5.846" excentricidade="0.5905" perielioUA="2.394"
+        afelioUA="9.30" inclinacao="11.25" longitudeNoAscendente="103.56" argumentoPerielio="341.35"
+        anomaliaMedia="349.09" periodoOrbitalD="5160"/>
+    <objeto id="a2010.nv1" nome="2010 NV1" designacao="2010 NV1" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="289" excentricidade="0.9674" perielioUA="9.416"
+        afelioUA="568.54" inclinacao="140.78" longitudeNoAscendente="136.22"
+        argumentoPerielio="132.88" anomaliaMedia="0.01" periodoOrbitalD="1790000" descobertoPor=""
+        massaKg="" diametrokm="38"/>
+    <objeto id="a2010.om101" nome="2010 OM101" designacao="2010 OM101" anoDescobrimento="2010"
+        categoria="damocloide" raioMedUA="26.4" excentricidade="0.9193" perielioUA="2.129"
+        afelioUA="50.67" inclinacao="118.68" longitudeNoAscendente="133.06"
+        argumentoPerielio="147.88" anomaliaMedia="0.94" periodoOrbitalD="49500" descobertoPor=""
+        massaKg="" diametrokm="2"/>
+    <objeto id="a2010.or1" nome="2010 OR1" designacao="2010 OR1" anoDescobrimento="2010"
+        categoria="damocloide" raioMedUA="27.19" excentricidade="0.9245" perielioUA="2.052"
+        afelioUA="52.32" inclinacao="143.85" longitudeNoAscendente="139.23"
+        argumentoPerielio="139.73" anomaliaMedia="1.46" periodoOrbitalD="51800" descobertoPor=""
+        massaKg="" diametrokm="3"/>
+    <objeto id="a2010.pl66" nome="2010 PL66" designacao="2010 PL66" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="20.15" excentricidade="0.3366" perielioUA="13.366"
+        afelioUA="26.93" inclinacao="24.50" longitudeNoAscendente="8.17" argumentoPerielio="107.57"
+        anomaliaMedia="243.55" periodoOrbitalD="33000"/>
+    <objeto id="a2010.po58" nome="2010 PO58" designacao="2010 PO58" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="8.801" excentricidade="0.6594" perielioUA="2.998"
+        afelioUA="14.60" inclinacao="121.15" longitudeNoAscendente="15.14" argumentoPerielio="28.18"
+        anomaliaMedia="23.80" periodoOrbitalD="9540"/>
+    <objeto id="a2010.rg43" nome="2010 RG43" designacao="2010 RG43" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="14.52" excentricidade="0.0795" perielioUA="13.362"
+        afelioUA="15.67" inclinacao="36.59" longitudeNoAscendente="34.69" argumentoPerielio="301.32"
+        anomaliaMedia="359.91" periodoOrbitalD="20200"/>
+    <objeto id="a2010.rm64" nome="2010 RM64" designacao="2010 RM64" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="19.57" excentricidade="0.6849" perielioUA="6.167"
+        afelioUA="32.98" inclinacao="26.97" longitudeNoAscendente="113.99"
+        argumentoPerielio="290.79" anomaliaMedia="353.02" periodoOrbitalD="31600"/>
+    <objeto id="a2010.th" nome="2010 TH" designacao="2010 TH" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="15.62" excentricidade="0.0821" perielioUA="14.338"
+        afelioUA="16.90" inclinacao="26.74" longitudeNoAscendente="124.07"
+        argumentoPerielio="265.64" anomaliaMedia="359.82" periodoOrbitalD="22500"/>
+    <objeto id="a2010.uh55" nome="2010 UH55" designacao="2010 UH55" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="6.517" excentricidade="0.5752" perielioUA="2.768"
+        afelioUA="10.27" inclinacao="8.66" longitudeNoAscendente="235.26" argumentoPerielio="221.62"
+        anomaliaMedia="354.59" periodoOrbitalD="6080"/>
+    <objeto id="a2010.wk" nome="2010 WK" designacao="2010 WK" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="5.731" excentricidade="0.6920" perielioUA="1.765"
+        afelioUA="9.70" inclinacao="11.48" longitudeNoAscendente="11.49" argumentoPerielio="40.85"
+        anomaliaMedia="7.99" periodoOrbitalD="5010"/>
+    <objeto id="a2010.wz71" nome="2010 WZ71" designacao="2010 WZ71" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="5.7" excentricidade="0.5241" perielioUA="2.713"
+        afelioUA="8.69" inclinacao="20.01" longitudeNoAscendente="220.13" argumentoPerielio="268.22"
+        anomaliaMedia="346.19" periodoOrbitalD="4970"/>
+    <objeto id="a2010.xq53" nome="2010 XQ53" designacao="2010 XQ53" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="6.516" excentricidade="0.5162" perielioUA="3.153"
+        afelioUA="9.88" inclinacao="26.92" longitudeNoAscendente="241.45" argumentoPerielio="86.36"
+        anomaliaMedia="35.74" periodoOrbitalD="6080"/>
+    <objeto id="a2010.xx68" nome="2010 XX68" designacao="2010 XX68" anoDescobrimento="2010"
+        categoria="centauro" raioMedUA="5.619" excentricidade="0.1565" perielioUA="4.740"
+        afelioUA="6.50" inclinacao="14.71" longitudeNoAscendente="73.19" argumentoPerielio="342.16"
+        anomaliaMedia="18.73" periodoOrbitalD="4870"/>
+</centauros>

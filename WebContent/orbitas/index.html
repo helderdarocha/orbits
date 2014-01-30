@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta name="keywords" content="sistema solar, orbitas, planetas, cometas, sedna, plutao, asteroides, kuiper, svg, animacao, animação, simulação, simulation, solar system, orbits, astronomy, astronomia">
+        <title>Simulação de órbitas do Sistema Solar</title>
+        <script type="text/javascript" src="/js/jscolor/jscolor.js">
+        </script>
+        <link type="text/css" href="/js/jquery-ui-1.8.9.custom.css" rel="stylesheet" />
+        <script type="text/javascript" src="/js/jquery-1.4.4.min.js">
+        </script>
+        <script type="text/javascript" src="/js/jquery-ui-1.8.9.custom.min.js">
+        </script>
+        <script type="text/javascript" src="/js/modernizr-1.6.min.js">
+        </script>
+        <script>
+            $(document).ready( function() {
+
+                var accentMap = {
+                    "á": "a",
+                    "ã": "a",
+                    "à": "a",
+                    "â": "a",
+                    "ä": "a",
+
+                    "é": "e",
+                    "ê": "e",
+                    "ë": "e",
+                    "è": "e",
+
+                    "í": "i",
+                    "ï": "i",
+
+                    "õ": "o",
+                    "ò": "o",
+                    "ó": "o",
+                    "ô": "o",
+                    "ö": "o",
+
+                    "ú": "u",
+                    "ü": "u",
+
+                    "ç": "c"
+                };
+
+                var normalize = function( term ) {
+                    var ret = "";
+                    for ( var i = 0; i < term.length; i++ ) {
+                        ret += accentMap[ term.charAt(i) ] || term.charAt(i);
+                    }
+                    return ret;
+                };
+                
+                $("#destaqueView").autocomplete({
+                    source: function( request, response ) {
+                        var matcher = new RegExp( $.ui.autocomplete.escapeRegex( request.term ), "i" );
+                        response( $.grep( $.getJSON("/astronomia/servlet/buscaNomes", {term: escape(request.term)}, response), function( value ) {
+                            value = value.label || value.value || value;
+                            return matcher.test( value ) || matcher.test( normalize( value ) );
+                        }) );
+                    },
+                    minLength: 1,
+                    selectFirst:true
+                });
+                
+                $( "#accordion" ).accordion();
+            });
+            
+            var animacao = true;
+            
+            // other functions
+            function enviar(form) {
+                form.submit();
+            }
+
+            function send(form) {
+                form.destaque.value = escape(form.destaqueView.value);
+                sessionStorage.destaque = form.destaqueView.value;
+                form.textoLegendaDestaque.value=form.destaque.value;
+                form.escala.value = form.escalaView.value / 100;
+                enviar(form);
+            }
+            
+            function reset(form) {
+                sessionStorage.removeItem("destaque");
+            	form.reset();
+            }
+            
+            function toggleSelection(object, root) {
+                  if (object.checked) {
+                    eval("object.form.mostrarNome" + root + ".disabled = false;");
+                    eval("object.form.linha" + root + ".disabled = false;");
+                    eval("object.form.circulo" + root + ".disabled = false;");
+                    eval("object.form.cor" + root + ".disabled = false;");
+                    eval("object.form.mostrarNome" + root + ".style.opacity = 1;");
+                    eval("object.form.linha" + root + ".style.opacity = 1;");
+                    eval("object.form.circulo" + root + ".style.opacity = 1;");
+                    eval("object.form.cor" + root + ".style.opacity = 1;");
+                  } else {  
+                    eval("object.form.mostrarNome" + root + ".disabled = true;");
+                    eval("object.form.linha" + root + ".disabled = true;");
+                    eval("object.form.circulo" + root + ".disabled = true;");
+                    eval("object.form.cor" + root + ".disabled = true;");
+                    eval("object.form.mostrarNome" + root + ".style.opacity = 0;");
+                    eval("object.form.linha" + root + ".style.opacity = 0;");
+                    eval("object.form.circulo" + root + ".style.opacity = 0;");
+                    eval("object.form.cor" + root + ".style.opacity = 0;");
+                  }
+            }
+            
+            function toggleAnimSwitch() {
+            	if (document.forms[0].graficoEstatico.checked) {
+            		document.forms[0].velocidadeOrbitalConstante.disabled=true;
+            	} else {
+            		document.forms[0].velocidadeOrbitalConstante.disabled=false;
+            	}
+            }
+            
+            function scrollToForm() {
+            	window.location.href='#formsend';
+            }
+            
+            /* Detection for ipod, iphone and ipad - temporary */
+			var ua = navigator.userAgent.toLowerCase();
+			function isAppleMobile() {
+			if (ua.search("ipod") > -1 || ua.search("iphone") > -1 || ua.search("ipad") > -1 )
+			  return true;
+			else
+			  return false;
+			}
+     
+        </script>
+        <style>
+            .body {
+                width: 800px
+            }
+            a {text-decoration: none}
+            a:hover {text-decoration: underline}
+            a:link {color: rgb(25%,35%,85%)}
+            a:visited {color: rgb(10%,15%,20%)}
+            * {
+                font-family: sans-serif
+            }
+            h1, h2, h3 {
+                color: navy
+            }
+            h1 {
+                font-size: 16pt
+            }
+            h2 {
+                font-size: 14pt; color: rgb(25%,25%,75%)
+            }
+            h3 {
+                font-size: 13pt; color: rgb(35%,35%,75%)
+            }
+            #accordion h3 {font-weight: bold}
+            p, td, th, li {
+                font-size: 10pt
+            }
+
+            td, th {text-align: left}
+            td {padding-left: 10px}
+            th {padding-bottom: 5px}
+
+            .ui-autocomplete {
+                max-height: 100px;
+                overflow-y: auto;
+                /* prevent horizontal scrollbar */
+                overflow-x: hidden;
+                /* add padding to account for vertical scrollbar */
+                padding-right: 20px;
+            }
+            input[type='text'], input[type='number'] {
+                border: 0px; 
+                font-family: sans-serif;
+                font-weight: bold;
+                color: rgb(128,30,30);
+                font-size: 10pt}
+            input[type='number'] {text-align: right; font-size: 10pt;}
+            input.color {border: solid black 1px; text-align: center}
+            
+            .shadow { background-color: #ccc; }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="body">
+            <img src="orbitas.jpg" height="210" width="800" alt="Sistema Solar: simulador de órbitas" />
+            <p>
+                Este programa gera um gráfico de órbitas do sistema solar no formato gráfico <a href"http://pt.wikipedia.org/wiki/SVG" target="wikipedia">SVG</a>,
+                usando dados obtidos do <a href="http://www.jpl.nasa.gov" target="jpl">Jet Propulsion Laboratory
+                da NASA</a> atualizados em dezembro de 2010.
+            <p>
+                Escolha um das opções prontas ou gere a sua selecionando diferentes parâmetros no formulário abaixo e apertando o botão <b>Gerar Órbitas</b>.
+            </p>
+            <p>
+                <b>Limitações e problemas de compatibilidade</b>:
+                <ul>
+                    <li>Todas as órbitas começam ao mesmo tempo no afélio - ponto da órbita que fica mais distante do Sol, e não na posição onde estariam hoje, o que seria o ideal. Portanto
+                    as posições relativas entre os planetas não é precisa. Pretendo consertar isto em versões futuras.</li>
+                    <li>
+                        A imagem gerada tem dimensões fixas em 1000 x 800 pixels e está no formato <a href="http://pt.wikipedia.org/wiki/SVG" target="wikipedia">SVG</a>, que funciona apenas em navegadores modernos. Foi testada e funciona bem nos browsers e versões <a href="http://www.apple.com/safari/download/" target="browser">Apple Safari 5</a>, <a href="http://www.mozilla.com/pt-BR/firefox/all-rc.html" target="browser">Mozilla Firefox 4</a>, <a href="http://www.google.com/chrome" target="browser">Google Chrome 10</a> e <a href="http://www.opera.com/download/" target="browser">Opera 10</a>. 
+                    </li>
+                    <li>O Firefox 3.x e o <a href="http://windows.microsoft.com/ie9" target="browser">Internet Explorer 9</a> não suportam as animações. Todos os gráficos gerados nesses navegadores serão estáticos.</li>
+                    <li>O Internet Explorer (6, 7 e 8) não mostra a animação mas faz o download do gráfico (que pode ser visualizado offline com outro navegador.)</li>
+                    <li>As órbitas animadas em iPads, iPods e iPhones têm velocidade constante (não aceleram quando se aproximam do Sol).
+                </ul>
+            </p>
+            
+            <h2>Órbitas pré-configuradas</h2>
+            </p>
+            <div id="accordion">
+            <!-- 1. 13 planetas -->
+            <h3><a href="#">13 planetas</a></h3>
+            <div>
+            <img src="img/13planetas_tn.jpg" height="200" width="200" border="0" style="float:left; margin-right: 10px" alt="13 planetas">
+            <p>Órbitas dos 4 planetas rochosos, 4 planetas gasosos e 5 planetas-anão. A órbita de Éris que dura 557 anos leva 10 minutos no gráfico. Na animação, um ano corresponde a pouco mais que 1 segundo.</p>
+            <p><b>Variações</b>: clique em <b>Configurar órbita</b> e use o formulário abaixo para variar o tempo da animação, redimensionar e mostrar outros objetos.
+            <div style="position:absolute; top:200px; left: 240px">
+            <span style="font-size: 9pt"><a href="javascript:configOrbita_1(document.forms[0]);scrollToForm()">Configurar órbita</a> (envie no formulário abaixo)</span>
+            <input type="button" value="Configurar Órbita e Gerar Animação" 
+            onclick="configOrbita_1(document.forms[0]); send(document.forms[0])" style="margin-left: 50px"/>
+            </div>
+                    <script>
+                        function configOrbita_1(form) {
+                        	reset(form);
+                            form.planeta.checked=true;
+                            form.planetaAnao.checked=true;
+                            form.asteroide.checked=false;
+                            form.tno.checked=false;
+                            form.cometa.checked=false;
+                            form.centauro.checked=false;
+
+                            form.mostrarNomePlaneta.checked=true;
+                            form.mostrarNomePlanetaAnao.checked=true;
+
+                            form.linhaPlaneta.value = '1';
+                            form.linhaPlanetaAnao.value = '1';
+
+                            form.minDiametro.value = '900';
+                            form.minOrbita.value = '0';
+                            form.maxOrbita.value = '100';
+                            form.maisX.value = '-450';
+                            form.maisY.value = '-25';
+                            form.escalaView.value = '120';
+
+                            form.titulo.value = "13 planetas";
+                            form.segundosOrbitaMaxima.value = '600';
+							initialize();
+                        }
+                    </script>
+            </div>
+            
+            <!-- 2. Sedna -->
+            <h3><a href="#">Órbita de Sedna</a></h3>
+            <div>
+            <img src="img/sedna_tn.jpg" height="200" width="200" border="0" style="float:left; margin-right: 10px" alt="Órbita de Sedna">
+            <p>Mostra a órbita de Sedna comparada à órbita dos planetas-anão Plutão, Éris, Makemake, Haumea e cometas com afélio* máximo de 1000 unidades astronômicas**. A órbita de Sedna (10.500 anos) dura 2 minutos na animação.</p>
+            <p>* Afélio = ponto da órbita que fica mais distante do Sol.</p>
+            <p>** 1 UA (unidade astronômica) = distância média da Terra ao Sol.</p>
+            <div style="position:absolute; top:200px; left: 240px">
+            <span style="font-size: 9pt"><a href="javascript:configOrbita_2(document.forms[0]);scrollToForm()">Configurar órbita</a> (envie no formulário abaixo)</span>
+            <input type="button" value="Configurar Órbita e Gerar Animação" 
+            onclick="configOrbita_2(document.forms[0]); send(document.forms[0])" style="margin-left: 50px"/>
+            </div>
+                    <script>
+                        function configOrbita_2(form) {
+                            reset(form);
+                            form.planeta.checked=true;
+                            form.planetaAnao.checked=true;
+                            form.asteroide.checked=false;
+                            form.tno.checked=true;
+                            form.cometa.checked=true;
+                            form.centauro.checked=true;
+
+                            form.mostrarNomePlaneta.checked=true;
+                            form.mostrarNomePlanetaAnao.checked=true;
+                            form.mostrarNomeAsteroide.checked=false;
+                            form.mostrarNomeTNO.checked=false;
+                            form.mostrarNomeCometa.checked=false;
+                            form.mostrarNomeCentauro.checked=true;
+
+                            form.linhaPlaneta.value = '1';
+                            form.linhaPlanetaAnao.value = '1';
+                            form.linhaAsteroide.value = '1';
+                            form.linhaTNO.value = '0.2';
+                            form.linhaCometa.value = '0.8';
+                            form.linhaCentauro.value = '1';
+
+                            form.minDiametro.value = '500';
+                            form.minOrbita.value = '50';
+                            form.maxOrbita.value = '1000';
+                            form.maisX.value = '-250';
+                            form.maisY.value = '-200';
+                            form.escalaView.value = '60';
+                            
+                            form.segundosOrbitaMaxima.value = '120';
+
+                            form.titulo.value = "Órbita de Sedna";
+
+                            form.destaqueView.value = 'Sedna';
+                            initialize();
+                        }
+                    </script>
+           </div>
+           
+          <!-- 3. Cinturão de asteróides -->
+            <h3><a href="#">Cinturão de asteróides</a></h3>
+            <div>
+            <img src="img/asteroides_tn.jpg" height="200" width="200" border="0" style="float:left; margin-right: 10px" alt="Cinturão de Asteróides">
+            <p>São mostrados apenas os asteróides cuja órbita situa-se entre Marte e Júpiter e que têm mais de 150km de diâmetro. A órbita de Júpiter nesta animação (12 anos) dura 4 minutos.</p>
+            <p><b>Variações</b>: clique em <b>Configurar órbita</b> e use o formulário para diminuir o diâmetro máximo e mostrar mais asteróides.</p>
+            <div style="position:absolute; top:200px; left: 240px">
+            <span style="font-size: 9pt"><a href="javascript:configOrbita_3(document.forms[0]);scrollToForm()">Configurar órbita</a> (envie no formulário abaixo)</span>
+            <input type="button" value="Configurar Órbita e Gerar Animação" 
+            onclick="configOrbita_3(document.forms[0]); send(document.forms[0])" style="margin-left: 50px"/>
+            </div>
+                    <script>
+                        function configOrbita_3(form) {
+                            reset(form);
+                            form.planeta.checked=true;
+                            form.planetaAnao.checked=true;
+                            form.asteroide.checked=true;
+                            form.tno.checked=true;
+                            form.cometa.checked=false;
+                            form.centauro.checked=true;
+
+                            form.mostrarNomePlaneta.checked=true;
+                            form.mostrarNomePlanetaAnao.checked=true;
+                            form.mostrarNomeAsteroide.checked=true;
+                            form.mostrarNomeCentauro.checked=true;
+
+                            form.linhaPlaneta.value = '1';
+                            form.linhaPlanetaAnao.value = '1';
+                            form.linhaAsteroide.value = '0.4';
+                            form.linhaCentauro.value = '1';
+
+                            form.minDiametro.value = '150';
+                            form.minOrbita.value = '0';
+                            form.maxOrbita.value = '10';
+                            form.maisX.value = '0';
+                            form.maisY.value = '0';
+                            form.escalaView.value = '100';
+
+                            form.titulo.value = "Cinturão de asteróides";
+                            form.segundosOrbitaMaxima.value = '240';
+
+                            form.destaqueView.value = 'Ceres';
+                            initialize();
+                        }
+                    </script>
+            </div>
+           
+          <!-- 4. Cinturão de Kuiper -->
+            <h3><a href="#">Cinturão de Kuiper</a></h3>
+            <div>
+            <img src="img/tnos_tn.jpg" height="200" width="200" border="0" style="float:left; margin-right: 10px" alt="Cinturão de Kuiper">
+            <p>Cinturão de Kuiper</b></a>: é formado por asteróides trans-netunianos (que estão além da órbita de Netuno). Na animação são mostrados os asteróides conhecidos que têm mais de 300km de diâmetro estimado.</p>
+            <p><b>Variações</b>: clique em <b>Configurar órbita</b> e use o formulário para diminuir o diâmetro máximo e mostrar mais asteróides trans-netunianos. Aumente a órbita máxima para mostrar órbitas de objetos mais distantes (como Sedna, que tem afélio de aproximadamente 1000 UA).</p>
+            <div style="position:absolute; top:200px; left: 240px">
+            <span style="font-size: 9pt"><a href="javascript:configOrbita_4(document.forms[0]);scrollToForm()">Configurar órbita</a> (envie no formulário abaixo)</span>
+            <input type="button" value="Configurar Órbita e Gerar Animação" 
+            onclick="configOrbita_4(document.forms[0]); send(document.forms[0])" style="margin-left: 50px"/>
+            </div>
+                    <script>
+                        function configOrbita_4(form) {
+                            reset(form);
+                            form.planeta.checked=true;
+                            form.planetaAnao.checked=true;
+                            form.asteroide.checked=true;
+                            form.tno.checked=true;
+                            form.cometa.checked=false;
+                            form.centauro.checked=true;
+
+                            form.mostrarNomePlaneta.checked=true;
+                            form.mostrarNomePlanetaAnao.checked=true;
+                            form.mostrarNomeTNO.checked=true;
+                            form.mostrarNomeCentauro.checked=true;
+
+                            form.linhaPlaneta.value = '1';
+                            form.linhaPlanetaAnao.value = '1';
+                            form.linhaTNO.value = '0.5';
+                            form.linhaCentauro.value = '1';
+
+                            form.minDiametro.value = '300';
+                            form.minOrbita.value = '10';
+                            form.maxOrbita.value = '200';
+                            form.maisX.value = '-100';
+                            form.maisY.value = '0';
+                            form.escalaView.value = '70';
+
+                            form.titulo.value = "Cinturao de Kuiper";
+                            form.segundosOrbitaMaxima.value = '120';
+
+                            form.destaqueView.value = 'Quaoar';
+                            initialize();
+                        }
+                    </script>
+            </div>
+           
+          <!-- 5. Cometas distantes -->
+            <h3><a href="#">Cometas distantes</a></h3>
+            <div>
+            <img src="img/cometas_tn.jpg" height="200" width="200" border="0" style="float:left; margin-right: 10px" alt="Cometas distantes">
+            <p>Essas órbitas são estimadas com base na passagem do cometa pelo periélio*; cada órbita de Sedna corresponde a aproximadamente 10.500 anos. O cometa de maior órbita mostrado no gráfico tem um afélio calculado de 2 anos-luz (130 mil UA**).</p>
+            <p>* Periélio = ponto da órbita que fica mais próxima do Sol.</p>
+            <p>** 1 UA (unidade astronômica) = distância média da Terra ao Sol.</p>
+            <div style="position:absolute; top:200px; left: 240px">
+            <span style="font-size: 9pt"><a href="javascript:configOrbita_5(document.forms[0]);scrollToForm()">Configurar órbita</a> (envie no formulário abaixo)</span>
+            <input type="button" value="Configurar Órbita e Gerar Animação" 
+            onclick="configOrbita_5(document.forms[0]); send(document.forms[0])" style="margin-left: 50px"/>
+            </div>
+                    <script>
+                        function configOrbita_5(form) {
+                            reset(form);
+                            form.planeta.checked=false;
+                            form.planetaAnao.checked=false;
+                            form.asteroide.checked=false;
+                            form.tno.checked=false;
+                            form.cometa.checked=true;
+                            form.centauro.checked=false;
+
+                            form.mostrarNomeCometa.checked=true;
+
+                            form.linhaTNO.value = '1';
+                            form.linhaCometa.value = '0.8';
+                            form.linhaCentauro.value = '1'; 
+
+                            form.minDiametro.value = '0';
+                            form.minOrbita.value = '20000';
+                            form.maxOrbita.value = '130000'; 
+                            form.maisX.value = '-700'; 
+                            form.maisY.value = '-200'; 
+                            form.escalaView.value = '100';
+
+                            form.titulo.value = "Cometas distantes e Sedna";
+                            form.segundosOrbitaMaxima.value = '480';
+
+                            form.destaqueView.value = 'Sedna';
+                            form.circuloDestaque.value = '2';
+                            initialize();
+                        }
+                    </script>
+             </div>
+           
+          <!-- 6. Halley e nuvem de cometas próximos -->
+            <h3><a href="#">Halley e nuvem de cometas próximos</a></h3>
+            <div>
+            <img src="img/halley_tn.jpg" height="200" width="200" border="0" style="float:left; margin-right: 10px" alt="Halley e cometas próximos">
+            <p>São mostrados  cometas que possuem um afélio* inferior a 40 unidades astronômicas*; O cometa Halley tem um movimento retrógrado e sua órbita (76 voltas da Terra) dura 8 minutos nesta animação.</p>
+            <p>* Afélio = ponto da órbita que fica mais distante do Sol.</p>
+            <p>** 1 UA (unidade astronômica) = distância média da Terra ao Sol.</p>
+            <div style="position:absolute; top:200px; left: 240px">
+            <span style="font-size: 9pt"><a href="javascript:configOrbita_6(document.forms[0]);scrollToForm()">Configurar órbita</a> (envie no formulário abaixo)</span>
+            <input type="button" value="Configurar Órbita e Gerar Animação" 
+            onclick="configOrbita_6(document.forms[0]); send(document.forms[0])" style="margin-left: 50px"/>
+            </div>
+                    <script>
+                        function configOrbita_6(form) {
+                            reset(form);
+                            form.planeta.checked=true;
+                            form.planetaAnao.checked=true;
+                            form.asteroide.checked=false;
+                            form.tno.checked=false;
+                            form.cometa.checked=true;
+                            form.centauro.checked=false;
+ 
+                            form.mostrarNomePlaneta.checked=true;
+                            form.mostrarNomePlanetaAnao.checked=true;
+                            form.mostrarNomeCometa.checked=false;
+
+                            form.linhaPlaneta.value = '1';
+                            form.linhaPlanetaAnao.value = '1';
+                            form.linhaCometa.value = '0.5';
+
+                            form.minDiametro.value = '0';
+                            form.minOrbita.value = '0';
+                            form.maxOrbita.value = '40'; 
+                            form.maisX.value = '-200'; 
+                            form.maisY.value = '-450'; 
+                            form.escalaView.value = '90';
+
+                            form.titulo.value = "Halley e nuvem de cometas próximos";
+                            form.segundosOrbitaMaxima.value = '480';
+
+                            form.destaqueView.value = 'Halley';
+                            initialize();
+                        }
+                    </script>
+                </div>
+           
+          <!-- 7. Dioretsa e outros centauros -->
+            <h3><a href="#">Dioretsa e outros centauros</a></h3>
+            <div>
+            <img src="img/dioretsa_tn.jpg" height="200" width="200" border="0" style="float:left; margin-right: 10px" alt="Dioretsa e outros centauros">
+            <p>Centauros são asteróides que cruzam as órbitas dos outros planetas. Dioretsa foi o primeiro asteróide descoberto com uma órbita retrógrada (daí seu nome).
+            </p>
+            <p><b>Variações</b>: clique em <b>Configurar órbita</b> e use o formulário para destacar órbitas de outros centauros como Nesso (Nessus), Quirón (Chiron) e Dâmocles (Damocles). Digite o início do nome e escolha da lista.</p>
+            <div style="position:absolute; top:200px; left: 240px">
+            <span style="font-size: 9pt"><a href="javascript:configOrbita_7(document.forms[0]);scrollToForm()">Configurar órbita</a> (envie no formulário abaixo)</span>
+            <input type="button" value="Configurar Órbita e Gerar Animação" 
+            onclick="configOrbita_7(document.forms[0]); send(document.forms[0])" style="margin-left: 50px"/>
+            </div>
+                    <script>
+                        function configOrbita_7(form) {
+                            reset(form);
+                            form.planeta.checked=true;
+                            form.planetaAnao.checked=true;
+                            form.asteroide.checked=false;
+                            form.tno.checked=false;
+                            form.cometa.checked=false;
+                            form.centauro.checked=true;
+ 
+                            form.mostrarNomePlaneta.checked=true;
+                            form.mostrarNomePlanetaAnao.checked=true;
+                            form.mostrarNomeCentauro.checked=false;
+
+                            form.linhaPlaneta.value = '1';
+                            form.linhaPlanetaAnao.value = '1';
+                            form.linhaCentauro.value = '0.5'; 
+
+                            form.minDiametro.value = '0';
+                            form.minOrbita.value = '1';
+                            form.maxOrbita.value = '50'; 
+                            form.maisX.value = '-100'; 
+                            form.maisY.value = '0'; 
+                            form.escalaView.value = '100';
+
+                            form.titulo.value = "Dioretsa e outros centauros";
+                            form.segundosOrbitaMaxima.value = '320';
+
+                            form.destaqueView.value = 'Dioretsa';
+                            initialize();
+                        }
+                    </script>
+            </div>
+            
+            </div> <!-- accordion -->
+            
+            <h2>Geração de órbitas</h2>
+                            <p>
+                    Há 4604 objetos na <a href="http://www.argonavis.com.br/astronomia/tabelas/index.html">base de dados</a> (mais da metade são asteróides do cinturão principal). Use o formulário abaixo para limitar a quantidade de objetos mostrados.
+                <p>
+                    A qualidade da animação depende da memória
+                    disponível na sua máquina. Se muitos ítens forem selecionados, é provável que o gráfico
+                    fique muito grande e não haja memória suficiente para a animação (ou mesmo para desenhar o gráfico). Para melhorar a visualização, diminua as espessuras das linhas da órbitas quando houver muitos objetos.
+                </p>
+            <form id="mainForm" action="/astronomia/servlet/orbitas.svg" method="post">
+                <h3>1. Filtro de objetos e aparência</h3>
+
+                <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Objetos</th><th>Mostrar</th><th>Legenda</th><th>Linha da órbita (px)</th><th>Raio do objeto (px)</th><th>Cor (rrggbb)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Planetas</td><td>
+                        <input type="checkbox" name="planeta" checked value="1" onclick="toggleSelection(this, 'Planeta')" /></td>
+                        <td>
+                        <input type="checkbox" name="mostrarNomePlaneta" checked value="1" /></td>
+                        <td>
+                        <input type="number" name="linhaPlaneta" value="1.0"
+                        min="0.0" max="10.0" step="0.1" size="4"/></td>
+                        <td>
+                        <input type="number" name="circuloPlaneta" value="2.0" min="0.0" max="10.0" step="0.1" size="4"/></td>
+                        <td>
+                        <input type="text" name="corPlaneta" value="#ffff80" size="6" class="color"/></td>
+                    </tr>
+                    <tr>
+                        <td>Planetas-anão</td><td>
+                        <input type="checkbox" name="planetaAnao" checked value="1" onclick="toggleSelection(this, 'PlanetaAnao')" /></td>
+                        <td>
+                        <input type="checkbox" name="mostrarNomePlanetaAnao" checked value="1" /></td>
+                        <td>
+                        <input type="number" name="linhaPlanetaAnao" value="1.0" min="0.0" max="10.0" step="0.1" size="4"/></td>
+                        <td>
+                        <input type="number" name="circuloPlanetaAnao" value="2.0" min="0.0" max="10.0" step="0.1" size="4"/></td>
+                        <td>
+                        <input type="text" name="corPlanetaAnao" value="#ff80ff" size="6" class="color"/></td>
+                    </tr>
+                    <tr>
+                        <td>Asteróides</td><td>
+                        <input type="checkbox" name="asteroide" value="1" onclick="toggleSelection(this, 'Asteroide')" /></td>
+                        <td>
+                        <input type="checkbox" name="mostrarNomeAsteroide" value="1" /></td>
+                        <td>
+                        <input type="number" name="linhaAsteroide" value="0.2" min="0.0" max="10.0" step="0.1" size="4"/></td>
+                        <td>
+                        <input type="number" name="circuloAsteroide" value="1.0"
+                        min="0.0" max="10.0" step="0.1" size="4" /></td>
+                        <td>
+                        <input disabled="true" type="text" name="corAsteroide" value="#80ff80" size="6" class="color"/></td>
+                    </tr>
+                    <tr>
+                        <td>Objetos Trans-Netunianos</td><td>
+                        <input type="checkbox" name="tno" value="1" onclick="toggleSelection(this, 'TNO')" /></td>
+                        <td>
+                        <input type="checkbox" name="mostrarNomeTNO" value="1" /></td>
+                        <td>
+                        <input type="number" name="linhaTNO" value="0.2"
+                        min="0.0" max="10.0" step="0.1" size="4" /></td>
+                        <td>
+                        <input type="number" name="circuloTNO" value="1.0"
+                        min="0.0" max="10.0" step="0.1" size="4" /></td>
+                        <td>
+                        <input type="text" name="corTNO" value="#00ffff" size="6" class="color"/></td>
+                    </tr>
+                    <tr>
+                        <td>Cometas</td><td>
+                        <input type="checkbox" name="cometa" value="1" onclick="toggleSelection(this, 'Cometa')" /></td>
+                        <td>
+                        <input type="checkbox" name="mostrarNomeCometa" value="1" /></td>
+                        <td>
+                        <input type="number" name="linhaCometa" value="0.2"
+                        min="0.0" max="10.0" step="0.1" size="4" /></td>
+                        <td>
+                        <input type="number" name="circuloCometa" value="1.0"
+                        min="0.0" max="10.0" step="0.1" size="4" /></td>
+                        <td>
+                        <input type="text" name="corCometa" value="#ff4040" size="6" class="color"/></td>
+                    </tr>
+                    <tr>
+                        <td>Centauros</td><td>
+                        <input type="checkbox" name="centauro" value="1" onclick="toggleSelection(this, 'Centauro')" /></td>
+                        <td>
+                        <input type="checkbox" name="mostrarNomeCentauro" value="1" /></td>
+                        <td>
+                        <input type="number" name="linhaCentauro" value="0.5"
+                        min="0.0" max="10.0" step="0.1" size="4" /></td>
+                        <td>
+                        <input type="number" name="circuloCentauro" value="1.0"
+                        min="0.0" max="10.0" step="0.1" size="4" /></td>
+                        <td>
+                        <input type="text" name="corCentauro" value="#9060ff" size="6" class="color"/></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h3>2. Destacar objeto</h3>
+                <p>
+                    Se desejar destacar um objeto, digite o início do seu nome
+                    e selecione da lista.
+                </p>
+                <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th>Objeto</th><th>Linha da órbita (px)</th><th>Raio do objeto (px)</th><th>Cor (rrggbb)</th><th>Fonte (pt)</th>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="text" id="destaqueView" name="destaqueView" size="40" placeHolder="Digite nome do objeto"/></td>
+                        <td>
+                        <input type="number" name="linhaDestaque" value="2" size="4" min="0.0" max="10.0" step="0.1" /></td>
+                        <td>
+                        <input type="number" name="circuloDestaque" value="4" min="0.0" max="10.0" step="0.1" size="4" /></td>
+                        <td>
+                        <input type="text" name="corDestaque" value="#ffffff" size="6" class="color"/></td>
+                        <td>
+                        <input type="number" name="tamFonteDestaque" value="18" size="4" min="1" step="1"/></td>
+                    </tr>
+                </table>
+                <input type="hidden" name="destaque" />
+                <input type="hidden" name="textoLegendaDestaque" />
+                <input type="hidden" name="mostrarNomeDestaque" value="1" />
+
+                <h3>3. Filtro de dimensões e órbita</h3>
+                <p>
+                    Tamanho mínimo dos objetos mostrados (exceto cometas):
+                    <input type="number" name="minDiametro" value="100" size="10" min="0"/> km de diâmetro
+                    <br>Objetos mostrados têm o raio maior da sua órbita (afélio) entre
+                    <input type="number" name="minOrbita" value="0" size="6" min="0"/> UA e 
+                    <input type="number" name="maxOrbita" value="50" size="6" min="0" /> UA
+                </p>
+                <h3>4. Parâmetros de apresentação</h3>
+                <p>
+                    Título a exibir para o gráfico
+                    <input type="text" name="titulo" style="font-size: 12pt" value="Sistema Solar" size="60"/>
+                    <br/>Tamanho da fonte
+                    <input type="number" name="tamFonte" value="14" size="4" min="1" step="1"/>pt.  Cor de fundo
+                    <input type="text" class="color" name="corDeFundo" value="#000030" size="6"/> Cor do texto
+                    <input type="text" class="color" name="corDoTexto" value="#ffffff" size="6"/> Duração da maior órbita
+                    <input type="number" name="segundosOrbitaMaxima" value="120" size="4"
+                    min="0" step="10"/>s
+                    <br/>
+                    <input type="checkbox" name="brilhoSol" value="1" checked />Brilho do sol
+                    <input type="checkbox" name="mostrarLegenda" value="1" checked /> Mostrar legenda
+                </p>
+                <h3>5. Parâmetros de performance e compatibilidade</h3>
+                <p>Use os parâmetros abaixo para gerar um gráfico menor que usa menos recursos da máquina.
+                <p>
+                    <input type="checkbox" name="graficoEstatico" value="1" onclick="toggleAnimSwitch()" /> Mostrar gráfico estático (sem animação)
+                    <input type="checkbox" name="velocidadeOrbitalConstante" value="1" /> Mostrar órbitas em velocidade constante
+                </p>
+                <h3>6. Parâmetros de ajuste</h3>
+                <p>
+                    Use os parâmetros abaixo para ajustar o gráfico da forma desejada (para caber inteiro no espaço, para aproximar, para afastar).
+                </p>
+                <p>
+                    Ajuste de escala (%)
+                    <input type="number" name="escalaView" value="100" size="6" min="10" step="10"/>
+                    <input type="hidden" name="escala" />
+                    <br/>Ajuste horizontal (valores positivos para a direita)
+                    <input type="number" name="maisX" value="0.0" size="6" step="50"/> px
+                    <br/>Ajuste vertical (valores positivos para baixo)
+                    <input type="number" name="maisY" value="0.0" size="6" step="50"/> px
+                <p><a name="formsend"></a>
+                    <input type="button" value="Gerar Órbitas" onclick="send(this.form)"/>
+                    <input type="button" value="Reiniciar Formulário" onclick="reset(this.form)"/>
+                </p>
+            </form>
+
+            <p>
+                <a name="sobre"></a><b>* Sobre a aplicação</b>: Esta aplicação foi construída por <a href="http://aleph.helderdarocha.com.br">Helder da Rocha</a> a partir de exemplos e exercícios criados para os <a href="http://www.argonavis.com.br/cursos/xml">cursos
+                de XML, XSL e SVG</a> da <a href="http://www.argonavis.com.br">Argo Navis</a>, cujas apostilas estão disponíveis para download. Os programas em Java,
+                documentos XSL e XML usados para gerar os dados, e uma descrição de como os dados foram
+                extraídos dinamicamente dos <a href="http://ssd.jpl.nasa.gov/sbdb_query.cgi" target="jpl">bancos de dados do JPL</a> para gerar a <a href="../data/sol_2010.2.2.xml">base XML</a> estão detalhados
+                <a href="../index.html">neste documento</a>.
+            </p>
+            <div class="shadow">
+              <div id="nosvg" title="Navegador sem suporte a SVG" style="display:none">
+				<p>O seu navegador não suporta SVG e não será capaz de exibir o gráfico gerado por esta aplicação.</p>
+				<p>Se possível, acesse esta página usando um navegador moderno como <a href="http://www.apple.com/safari/download/" target="browser">Apple Safari 5</a>, 
+				<a href="http://www.mozilla.com/pt-BR/firefox/all-rc.html" target="browser">Mozilla Firefox 4</a>, 
+				<a href="http://www.google.com/chrome" target="browser">Google Chrome 10</a> ou <a href="http://www.opera.com/download/" target="browser">Opera 10</a>.</p>
+			  </div>
+			  <div id="nosmil" title="Navegador sem suporte a SMIL" style="display:none">
+				<p>O seu navegador não suporta SMIL - tecnologia usada para animação em SVG, portanto apenas irá mostrar gráficos estáticos (sem animação).</p>
+				<p>Se possível, acesse esta página usando um navegador moderno como <a href="http://www.apple.com/safari/download/" target="browser">Apple Safari 5</a>, 
+				<a href="http://www.mozilla.com/pt-BR/firefox/all-rc.html" target="browser">Mozilla Firefox 4</a>, 
+				<a href="http://www.google.com/chrome" target="browser">Google Chrome 10</a> ou <a href="http://www.opera.com/download/" target="browser">Opera 10</a>.</p>
+			  </div>
+			  <div id="noaccel" title="Suporte limitado a SMIL" style="display:none">
+				<p>Alguns recursos da animação não são suportados, portanto as órbitas serão exibidas com velocidades constantes (sem acelerar perto do Sol).</p>
+			  </div>
+			</div>
+			
+        </div>
+        <script>
+            var _gaq=[['_setAccount','UA-21073777-1'],['_trackPageview']];
+            ( function(d,t) {
+                var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                g.async=1;
+                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)
+            }(document,'script'));
+        </script>
+        <script>
+          function initialize() {
+            if (sessionStorage.destaque) {
+            	document.forms[0].destaqueView.value = sessionStorage.destaque;
+            }
+
+            toggleSelection(document.forms[0].planeta, 'Planeta');
+            toggleSelection(document.forms[0].planetaAnao, 'PlanetaAnao');
+            toggleSelection(document.forms[0].asteroide, 'Asteroide');
+            toggleSelection(document.forms[0].tno, 'TNO');
+            toggleSelection(document.forms[0].cometa, 'Cometa');
+            toggleSelection(document.forms[0].centauro, 'Centauro');
+            
+            if (!animacao) {
+            	document.forms[0].graficoEstatico.checked = true;
+            }
+            if (animacao && isAppleMobile()) { // iOS 4.2.1 nao suporta calcMode=spline e filter
+            	document.forms[0].velocidadeOrbitalConstante.checked=true;
+            	document.forms[0].brilhoSol.checked=false;
+            }
+            toggleAnimSwitch();
+          }
+          initialize();
+        </script>
+        <script>
+           function featureDetection() {
+             if (!Modernizr.svg && !sessionStorage.avisoMostrado) {
+    			  $( "#nosvg" ).dialog({
+    				    buttons: {
+    				        Ok: function() {
+    					       $( this ).dialog( "close" );
+    				        }
+    			        },
+    			        modal:true
+    			  });
+    			  sessionStorage.avisoMostrado = true;
+  		     } else if (!Modernizr.smil) {
+    		      if (!sessionStorage.avisoMostrado) {
+    			     $( "#nosmil" ).dialog({
+    				     buttons: {
+    				        Ok: function() {
+    					       $( this ).dialog( "close" );
+    				        }
+    			         },
+    			         modal: true
+    				 });
+    				 sessionStorage.avisoMostrado = true;
+    			  }
+    			  animacao = false;
+    			  initialize();
+  		     } else if (isAppleMobile()) { // supports svg, smil, but not some features
+    		      if (!sessionStorage.avisoMostrado) {
+    			     $( "#noaccel" ).dialog({
+    				     buttons: {
+    				        Ok: function() {
+    					       $( this ).dialog( "close" );
+    				        }
+    			         },
+    			         modal: true
+    				 });
+    				 sessionStorage.avisoMostrado = true;
+    			  }
+    			  initialize();
+  		     }
+		   }
+		   setTimeout("featureDetection()", 1000);
+		</script>
+    </body>
+</html>

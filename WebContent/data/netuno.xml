@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planeta id="p8" nome="Netuno" diametrokm="49492" anoDescobrimento="1846" raioMedUA="30.1"
+    perielioUA="29.77" afelioUA="30.44" periodoOrbitalD="60190" periodoRotacaoSideralH="16.11"
+    inclinacaoAxial="28.32" massaKg="1.024e26" excentricidade="0.011214269" inclinacao="1.76798"
+    categoria="gasoso" longitudeNoAscendente="131.7943" argumentoPerielio="265.65"
+    anomaliaMedia="267.77" massaGM="6833152" gravidadeEquatorial="11.15" densidade="1.638"
+    volume="6.254e13" descobertoPor="Urbain Le Verrier, John Couch Adams, Johann Galle">
+    <imagem href="neptune.jpg"/>
+    <satelite id="p8.1" nome="Naiada" diametrokm="66" raioMedOrbitakm="48227"
+        anoDescobrimento="1989" descobertoPor="Voyager"/>
+    <satelite id="p8.2" nome="Thalassa" diametrokm="82" raioMedOrbitakm="50074"
+        anoDescobrimento="1989" descobertoPor="Voyager"/>
+    <satelite id="p8.3" nome="Despina" diametrokm="150" raioMedOrbitakm="52526"
+        anoDescobrimento="1989" descobertoPor="Voyager"/>
+    <satelite id="p8.4" nome="Galatéia" diametrokm="176" raioMedOrbitakm="61953"
+        anoDescobrimento="1989" descobertoPor="Voyager"/>
+    <satelite id="p8.5" nome="Larissa" diametrokm="194" raioMedOrbitakm="73548"
+        anoDescobrimento="1981" descobertoPor="H. Reitsema, W. Hubbard, L. Leboftsky, D. J. Tholen"/>
+    <satelite id="p8.6" nome="Proteus" diametrokm="420" raioMedOrbitakm="117646"
+        anoDescobrimento="1989" descobertoPor="Voyager"/>
+    <satelite id="p8.7" nome="Tritão" diametrokm="2700" raioMedOrbitakm="354759" categoria="redondo"
+        gravidadeEquatorial="0.78" densidade="2.061" massaGM="1428.022" periodoOrbitalD="5.877"
+        volume="1e10" massaKg="2.14e22" anoDescobrimento="1846" descobertoPor="William Lassell">
+        <imagem href="triton.jpg"/>
+    </satelite>
+    <satelite id="p8.8" nome="Nereida" diametrokm="340" raioMedOrbitakm="5513818"
+        anoDescobrimento="1949" descobertoPor="Gerard Kuiper"/>
+    <satelite id="p8.9" nome="Halimede" diametrokm="62" raioMedOrbitakm="16611000"
+        anoDescobrimento="2002"
+        descobertoPor="Matthew Holman, John Kavelaars, T. Grav, W. Fraser, D. Milisavljevic"/>
+    <satelite id="p8.10" nome="Sao" diametrokm="44" raioMedOrbitakm="22228000"
+        anoDescobrimento="2002"
+        descobertoPor="Matthew Holman, John Kavelaars, T. Grav, W. Fraser, D. Milisavljevic"/>
+    <satelite id="p8.11" nome="Laomedeia" diametrokm="42" raioMedOrbitakm="23567000"
+        anoDescobrimento="2002"
+        descobertoPor="Matthew Holman, John Kavelaars, T. Grav, W. Fraser, D. Milisavljevic"/>
+    <satelite id="p8.12" nome="Psamathe" diametrokm="40" raioMedOrbitakm="48096000"
+        anoDescobrimento="2003" descobertoPor="Scott Sheppard, David Jewitt, Jan Kleyna"/>
+    <satelite id="p8.13" nome="Neso" diametrokm="60" raioMedOrbitakm="49285000"
+        anoDescobrimento="2002"
+        descobertoPor="Matthew Holman, John Kavelaars, T. Grav, W. Fraser, D. Milisavljevic"/>
+</planeta>

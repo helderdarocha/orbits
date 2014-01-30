@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planeta id="p7" nome="Urano" diametrokm="51118" anoDescobrimento="1781" raioMedUA="19.2"
+    perielioUA="18.3" afelioUA="20.1" periodoOrbitalD="30799" periodoRotacaoSideralH="17.24"
+    excentricidade="0.044405586" inclinacao="0.7726" categoria="gasoso"
+    longitudeNoAscendente="73.9898" argumentoPerielio="96.541" anomaliaMedia="142.96"
+    massaGM="5793498.6" gravidadeEquatorial="8.69" densidade="1.27" volume="6.833e13"
+    inclinacaoAxial="97.77" massaKg="8.682e25" descobertoPor="William Herschel">
+    <imagem href="uranus.jpg"/>
+    <satelite id="p7.1" nome="Cordelia" diametrokm="40" raioMedOrbitakm="49751"
+        anoDescobrimento="1986" descobertoPor="Voyager 2"/>
+    <satelite id="p7.2" nome="Ofélia" diametrokm="43" raioMedOrbitakm="53764"
+        anoDescobrimento="1986" descobertoPor="Voyager 2"/>
+    <satelite id="p7.3" nome="Bianca" diametrokm="51" raioMedOrbitakm="59165"
+        anoDescobrimento="1986" descobertoPor="Voyager 2"/>
+    <satelite id="p7.4" nome="Créssida" diametrokm="80" raioMedOrbitakm="61766"
+        anoDescobrimento="1986" descobertoPor="Voyager 2"/>
+    <satelite id="p7.5" nome="Desdêmona" diametrokm="64" raioMedOrbitakm="62658"
+        anoDescobrimento="1986" descobertoPor="Voyager 2"/>
+    <satelite id="p7.6" nome="Julieta" diametrokm="94" raioMedOrbitakm="64360"
+        anoDescobrimento="1986" descobertoPor="Voyager 2"/>
+    <satelite id="p7.7" nome="Pórcia" diametrokm="135" raioMedOrbitakm="66097"
+        anoDescobrimento="1986" descobertoPor="Voyager 2"/>
+    <satelite id="p7.8" nome="Rosalinda" diametrokm="72" raioMedOrbitakm="69927"
+        anoDescobrimento="1986" descobertoPor="Voyager 2"/>
+    <satelite id="p7.22" nome="Cupido" diametrokm="18" raioMedOrbitakm="74800"
+        anoDescobrimento="2003" descobertoPor="Mark Showalter, Jack Lissauer"/>
+    <satelite id="p7.9" nome="Belinda" diametrokm="90" raioMedOrbitakm="75255"
+        anoDescobrimento="1986" descobertoPor="Voyager 2"/>
+    <satelite id="p7.10" nome="Perdita" diametrokm="30" raioMedOrbitakm="76420"
+        anoDescobrimento="1999" descobertoPor="Voyager 2"/>
+    <satelite id="p7.11" nome="Puck" diametrokm="162" raioMedOrbitakm="86004"
+        anoDescobrimento="1986" descobertoPor="Voyager 2"/>
+    <satelite id="p7.23" nome="Mab" diametrokm="25" raioMedOrbitakm="97734" anoDescobrimento="2003"
+        descobertoPor="Mark Showalter, Jack Lissauer"/>
+    <satelite id="p7.12" nome="Miranda" diametrokm="472" raioMedOrbitakm="129390" massaKg="6.59e19"
+        categoria="redondo" gravidadeEquatorial="0.08" densidade="1.2" massaGM="4.398"
+        periodoOrbitalD="1.414" volume="5.5e7" anoDescobrimento="1948" descobertoPor="Gerard Kuiper">
+        <imagem href="miranda.jpg"/>
+    </satelite>
+    <satelite id="p7.13" nome="Ariel" diametrokm="1158" raioMedOrbitakm="191020" massaKg="1.35e21"
+        categoria="redondo" gravidadeEquatorial="0.27" densidade="1.67" massaGM="90.086"
+        periodoOrbitalD="2.52" volume="8.1e8" anoDescobrimento="1851"
+        descobertoPor="William Lassell">
+        <imagem href="ariel.jpg"/>
+    </satelite>
+    <satelite id="p7.14" nome="Umbriel" diametrokm="1169" raioMedOrbitakm="266300" massaKg="1.2e21"
+        categoria="redondo" gravidadeEquatorial="0.23" densidade="1.4" massaGM="80.076"
+        periodoOrbitalD="4.14" volume="8.4e8" anoDescobrimento="1851"
+        descobertoPor="William Lassell">
+        <imagem href="umbriel.jpg"/>
+    </satelite>
+    <satelite id="p7.15" nome="Titânia" diametrokm="1577" raioMedOrbitakm="435910"
+        categoria="redondo" gravidadeEquatorial="0.39" densidade="1.72" massaGM="3.5e21"
+        periodoOrbitalD="8.71" volume="2.06e9" massaKg="3.52e21" anoDescobrimento="1787"
+        descobertoPor="William Herschel">
+        <imagem href="titania.jpg"/>
+    </satelite>
+    <satelite id="p7.16" nome="Oberon" diametrokm="1523" raioMedOrbitakm="583520"
+        categoria="redondo" gravidadeEquatorial="0.35" densidade="1.63" massaGM="200.857"
+        periodoOrbitalD="13.46" volume="1.85e9" massaKg="3.01e21" anoDescobrimento="1787"
+        descobertoPor="William Herschel">
+        <imagem href="oberon.jpg"/>
+    </satelite>
+    <satelite id="p7.24" nome="Francisco" diametrokm="22" raioMedOrbitakm="4276000"
+        anoDescobrimento="2003" descobertoPor="Matthew Holman et al"/>
+    <satelite id="p7.17" nome="Calibã" diametrokm="72" raioMedOrbitakm="7231000"
+        anoDescobrimento="1997" descobertoPor="Brett Gladman et al"/>
+    <satelite id="p7.18" nome="Estéfano" diametrokm="32" raioMedOrbitakm="8004000"
+        anoDescobrimento="1999" descobertoPor="Brett Gladman et al"/>
+    <satelite id="p7.25" nome="Trínculo" diametrokm="18" raioMedOrbitakm="8504000"
+        anoDescobrimento="2001" descobertoPor="Matthew Holman et al"/>
+    <satelite id="p7.19" nome="Sicorax" diametrokm="150" raioMedOrbitakm="12179000"
+        anoDescobrimento="1997" descobertoPor="Seth Barnes Nicholson et al"/>
+    <satelite id="p7.26" nome="Margarete" diametrokm="20" raioMedOrbitakm="14345000"
+        anoDescobrimento="2003" descobertoPor="Scott Sheppard, David Jewitt"/>
+    <satelite id="p7.20" nome="Próspero" diametrokm="50" raioMedOrbitakm="16256000"
+        anoDescobrimento="1999" descobertoPor="Matthew Holman et al"/>
+    <satelite id="p7.21" nome="Setebos" diametrokm="48" raioMedOrbitakm="17418000"
+        anoDescobrimento="1999" descobertoPor="John Kavelaars et al"/>
+    <satelite id="p7.27" nome="Ferdinando" diametrokm="20" raioMedOrbitakm="20901000"
+        anoDescobrimento="2003" descobertoPor="Matthew Holman et al"/>
+</planeta>

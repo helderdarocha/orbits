@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!DOCTYPE sistemaSolar SYSTEM "sol_2010.2.2.dtd" [
+    <!ENTITY asteroides         SYSTEM "asteroides.xml">
+    <!ENTITY centauros          SYSTEM "centauros.xml">
+    <!ENTITY trans-netunianos   SYSTEM "trans-netunianos.xml">
+    <!ENTITY cometas            SYSTEM "cometas.xml">
+    
+    <!ENTITY jupiter            SYSTEM "jupiter.xml">
+    <!ENTITY saturno            SYSTEM "saturno.xml">
+    <!ENTITY urano              SYSTEM "urano.xml">
+    <!ENTITY netuno             SYSTEM "netuno.xml"> 
+]>
+
+<!-- 5024 objetos (29/12/2010) 
+     1    estrela
+     8    planetas
+     5    planetas-anao
+     238  satelites naturais (luas)
+     2560 asteroides
+     261  centauros
+     645  cometas
+     1306 objetos trans-netunianos
+-->
+<sistemaSolar versao="2.2" dataAtualizacao="2010-12-29">
+    
+    <estrela nome="Sol" diametrokm="1390000" cor="amarela" massaKg="1.98892e30"
+        massaGM="132712439935.4841" gravidadeEquatorial="274" densidade="1.409">
+        <imagem href="sun.jpg"/>
+    </estrela>
+    
+    <planetas>
+        <!-- Planetas rochosos -->
+        <planeta id="p1" nome="Mercúrio" diametrokm="4879" raioMedUA="0.387" perielioUA="0.3075"
+            afelioUA="0.4667" periodoOrbitalD="87.97" periodoRotacaoSideralH="1407.5"
+            inclinacaoAxial="0.01" massaKg="3.301e23" categoria="rochoso"
+            excentricidade="0.20563069" inclinacao="7.0" longitudeNoAscendente="48.331"
+            argumentoPerielio="29.124" anomaliaMedia="174.8" massaGM="22027.573"
+            gravidadeEquatorial="3.7" densidade="5.43" volume="6.083e10">
+            <imagem href="mercury.jpg"/>
+        </planeta>
+        <planeta id="p2" nome="Venus" diametrokm="12104" raioMedUA="0.723" perielioUA="0.718"
+            afelioUA="0.728" periodoOrbitalD="224.7" periodoRotacaoSideralH="-243"
+            inclinacaoAxial="177.3" massaKg="4.867e24" categoria="rochoso"
+            excentricidade="0.00677323" inclinacao="3.39" longitudeNoAscendente="76.67"
+            argumentoPerielio="54.85" anomaliaMedia="50.45" massaGM="324774.91"
+            gravidadeEquatorial="8.87" densidade="5.515" volume="9.38e11">
+            <imagem href="venus.jpg"/>
+        </planeta>
+        <planeta id="p3" nome="Terra" diametrokm="12756" raioMedUA="1" perielioUA="0.9833"
+            afelioUA="1.0167" periodoOrbitalD="365.25636" periodoRotacaoSideralH="23.93447"
+            inclinacaoAxial="23.4394" massaKg="5.972e24" categoria="rochoso"
+            excentricidade="0.01671022" inclinacao="0" longitudeNoAscendente="0"
+            argumentoPerielio="114.2" anomaliaMedia="0" massaGM="398511.56"
+            gravidadeEquatorial="9.780327" densidade="5.515" volume="1.08321e12">
+            <imagem href="earth.jpg"/>
+            <satelite id="p3.1" nome="Lua" diametrokm="3475" raioMedOrbitakm="384400"
+                massaKg="7.346e22" categoria="redondo" gravidadeEquatorial="1.622"
+                densidade="3.3464" massaGM="4901.986" periodoOrbitalD="27.32158" volume="2.2e10">
+                <imagem href="moon.jpg"/>
+            </satelite>
+        </planeta>
+        <planeta id="p4" nome="Marte" diametrokm="6794" raioMedUA="1.52" perielioUA="1.381"
+            afelioUA="1.666" periodoOrbitalD="686.97" periodoRotacaoSideralH="24.623"
+            inclinacaoAxial="25.19" massaKg="6.417e23" categoria="rochoso"
+            excentricidade="0.09341233" inclinacao="1.85" longitudeNoAscendente="49.562"
+            argumentoPerielio="286.537" anomaliaMedia="19.3564" massaGM="42820.641"
+            gravidadeEquatorial="3.71" densidade="3.940" volume="1.6318e11">
+            <imagem href="mars.jpg"/>
+            <satelite id="p4.1" nome="Phobos" diametrokm="11.2" raioMedOrbitakm="9380"
+                anoDescobrimento="1877" descobertoPor="Asaph Hall"/>
+            <satelite id="p4.2" nome="Deimos" diametrokm="6.4" raioMedOrbitakm="23460"
+                anoDescobrimento="1877" descobertoPor="Asaph Hall"/>
+        </planeta>
+        
+        <!-- Planetas gasosos --> 
+        &jupiter; 
+        &saturno; 
+        &urano; 
+        &netuno; 
+        
+        <!-- Planetas anao -->
+        <planeta-anao id="a1" nome="Ceres" diametrokm="952.4" perielioUA="2.547" afelioUA="2.996"
+            periodoOrbitalD="1680" inclinacaoAxial="4" massaKg="9.3e20" anoDescobrimento="1801"
+            raioMedUA="2.765" excentricidade="0.0791" inclinacao="10.59" categoria="planeta-anão"
+            longitudeNoAscendente="80.39" argumentoPerielio="72.59" anomaliaMedia="113.41"
+            massaGM="62.059" gravidadeEquatorial="0.27" densidade="2.08" volume="4.37e8"
+            descobertoPor="Guiseppe Piazzi">
+            <imagem href="ceres.jpg"/>
+        </planeta-anao>
+        <planeta-anao id="a134340" nome="Plutão" numero="134340" anoDescobrimento="1930"
+            categoria="plutino" raioMedUA="39.481" excentricidade="0.249" perielioUA="29.658"
+            afelioUA="49.305" inclinacao="17.1" diametrokm="2306" periodoOrbitalD="90613"
+            longitudeNoAscendente="110.3" argumentoPerielio="113.763" gravidadeEquatorial="0.6"
+            densidade="2.0" volume="6.33e9" anomaliaMedia="14.86" massaKg="1.31e22"
+            massaGM="874.163" descobertoPor="Clyde W. Tombaugh">
+            <satelite id="s134340.1" nome="Caronte" diametrokm="1212" raioMedOrbitakm="17530"
+                massaKg="1.52e21" categoria="redondo" gravidadeEquatorial="0.28" volume="9.2e8"
+                densidade="1.65" massaGM="101.43" periodoOrbitalD="6.387" anoDescobrimento="1978"
+                descobertoPor="James W. Christy"/>
+            <satelite id="s134340.2" nome="Nix" diametrokm="88" raioMedOrbitakm="48708"
+                anoDescobrimento="2005" descobertoPor="HST Pluto Companion Search Team"/>
+            <satelite id="s134340.3" nome="Hidra" diametrokm="72" raioMedOrbitakm="64749"
+                anoDescobrimento="2005" descobertoPor="HST Pluto Companion Search Team"/>
+        </planeta-anao>
+        <planeta-anao id="a2003.ub313" nome="Éris" diametrokm="2320" perielioUA="37.77"
+            numero="136199" afelioUA="97.558" periodoOrbitalD="203600" massaKg="1.67e22"
+            anoDescobrimento="2003" categoria="SDO" raioMedUA="67.67" excentricidade="0.44177"
+            longitudeNoAscendente="35.87" argumentoPerielio="151.43" anomaliaMedia="197.634"
+            massaGM="1114.391" gravidadeEquatorial="0.8" densidade="2.25" volume="7.23e9"
+            inclinacao="44.1" descobertoPor="Michael Brown, Chadwick Trujillo, David Rabinowitz">
+            <satelite id="s136199.1" nome="Disnomia" diametrokm="174" raioMedOrbitakm="37350"
+                anoDescobrimento="2005" descobertoPor="Michael Brown"/>
+        </planeta-anao>
+        <planeta-anao id="a2003.el61" nome="Haumea" numero="136108" diametrokm="1150"
+            raioMedUA="43.000" excentricidade="0.198" perielioUA="34.484" afelioUA="51.516"
+            periodoOrbitalD="103468" massaKg="4e21" anoDescobrimento="2003" categoria="TNO"
+            longitudeNoAscendente="121.10" argumentoPerielio="239.18" anomaliaMedia="202.67"
+            massaGM="266.92" gravidadeEquatorial="0.44" densidade="2.9" volume="1.45e9"
+            inclinacao="28.2" descobertoPor="Michael Brown">
+            <satelite id="s136108.1" nome="Namaka" diametrokm="170" raioMedOrbitakm="25657"
+                anoDescobrimento="2005" descobertoPor="Michael Brown"/>
+            <satelite id="s136108.2" nome="Hi'iaka" diametrokm="310" raioMedOrbitakm="49880"
+                anoDescobrimento="2005" descobertoPor="Michael Brown"/>
+        </planeta-anao>
+        <planeta-anao id="a2005.fy9" nome="Makemake" numero="136472" diametrokm="1460"
+            perielioUA="37.918" categoria="cubewano" raioMedUA="45.346" excentricidade="0.164"
+            inclinacao="29.0" afelioUA="52.775" periodoOrbitalD="113183" massaKg="4e21"
+            volume="1.8e9" densidade="2.0" anoDescobrimento="2005" longitudeNoAscendente="79.382"
+            argumentoPerielio="298.41" gravidadeEquatorial="0.5" anomaliaMedia="85.13"
+            massaGM="266.91" descobertoPor="Michael Brown, Chadwick Trujillo, David Rabinowitz"/>
+    </planetas>
+
+    &asteroides;
+    
+    &trans-netunianos; 
+    
+    &centauros; 
+    
+    &cometas; 
+    
+</sistemaSolar>

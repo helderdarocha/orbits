@@ -1,0 +1,172 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT sistemaSolar (estrela,planetas,asteroides,trans-netunianos,centauros,cometas)>
+<!ATTLIST sistemaSolar
+  dataAtualizacao NMTOKEN #REQUIRED
+  versao CDATA #REQUIRED>
+  
+<!ELEMENT imagem EMPTY>
+<!ATTLIST imagem
+          href NMTOKEN #REQUIRED>
+
+<!ELEMENT estrela (imagem*)>
+<!ATTLIST estrela
+  cor NMTOKEN #REQUIRED
+  densidade CDATA #REQUIRED
+  diametrokm CDATA #REQUIRED
+  gravidadeEquatorial CDATA #REQUIRED
+  massaGM CDATA #REQUIRED
+  massaKg CDATA #REQUIRED
+  nome NMTOKEN #REQUIRED>
+
+<!ELEMENT satelite (imagem*)>
+<!ATTLIST satelite
+  anoDescobrimento CDATA #IMPLIED
+  categoria NMTOKEN #IMPLIED
+  densidade CDATA #IMPLIED
+  descobertoPor CDATA #IMPLIED
+  diametrokm CDATA #REQUIRED
+  gravidadeEquatorial CDATA #IMPLIED
+  id ID #REQUIRED
+  massaGM CDATA #IMPLIED
+  massaKg CDATA #IMPLIED
+  nome CDATA #REQUIRED
+  periodoOrbitalD CDATA #IMPLIED
+  raioMedOrbitakm CDATA #IMPLIED
+  volume CDATA #IMPLIED>
+  
+<!ELEMENT planetas (planeta+,planeta-anao+)>
+<!ATTLIST planetas>
+
+<!ELEMENT planeta-anao (imagem*,satelite*)>
+<!ATTLIST planeta-anao
+  afelioUA CDATA #REQUIRED
+  anoDescobrimento CDATA #IMPLIED
+  anomaliaMedia CDATA #REQUIRED
+  argumentoPerielio CDATA #REQUIRED
+  categoria NMTOKEN #REQUIRED
+  densidade CDATA #REQUIRED
+  descobertoPor CDATA #IMPLIED
+  diametrokm CDATA #REQUIRED
+  excentricidade CDATA #REQUIRED
+  gravidadeEquatorial CDATA #REQUIRED
+  id ID #REQUIRED
+  inclinacao CDATA #REQUIRED
+  inclinacaoAxial CDATA #IMPLIED
+  longitudeNoAscendente CDATA #REQUIRED
+  massaGM CDATA #REQUIRED
+  massaKg CDATA #REQUIRED
+  nome NMTOKEN #REQUIRED
+  numero CDATA #IMPLIED
+  perielioUA CDATA #REQUIRED
+  periodoOrbitalD CDATA #REQUIRED
+  raioMedUA CDATA #REQUIRED
+  volume CDATA #REQUIRED>
+
+<!ELEMENT planeta (imagem*,satelite*)>
+<!ATTLIST planeta
+  afelioUA CDATA #REQUIRED
+  anoDescobrimento CDATA #IMPLIED
+  anomaliaMedia CDATA #REQUIRED
+  argumentoPerielio CDATA #REQUIRED
+  categoria NMTOKEN #REQUIRED
+  densidade CDATA #REQUIRED
+  descobertoPor CDATA #IMPLIED
+  diametrokm CDATA #REQUIRED
+  excentricidade CDATA #REQUIRED
+  gravidadeEquatorial CDATA #REQUIRED
+  id ID #REQUIRED
+  inclinacao CDATA #REQUIRED
+  inclinacaoAxial CDATA #REQUIRED
+  longitudeNoAscendente CDATA #REQUIRED
+  massaGM CDATA #REQUIRED
+  massaKg CDATA #REQUIRED
+  nome NMTOKEN #REQUIRED
+  perielioUA CDATA #REQUIRED
+  periodoOrbitalD CDATA #REQUIRED
+  periodoRotacaoSideralH CDATA #REQUIRED
+  raioMedUA CDATA #REQUIRED
+  volume CDATA #REQUIRED>
+  
+<!ELEMENT trans-netunianos (objeto)+>
+<!ATTLIST trans-netunianos
+  dataAtualizacao NMTOKEN #REQUIRED
+  versao CDATA #REQUIRED>
+
+<!ELEMENT centauros (objeto)+>
+<!ATTLIST centauros
+  dataAtualizacao NMTOKEN #REQUIRED
+  versao CDATA #REQUIRED>
+
+<!ELEMENT asteroides (asteroide)+>
+<!ATTLIST asteroides
+  dataAtualizacao NMTOKEN #REQUIRED
+  versao CDATA #REQUIRED>
+  
+<!ELEMENT objeto (imagem*,satelite*)>
+<!ATTLIST objeto
+  afelioUA CDATA #REQUIRED
+  anoDescobrimento CDATA #IMPLIED
+  anomaliaMedia CDATA #REQUIRED
+  argumentoPerielio CDATA #REQUIRED
+  categoria CDATA #REQUIRED
+  descobertoPor CDATA #IMPLIED
+  designacao CDATA #IMPLIED
+  diametrokm CDATA #IMPLIED
+  excentricidade CDATA #REQUIRED
+  id ID #REQUIRED
+  inclinacao CDATA #REQUIRED
+  longitudeNoAscendente CDATA #REQUIRED
+  massaGM CDATA #IMPLIED
+  massaKg CDATA #IMPLIED
+  nome CDATA #REQUIRED
+  numero CDATA #IMPLIED
+  perielioUA CDATA #REQUIRED
+  periodoOrbitalD CDATA #REQUIRED
+  raioMedUA CDATA #REQUIRED>
+
+<!ELEMENT asteroide (imagem*,satelite*)>
+<!ATTLIST asteroide
+  afelioUA CDATA #REQUIRED
+  anoDescobrimento NMTOKEN #IMPLIED
+  anomaliaMedia CDATA #REQUIRED
+  argumentoPerielio CDATA #REQUIRED
+  categoria NMTOKEN #REQUIRED
+  descobertoPor CDATA #IMPLIED
+  designacao CDATA #IMPLIED
+  diametrokm CDATA #IMPLIED
+  excentricidade CDATA #REQUIRED
+  id ID #REQUIRED
+  inclinacao CDATA #REQUIRED
+  longitudeNoAscendente CDATA #REQUIRED
+  massaGM CDATA #IMPLIED
+  massaKg CDATA #IMPLIED
+  nome CDATA #REQUIRED
+  numero CDATA #IMPLIED
+  perielioUA CDATA #REQUIRED
+  periodoOrbitalD CDATA #REQUIRED
+  raioMedUA CDATA #REQUIRED>
+  
+<!ELEMENT cometas (cometa)+>
+<!ATTLIST cometas
+  dataAtualizacao NMTOKEN #REQUIRED
+  versao CDATA #REQUIRED>
+
+<!ELEMENT cometa (imagem*)>
+<!ATTLIST cometa
+  afelioUA CDATA #REQUIRED
+  anoDescobrimento CDATA #IMPLIED
+  anomaliaMedia CDATA #REQUIRED
+  argumentoPerielio CDATA #REQUIRED
+  categoria NMTOKEN #IMPLIED
+  descobertoPor CDATA #IMPLIED
+  diametrokm CDATA #REQUIRED
+  excentricidade CDATA #REQUIRED
+  id ID #REQUIRED
+  inclinacao CDATA #REQUIRED
+  longitudeNoAscendente CDATA #REQUIRED
+  nome CDATA #REQUIRED
+  numero NMTOKEN #IMPLIED
+  perielioUA CDATA #REQUIRED
+  periodoOrbitalD CDATA #REQUIRED
+  raioMedUA CDATA #REQUIRED>

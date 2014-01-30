@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Objetos do Sistema Solar</title>
-<script type="text/javascript" src="/js/jscolor/jscolor.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>AplicaÁıes de astronomia</title>
 <style>
    tr {text-align: center}
    .body {width: 800px}
@@ -11,110 +10,88 @@
    h1, h2, h3 {color: navy}
    h1 {font-size: 16pt}
    h2,h3 {font-size: 13pt}
-   p, td, th, li {font-size: 10pt}
-   input[type='number'] {font-size: 10pt; font-family: monospace; color: rgb(128,30,30); font-weight: bold}
+   p, td, li {font-size: 11pt}
+   input {font-size: 13pt; font-family: monospace}
 </style>
 </head>
 <body><div class="body">
-<h1>Objetos sistema solar</h1>
+<h1>AplicaÁıes de astronomia</h1>
 
-<p>Este programa pesquisa em uma base de dados XML de objetos do sistema solar
-contendo 5024  objetos obtidos da base do <a href="http://www.jpl.nasa.gov" target="jpl">Jet Propulsion Laboratory 
-da NASA</a>. Os dados foram atualizados em dezembro de 2010.</p>
+<p>Todos os arquivos est„o disponibilizados aqui temporariamente, portanto os links dever„o mudar (ser„o movidos para um repositÛrio versionado em breve).
 
-<p>Use o formul√°rio abaixo para alterar a apar√™ncia dos resultados e
- filtrar os resultados por tipo de objeto, di√¢metro
-e √≥rbita m√°xima e m√≠nima, e mostrar menos objetos.
-
-<p><b>Limita√ß√µes</b>: 
+<h2>AplicaÁıes online usando dados do JPL/NASA</h2>
 <ul>
-<li>Esta √© uma aplica√ß√£o experimental. N√£o h√° valida√ß√£o nos campos abaixo.</li>
-<li>A reordena√ß√£o dos dados da tabela s√≥ √© poss√≠vel quando as luas n√£o s√£o exibidas.</li>
+<li><a href="orbitas">Gerador de orbitas (aplicaÁ„o Java, SVG e XSLT)</a></li>
+<li><a href="tabelas">Gerador de tabelas com objetos do sistema solar (aplicaÁ„o Java e XSLT)</a></li>
 </ul>
-</p>
 
-<form action="/Orbits/servlet/sistemasolar.html" method="post">
-     <h3>1. Filtro de objetos e apar√™ncia</h3>
-     <table border="1" width="100%">
-     	<tr><th>Objetos</th><th>Mostrar</th><th>Cor de fundo</th><th>Cor do texto</th></tr>
-     	<tr><td>Planetas</td><td><input type="checkbox" name="planeta" checked value="1" /></td>
-     	    <td><input type="text" name="corPlaneta" value="dddd60" size="6" class="color"/></td>
-     	    <td><input type="text" name="corTextoPlaneta" value="000000" size="6" class="color"/></td></tr>
-     	<tr><td>Planetas-an√£o</td><td><input type="checkbox" name="planetaAnao" checked value="1" /></td>
-     	    <td><input type="text" name="corPlanetaAnao" value="ddff99" size="6" class="color"/></td>
-     	    <td><input type="text" name="corTextoPlanetaAnao" value="000000" size="6" class="color"/></td>
-     	    </tr>
-     	<tr><td>Aster√≥ides</td><td><input type="checkbox" name="asteroide" value="1" checked /></td>
-     	    <td><input type="text" name="corAsteroide" value="ccffcc" size="6" class="color"/></td>
-     	    <td><input type="text" name="corTextoAsteroide" value="000000" size="6" class="color"/></td>
-     	    </tr>
-     	<tr><td>Objetos Trans-Netunianos</td><td><input type="checkbox" name="tno" checked value="1" /></td>
-     	    <td><input type="text" name="corObjeto" value="70ffff" size="6" class="color"/></td>
-     	    <td><input type="text" name="corTextoObjeto" value="000000" size="6" class="color"/></td>
-     	    </tr>
-     	<tr><td>Cometas</td><td><input type="checkbox" name="cometa" value="1" /></td>
-     	    <td><input type="text" name="corCometa" value="ffdd99" size="6" class="color"/></td>
-     	    <td><input type="text" name="corTextoCometa" value="000000" size="6" class="color"/></td>
-     	    </tr>
-     	<tr><td>Centauros</td><td><input type="checkbox" name="centauro" value="1" checked /></td>
-     	    <td><input type="text" name="corCentauro" value="ccccff" size="6" class="color"/></td>
-     	    <td><input type="text" name="corTextoCentauro" value="000000" size="6" class="color"/></td>
-     	    </tr>
-     	<tr><td>Sol</td><td><input type="checkbox" name="estrela" value="1" checked /></td>
-     	    <td><input type="text" name="corEstrela" value="ffff00" size="6" class="color"/></td>
-     	    <td><input type="text" name="corTextoEstrela" value="000000" size="6" class="color"/></td>
-     	    </tr>
-     	<tr><td>Luas</td><td><input type="checkbox" name="satelite" value="1"  checked /></td>
-     	    <td></td>
-     	    <td></td>
-     	    </tr>
-     </table>
-     
-     <h3>2. Filtro de dimens√µes e √≥rbita</h3>
-     <p>Di√¢metro m√≠nimo dos objetos mostrados (exceto cometas): <input type="number" name="minDiametro" value="500" size="10" min="0"/> km. Di√¢metro m√°ximo <input type="number" name="maxDiametro" value="1390000.00" size="10" min="0"/> km
-     <br>√ìrbita m√≠nima (af√©lio) <input type="number" name="minOrbita" value="0" size="6" min="0"/> UA.  √ìrbita m√°xima (af√©lio) <input type="number" name="maxOrbita" value="100" size="6" min="0" /> UA</p>
+<h2>Base de dados: documentos XML</h2>
+<p>Baixe o arquivo e abra em um editor de textos ou editor XML</p>
+<ul>
+<li>Documento principal: sol, planetas rochosos e planetas-an„o (<a href="data/sol_2010.2.2.xml">sol_2010.2.2.xml</a>)</li>
+<li>DTD (<a href="data/sol_2010.2.2.dtd">sol_2010.2.2.dtd</a>)</li>
+<li>J˙piter (<a href="data/jupiter.xml">jupiter.xml</a>)</li>
+<li>Saturno (<a href="data/saturno.xml">saturno.xml</a>)</li>
+<li>Urano (<a href="data/urano.xml">urano.xml</a>)</li>
+<li>Netuno (<a href="data/netuno.xml">netuno.xml</a>)</li>
+<li>AsterÛides (<a href="data/asteroides.xml">asteroides.xml</a>)</li>
+<li>Cometas (<a href="data/cometas.xml">cometas.xml</a>)</li>
+<li>Centauros (<a href="data/centauros.xml">centauros.xml</a>)</li>
+<li>Objetos Trans-netunianos (<a href="data/trans-netunianos.xml">trans-netunianos.xml</a>)</li>
+</ul>
 
-     <h3>3. Par√¢metros de apresenta√ß√£o</h3>
-     <p>T√≠tulo a exibir para o gr√°fico <input type="text" name="titulo" value="Objetos do Sistema Solar" size="60"/>
-     <br/>Tamanho da fonte (pt) <input type="number" name="tamFonte" value="8" size="4" min="1" step="1"/> Cor de fundo <input type="text" class="color" name="corDeFundo" value="ffffff" size="6"/> Cor do texto <input type="text" class="color" name="corDoTexto" value="000000" size="6"/>
-     <br/><input type="checkbox" name="exibirImagens" value="1" checked />Mostrar imagens
-          <input type="checkbox" name="mostrarLegenda" value="1" checked /> Mostrar legenda
-          
-     <h3>4. Colunas a mostrar</h3>
-     <p><input type="checkbox" name="categoria" value="1" checked /> categoria   
-     <br/><input type="checkbox" name="diametrokm" value="1" checked /> di√¢metro (km)   
-     <br/><input type="checkbox" name="massaGM" value="1" checked /> massa (GM)   
-     <br/><input type="checkbox" name="massaKg" value="1" /> massa (kg)   
-     <br/><input type="checkbox" name="volume" value="1" /> volume   
-     <br/><input type="checkbox" name="densidade" value="1" /> densidade   
-     <br/><input type="checkbox" name="gravidadeEquatorial" value="1" checked /> gravidade   
-     <br/><input type="checkbox" name="periodoRotacaoSideralH" value="1" checked /> tempo de rota√ß√£o   
-     <br/><input type="checkbox" name="afelioUA" value="1" checked /> af√©lio da √≥rbita   
-     <br/><input type="checkbox" name="perielioUA" value="1" checked /> peri√©lio da √≥rbita  
-     <br/><input type="checkbox" name="periodoOrbitalD" value="1" checked /> per√≠odo da √≥rbita   
-     <br/><input type="checkbox" name="excentricidade" value="1" /> excentricidade da √≥rbita   
-     <br/><input type="checkbox" name="inclinacao" value="1" /> inclina√ß√£o da √≥rbita   
-     <br/><input type="checkbox" name="longitudeNoAscendente" value="1" /> longitude do n√≥ ascendente   
-     <br/><input type="checkbox" name="argumentoPerielio" value="1" /> argumento do peri√©lio   
-     <br/><input type="checkbox" name="anomaliaMedia" value="1" /> anomalia m√©dia   
-     <br/><input type="checkbox" name="designacao" value="1" /> designa√ß√£o   
-     <br/><input type="checkbox" name="numero" value="1" /> n√∫mero   
-     <br/><input type="checkbox" name="inclinacaoAxial" value="1" checked /> inclina√ß√£o do eixo   
-     <br/><input type="checkbox" name="anoDescobrimento" value="1" checked /> ano do descobrimento   
-     <br/><input type="checkbox" name="descobertoPor" value="1" checked /> descoberto por</p>  
-     
-     <input type="hidden" name="raioMedUA" value="1" />
-     <input type="hidden" name="raioMedOrbitakm" value="1" />
-     <input type="hidden" name="nome" value="1" />
- 
-	 <p><input type="submit" value="Gerar Tabela" /></p>
+<h2>Como os dados foram extraÌdos</h2>
+<p>Os dados do Sol e oito planetas principais foram inseridos manualmente.</p>
+<p>Os dados dos satÈlites, asterÛides, objetos trans-netunianos, centauros e cometas foram extraÌdos da base do <a href="http://ssd.jpl.nasa.gov/sbdb_query.cgi">Jet Propulsion Laboratory (JPL) da NASA</a> atravÈs das ferramentas <a href="http://hc.apache.org/httpclient-3.x/">Commons HTTPClient</a> e <a href="http://jtidy.sourceforge.net/">JTidy</a> usadas para converter os resultados das pesquisas (tabelas HTML) em XML, extraÌndo os dados selecionados e convertendo-os nos formatos e unidades usadas na aplicaÁ„o (atravÈs de Java e v·rias folhas de estilo XSLT). A ˙ltima atualizaÁ„o foi em dezembro de 2010.</p>
+<p>Os programas usados ser„o disponibilizados aqui em breve.</p>
 
-     </form>
-     
-     <p><a name="sobre"></a><b>* Sobre a aplica√ß√£o</b>: Esta aplica√ß√£o foi constru√≠da a partir de exemplos e exerc√≠cios propostos nos <a href="http://www.argonavis.com.br/cursos/xml">cursos
-de XML, XSL e SVG</a> da <a href="http://www.argonavis.com.br">Argo Navis</a>, cujas apostilas est√£o dispon√≠veis para download. Os programas em Java,
-documentos XSL e XML usados para gerar os dados, e uma descri√ß√£o de como os dados foram
-extra√≠dos dinamicamente dos <a href="http://ssd.jpl.nasa.gov/sbdb_query.cgi" target="jpl">bancos de dados do JPL</a> para gerar a <a href="../data/sol_2010.2.2.xml">base XML</a> est√£o detalhados
-<a href="../index.html">neste documento</a>.</p>
-</div></body>
+<h2>Como os gr·ficos e tabelas foram gerados</h2>
+<p>Os gr·ficos SVG de Ûrbitas s„o gerados atravÈs de folha de estilos XSLT, que È processada pelo <a href="http://saxon.sourceforge.net/">Saxon 9.0</a> embutido em um servlet Java. Todos os arquivos utilizados na transformaÁ„o est„o listados abaixo (TODO: svn links):
+<ul>
+  <li>Folha de estilos XSLT 1.0 para gerar animaÁ„o com Ûrbitas (vers„o 0.2): sol_orbitas_svg_2.xsl</li>
+  <li>DependÍncias: valores_de_referencia.xsl, parametros_sol_orbitas.xsl, defaults.xsl, geometria.xsl, matematica.xsl</li>
+  <li>Folha de estilos XSLT para gerar tabelas (vers„o 0.1): sol_tabelas_html.xsl</li>
+  <li>DependÍncias: parametros_sol_tabelas.xsl</li>
+  <li>AplicaÁ„o Web Orbitas: web.xml, TransformacaoServlet.java, TransformacaoSVG.java</li>
+  <li>AplicaÁ„o Web Tabelas: web.xml, TransformacaoHTML.java</li>
+</ul>
+<p>A folha de estilos usa XSLT 1.0 e XPath 1.0 sem extensıes (e n„o versıes mais novas) porque È usada em um treinamento que aborda essas versıes separadamente (por motivos pr·ticos e suporte).</p>
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'argonavis'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+ <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'argonavis'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+  <script>
+    var _gaq=[['_setAccount','UA-21073777-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+</body>
 </html>

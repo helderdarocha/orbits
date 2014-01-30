@@ -15,56 +15,50 @@
     <servlet-name>OrbitXSLTransformer</servlet-name>
     <servlet-class>br.com.argonavis.astronomy.orbits.OrbitXSLTransformer</servlet-class>
     <init-param>
-      <param-name>stylesheetFile</param-name>
-      <param-value>sol_orbitas_svg_2.xsl</param-value>
+    	<param-name>stylesheetFile</param-name>
+    	<param-value>sol_orbitas_svg_2.xsl</param-value>
     </init-param>
     <init-param>
-      <param-name>sourceXMLFile</param-name>
-      <param-value>sol_2010.2.2.xml</param-value>
+    	<param-name>sourceXMLFile</param-name>
+    	<param-value>sol_2010.2.2.xml</param-value>
     </init-param>
     <init-param>
-      <param-name>xslWorkingDirectory</param-name>
-      <param-value>/Users/helder/Docs/Astronomy/sol_2010_2.2/xsl</param-value>
+    	<param-name>xslWorkingDirectory</param-name>
+    	<param-value>/home/argonavis1/public_html/astronomia/xsl</param-value>
     </init-param>
     <init-param>
-      <param-name>dataWorkingDirectory</param-name>
-      <param-value>/Users/helder/Docs/Astronomy/sol_2010_2.2/data</param-value>
+    	<param-name>dataWorkingDirectory</param-name>
+    	<param-value>/home/argonavis1/public_html/astronomia/data</param-value>
     </init-param>
   </servlet>
+  
   <servlet>
     <description>Uses XSLT to generate tabular data from Solar System XML database</description>
     <display-name>TabelaXSLTransformer</display-name>
     <servlet-name>TabelaXSLTransformer</servlet-name>
     <servlet-class>br.com.argonavis.astronomy.tabelas.TabelaXSLTransformer</servlet-class>
     <init-param>
-      <param-name>stylesheetFile</param-name>
-      <param-value>sol_tabelas_html.xsl</param-value>
+    	<param-name>stylesheetFile</param-name>
+    	<param-value>sol_tabelas_html.xsl</param-value>
     </init-param>
     <init-param>
-      <param-name>sourceXMLFile</param-name>
-      <param-value>sol_2010.2.2.xml</param-value>
+    	<param-name>sourceXMLFile</param-name>
+    	<param-value>sol_2010.2.2.xml</param-value>
     </init-param>
     <init-param>
-      <param-name>xslWorkingDirectory</param-name>
-      <param-value>/Users/helder/Docs/Astronomy/sol_2010_2.2/xsl</param-value>
+    	<param-name>xslWorkingDirectory</param-name>
+    	<param-value>/home/argonavis1/public_html/astronomia/xsl</param-value>
     </init-param>
     <init-param>
-      <param-name>dataWorkingDirectory</param-name>
-      <param-value>/Users/helder/Docs/Astronomy/sol_2010_2.2/data</param-value>
+    	<param-name>dataWorkingDirectory</param-name>
+    	<param-value>/home/argonavis1/public_html/astronomia/data</param-value>
     </init-param>
     <init-param>
-      <param-name>imageDirectory</param-name>
-      <param-value>http://www.argonavis.com.br/astronomia/data/img/</param-value>
+    	<param-name>imageDirectory</param-name>
+    	<param-value>http://www.argonavis.com.br/astronomia/data/img/</param-value>
     </init-param>
   </servlet>
-  <servlet-mapping>
-    <servlet-name>OrbitXSLTransformer</servlet-name>
-    <url-pattern>/servlet/orbitas.svg</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>TabelaXSLTransformer</servlet-name>
-    <url-pattern>/servlet/sistemasolar.html</url-pattern>
-  </servlet-mapping>
+  
   <servlet>
     <description></description>
     <display-name>autocomplete</display-name>
@@ -75,18 +69,23 @@
       <param-value>sol_2010.2.2.xml</param-value>
     </init-param>
     <init-param>
-      <param-name>xslWorkingDirectory</param-name>
-      <param-value>/Users/helder/Docs/Astronomy/sol_2010_2.2/xsl</param-value>
-    </init-param>
-    <init-param>
-      <param-name>dataWorkingDirectory</param-name>
-      <param-value>/Users/helder/Docs/Astronomy/sol_2010_2.2/data</param-value>
+    	<param-name>dataWorkingDirectory</param-name>
+    	<param-value>/home/argonavis1/public_html/astronomia/data</param-value>
     </init-param>
     <init-param>
       <param-name>xpathNomes</param-name>
       <param-value>//*[not(self::satelite)][@nome]</param-value>
     </init-param>
   </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>OrbitXSLTransformer</servlet-name>
+    <url-pattern>/servlet/orbitas.svg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TabelaXSLTransformer</servlet-name>
+    <url-pattern>/servlet/sistemasolar.html</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
     <servlet-name>autocomplete</servlet-name>
     <url-pattern>/servlet/buscaNomes</url-pattern>
