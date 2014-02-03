@@ -20,3 +20,5 @@ Another application which plots the data in a table is available at <http://www.
 ![](https://raw2.github.com/helderdarocha/orbits/master/orbits_table.png)
 
 All the data is in Portuguese.
+
+<style>img{border: solid gray 1px}</style>
