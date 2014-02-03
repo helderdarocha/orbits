@@ -1,7 +1,7 @@
 orbits
 ======
 
-<style>img{border: solid gray 1px !important}</style>
+<style>img[alt=ss]{border: solid gray 1px !important}</style>
 
 Web application that generates SVG orbits from Solar System data.
 
@@ -11,15 +11,15 @@ This application is running here: <http://www.argonavis.com.br/astronomia/orbita
 
 Here are some screenshots. This is the form to collect the data used to generate the animation:
 
-![](https://raw2.github.com/helderdarocha/orbits/master/orbits_form.png)
+![ss](https://raw2.github.com/helderdarocha/orbits/master/orbits_form.png)
 
 And this is a screenshot of a rendered SVG:
 
-![](https://raw2.github.com/helderdarocha/orbits/master/orbits_svg.png)
+![ss](https://raw2.github.com/helderdarocha/orbits/master/orbits_svg.png)
 
 Another application which plots the data in a table is available at <http://www.argonavis.com.br/astronomia/tabelas>. This is a screenshot of a generated table with selected data:
 
-![](https://raw2.github.com/helderdarocha/orbits/master/orbits_table.png)
+![ss](https://raw2.github.com/helderdarocha/orbits/master/orbits_table.png)
 
 All the data is in Portuguese.
 
