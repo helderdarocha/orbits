@@ -1,7 +1,7 @@
 orbits
 ======
 
-<style>img{border: solid gray 1px}</style>
+<style>img{border: solid gray 1px !important}</style>
 
 Web application that generates SVG orbits from Solar System data.
 
